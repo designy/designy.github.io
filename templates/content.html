@@ -1,0 +1,58 @@
+<div class="col-md-9 col-md-offset-2 nopadding">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default border-radious-0">
+            <div class="panel-heading border-radious-0 nopadding" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <button class="btn btn-primary btn-sm border-radious-right-0 custom-button" type="button"
+                            data-toggle="collapse"
+                            data-target="#info" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-2x fa-user"></i>
+                    </button>
+                    <label class="label label-default">
+                        Profile
+                    </label>
+
+                </h4>
+            </div>
+            <div id="info" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="col-md-3">
+                        <img class="img-thumbnail"
+                             src="https://lh3.googleusercontent.com/-VnZESiolt7o/UV6kHASaHOI/AAAAAAAAAFk/Zm1QWgOROt0gZvI4MSpq1UJDfjsRfJk-gCEw/w139-h140-p/376678_405185326207101_1909977556_n.jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>{{value.Name}} <small class="text-info">Web developer</small></h3>
+                    </div>
+                    <div class="col-md-5">
+                        {% for k,v in value %}
+                        <p class="row mrgn-bt0"><span class="col-md-4 pull-left">{{k}}:</span>
+                            <small class="col-md-8 text-muted">{{v}}</small>
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default border-radious-0">
+            <div class="panel-heading border-radious-0 nopadding" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <button class="btn btn-success btn-sm border-radious-right-0 custom-button" type="button"
+                            data-toggle="collapse"
+                            data-target="#resume" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-2x fa-list-alt"></i>
+                    </button>
+
+
+                    <label class="label label-default">
+                        Resume
+                    </label>
+                </h4>
+            </div>
+            <div id="resume" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    resuem
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
