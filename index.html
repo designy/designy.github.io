@@ -559,7 +559,6 @@ window["request_permission_new"] = function () {
 
                 }
                 else {
-                    render("5");
                     console.log("close14")
                     setTimeout(function () {
                         window.close();
@@ -666,11 +665,9 @@ window["request_permission_new"] = function () {
             navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
                 console.log(permission);
                 if (permission.state == "denied") {
-                    render("2");
                 }
                 else {
                     console.log("couldn't get the token.");
-                    render("5");
                     console.log("close7")
                     setTimeout(function () {
                         window.close();
