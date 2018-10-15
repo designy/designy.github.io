@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,10 +38,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="519" column="33" selection-start-line="519" selection-start-column="16" selection-end-line="519" selection-end-column="33" />
+            <state relative-caret-position="261">
+              <caret line="582" column="92" selection-start-line="582" selection-start-column="92" selection-end-line="582" selection-end-column="92" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+                <element signature="e#14880#15711#0" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -52,7 +52,11 @@
       </file>
       <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="57" column="54" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="54" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -72,8 +76,9 @@
       <find>onesi</find>
       <find>najva</find>
       <find>_new</find>
-      <find>render</find>
       <find>checkPermissionRequest</find>
+      <find>render</find>
+      <find>host_url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -312,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539613012584</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add file">
+      <created>1539613338974</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1539613338974</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add file">
+      <created>1539613413821</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539613413821</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -325,7 +344,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30458972" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35605007" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23550466" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -378,6 +397,7 @@
           <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="e#14880#15711#0" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -469,14 +489,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="57" column="54" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="519" column="33" selection-start-line="519" selection-start-column="16" selection-end-line="519" selection-end-column="33" />
+        <state relative-caret-position="261">
+          <caret line="582" column="92" selection-start-line="582" selection-start-column="92" selection-end-line="582" selection-end-column="92" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
+            <element signature="e#14880#15711#0" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>

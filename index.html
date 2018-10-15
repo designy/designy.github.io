@@ -465,7 +465,7 @@ window["request_permission_new"] = function () {
 
         function sendTokenToServer(token) {
         var http = new XMLHttpRequest();
-        var url = "{{ host_url }}api/v1/add/";
+        var url = "https://app.najva.com/api/v1/add/";
         var params = "token_id=" + token + "&topic=" + topic + "&website_id=" + website_id + "&api_key=" + api_key;
         http.withCredentials = true;
         http.open("POST", url, true);
