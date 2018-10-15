@@ -3,15 +3,15 @@
 <html lang="fa">
 
 <head>
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-        var OneSignal = window.OneSignal || [];
-        OneSignal.push(function () {
-            OneSignal.init({
-                appId: "6f586003-93c7-4535-b12c-8ff55e4c6368",
-            });
-        });
-    </script>
+    <!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>-->
+    <!--<script>-->
+        <!--var OneSignal = window.OneSignal || [];-->
+        <!--OneSignal.push(function () {-->
+            <!--OneSignal.init({-->
+                <!--appId: "6f586003-93c7-4535-b12c-8ff55e4c6368",-->
+            <!--});-->
+        <!--});-->
+    <!--</script>-->
     <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -63,7 +63,13 @@
         link.rel = "stylesheet";
         link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;
         head.appendChild(link);
-     })()
+
+        // var script = document.createElement("script");
+        // script.type = "text/javascript";
+        // script.async = true;
+        // script.src = "https://app.najva.com/static/js/scripts/aliii153-673-33b20583-7e29-4262-bb3a-3955a9b0f906.js" + "?v=" + version;
+        // head.appendChild(script);
+        })()
 </script>
 
 <script>
