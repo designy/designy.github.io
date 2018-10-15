@@ -436,6 +436,147 @@ window["najvaSetLocation"] = function () {
 };
 
 window["request_permission_new"] = function () {
+        var topic = "673";
+    var location_permission = true;
+    var website_id = "167";
+    var api_key = "33b205837e294262bb3a3955a9b0f906";
+
+        function sendRequest(url, success, reject, method, data, headers) {
+        var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
+        httpRequest.open(method, url, !0),
+            httpRequest.withCredentials = !0,
+            httpRequest.onreadystatechange = function () {
+                var a;
+                4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
+            };
+        if (headers) {
+            var header_keys = Object.keys(headers);
+            for (var i = 0; i < header_keys.length; i++) {
+                httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
+            }
+        }
+        if (data) {
+            httpRequest.send(data)
+        }
+        else {
+            httpRequest.send()
+        }
+    }
+
+        function sendTokenToServer(token) {
+        var http = new XMLHttpRequest();
+        var url = "{{ host_url }}api/v1/add/";
+        var params = "token_id=" + token + "&topic=" + topic + "&website_id=" + website_id + "&api_key=" + api_key;
+        http.withCredentials = true;
+        http.open("POST", url, true);
+        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4) {
+                if (http.status == 200) {
+                    cookie_token = JSON.parse(http.response).cookie_token;
+                    setCookie("cookie_token:" + topic, cookie_token, 3650);
+                    setCookie("token_id:" + topic, token, 3650);
+                    if (location_permission) {
+                        // get location permission
+                        navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
+                            console.log("initial permission state : ", permission.state);
+                            var options = {
+                                enableHighAccuracy: true,
+                                timeout: 60000,
+                                maximumAge: 0
+                            };
+
+                            function success(pos) {
+                                var crd = pos.coords;
+                                var data = {
+                                    "accuracy": crd.accuracy,
+                                    "altitude": crd.altitude,
+                                    "latitude": crd.latitude,
+                                    "longitude": crd.longitude
+                                };
+                                var url = "{% url 'set_subscriber_location' %}";
+                                    sendRequest(url, function success(response) {
+                                        setCookie("tlc", true, 0.5)
+                                        console.log("close8")
+                                        setTimeout(function () {
+                                            window.close();
+                                        }, 2000);
+
+                                    }, function error(response) {
+                                        console.log("close9")
+                                        setTimeout(function () {
+                                            window.close();
+                                        }, 2000);
+                                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
+
+
+                                /*
+                                .catch(function () {
+
+                                    console.log("unexpected error");
+                                    setTimeout(
+                                        function () {
+                                        window.close();
+                                    }, 5000);
+                                });
+                                */
+                            }
+
+                            function error(err) {
+                                console.log("close12")
+                                setTimeout(function () {
+                                    window.close();
+                                }, 2000);
+                                console.warn(`ERROR(${err.code}): ${err.message}`);
+                            }
+
+                            navigator.geolocation.getCurrentPosition(success, error, options);
+
+                            permission.onchange = function (event) {
+                                var state = event.currentTarget.state;
+                                console.log("permission status changed to : ", state);
+                                if (state == "granted") {
+                                    console.log("user granted location access.")
+                                }
+                                else if (state == "denied") {
+                                    console.log("user denied location access.")
+                                }
+                                else if (state == "prompt") {
+                                    navigator.geolocation.getCurrentPosition(success, error, options);
+                                }
+                            }
+
+                        });
+                    }
+                    else {
+                        console.log("close13")
+                        setTimeout(function () {
+                            window.close();
+                        }, 2000);
+                    }
+
+
+                }
+                else {
+                    render("5");
+                    console.log("close14")
+                    setTimeout(function () {
+                        window.close();
+                    }, 5000);
+                }
+            }
+        };
+
+        http.send(params);
+    }
+
+        function checkPermissionRequest() {
+        messaging.requestPermission().then(function () {
+        }).catch(function () {
+            console.log("couldn't get notification permission from user.");
+        });
+    }
     function setCookie(cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -480,7 +621,6 @@ window["request_permission_new"] = function () {
 
             if (state == "granted") {
                 console.log("permission granted.");
-                render("3");
 
                 messaging.getToken()
                     .then(function (currentToken) {
@@ -489,7 +629,6 @@ window["request_permission_new"] = function () {
 
                     }).catch(function () {
 
-                    render("5");
                     console.log("unexpected error");
                     console.log("close4")
                     setTimeout(function () {
@@ -498,11 +637,9 @@ window["request_permission_new"] = function () {
                 });
             }
             else if (state == "denied") {
-                render("2");
                 checkPermissionRequest();
             }
             else if (state == "prompt") {
-                render("1");
                 checkPermissionRequest();
             }
         };
