@@ -38,11 +38,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="582" column="92" selection-start-line="582" selection-start-column="92" selection-end-line="582" selection-end-column="92" />
+            <state relative-caret-position="77">
+              <caret line="573" column="17" selection-start-line="573" selection-start-column="8" selection-end-line="573" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
                 <element signature="e#14880#15711#0" />
+                <element signature="e#15260#19686#0" />
+                <element signature="e#22085#23973#0" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -79,6 +81,7 @@
       <find>checkPermissionRequest</find>
       <find>render</find>
       <find>host_url</find>
+      <find>messaging</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -331,7 +334,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539613413821</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add file">
+      <created>1539613890089</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539613890089</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add file">
+      <created>1539615971170</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1539615971170</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +361,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35605007" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34909597" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23550466" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -398,6 +415,8 @@
           <folding>
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
             <element signature="e#14880#15711#0" />
+            <element signature="e#15260#19686#0" />
+            <element signature="e#22085#23973#0" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -497,11 +516,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="582" column="92" selection-start-line="582" selection-start-column="92" selection-end-line="582" selection-end-column="92" />
+        <state relative-caret-position="77">
+          <caret line="573" column="17" selection-start-line="573" selection-start-column="8" selection-end-line="573" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
             <element signature="e#14880#15711#0" />
+            <element signature="e#15260#19686#0" />
+            <element signature="e#22085#23973#0" />
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
