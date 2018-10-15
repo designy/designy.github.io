@@ -457,6 +457,12 @@ window["request_permission_new"] = function () {
         }
         return cookieValue;
     }
+    var config = {
+        messagingSenderId: "334645784830"
+    };
+    firebase.initializeApp(config);
+
+    var messaging = firebase.messaging();
 
     navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
         console.log("initial permission state : ", permission.state);
