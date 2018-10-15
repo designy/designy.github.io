@@ -603,7 +603,58 @@ window["request_permission_new"] = function () {
     firebase.initializeApp(config);
 
     var messaging = firebase.messaging();
+messaging.onMessage(function (payload) {
+        if (!document.hidden) {
+            console.log(payload);
 
+            var expireTime = parseInt(payload.data.expireTime);
+
+            var notification = new Notification(
+                payload.data.title,
+                {
+                    body: payload.data.body,
+                    icon: payload.data.icon,
+                    requireInteraction: true,
+                    image: payload.data.image
+                }
+            );
+
+            notification.id = payload.data.notification_id;
+
+            notification.isClosedByScript = false;
+
+            notification.onclick = function () {
+                var url = "https://app.najva.com/redirect/?notification_id=" + payload.data.notification_id;
+                url += '&website_id=' + payload.data.website_id;
+                url += '&api_key=' + payload.data.api_key;
+                url += "&next=" + payload.data.url;
+
+                window.open(url, '_bl');
+                notification.isClosedByScript = true;
+                notification.close();
+            };
+
+            notification.onclose = function () {
+                if (!notification.isClosedByScript) {
+                    var xhr = new XMLHttpRequest();
+                    var url = '{{ host_url }}';
+                    url += 'api/v1/notification/closed/?notification_id=' + payload.data.notification_id;
+                    url += '&website_id=' + payload.data.website_id;
+                    url += '&api_key=' + payload.data.api_key;
+                    xhr.open('GET', url, true);
+                    xhr.withCredentials = true;
+                    xhr.send();
+                }
+            };
+
+            if (expireTime > 0) {
+                setTimeout(function () {
+                    notification.isClosedByScript = true;
+                    notification.close();
+                }, expireTime)
+            }
+        }
+    });
     navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
         console.log("initial permission state : ", permission.state);
 
