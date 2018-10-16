@@ -205,26 +205,20 @@ function setHasShownCookie() {
 
 showPopUp.hasAlreadyShown = false;
 
-function append_ext_script(script_address,script_id, async_state, add_version) {
-    var now = new Date();
-    var head = document.getElementsByTagName('head')[0];
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.id = script_id;
-    if (async_state){
-        script.async = async_state;
-    }
-    if (add_version){
-        script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() +
-        '0' + now.getHours();
-    }
-    else{
-    script.src = script_address;
-    }
-    if (document.getElementById(script_id) == null)
-        head.appendChild(script);
+function get_messaging_fn(call) {
+        function get_messaging(handle_permission) {
+            var config = {
+                messagingSenderId: "334645784830"
+            };
+            firebase.initializeApp(config);
+            messaging = firebase.messaging();
+            handle_permission()
+        }
+        function load_messaging() {
+            NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging(call))
+        }
+    NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
 }
-
 function showPopUp() {
     if (showPopUp.hasAlreadyShown == true) {
         return;
@@ -240,14 +234,8 @@ function showPopUp() {
     // if (window.focus) {
     //     new_window.focus()
     // }
-    append_ext_script("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", "najva-firebase");
-    append_ext_script("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", "najva-firebase-messaging");
-    var config = {
-        messagingSenderId: "334645784830"
-    };
-    firebase.initializeApp(config);
-    var messaging = firebase.messaging();
-
+get_messaging_fn(handle_permission)
+function handle_permission() {
     var topic = window.webPushTopic;
     var location_permission = location_permission;
     var website_id = window.webPushWebsite;
@@ -384,6 +372,8 @@ function showPopUp() {
         }
     }).catch(function (error) {
     });
+}
+
     return false;
 }
 
