@@ -695,7 +695,6 @@ function setUserAgentParameters() {
                 clearInterval(webPushInterval);
                 detectPrivateMode(function (is_private) {
                 if (!is_private) {
-         najvaSetLocation();
         document.body.appendChild(
             htmlToElement(`
             <div id="najva-subscriber-notif-popup" class="subscriber-notif-popup deactive">
