@@ -205,20 +205,24 @@ function setHasShownCookie() {
 
 showPopUp.hasAlreadyShown = false;
 
-function get_messaging_fn() {
-    var messaging;
-        function get_messaging() {
-            var config = {
-                messagingSenderId: "334645784830"
-            };
-            firebase.initializeApp(config);
-            messaging = firebase.messaging();
-        }
-        function load_messaging() {
-            NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging)
-        }
-    NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
-    return messaging
+function append_ext_script(script_address,script_id, async_state, add_version) {
+    var now = new Date();
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.id = script_id;
+    if (async_state){
+        script.async = async_state;
+    }
+    if (add_version){
+        script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() +
+        '0' + now.getHours();
+    }
+    else{
+    script.src = script_address;
+    }
+    if (document.getElementById(script_id) == null)
+        head.appendChild(script);
 }
 
 function showPopUp() {
@@ -236,8 +240,13 @@ function showPopUp() {
     // if (window.focus) {
     //     new_window.focus()
     // }
-
-    var messaging = get_messaging_fn();
+    append_ext_script("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", "najva-firebase");
+    append_ext_script("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", "najva-firebase-messaging");
+    var config = {
+        messagingSenderId: "334645784830"
+    };
+    firebase.initializeApp(config);
+    var messaging = firebase.messaging();
 
     var topic = window.webPushTopic;
     var location_permission = location_permission;
