@@ -437,9 +437,9 @@ window["najvaSetLocation"] = function () {
 
 window["request_permission_new"] = function () {
         var topic = "673";
-    var location_permission = true;
-    var website_id = "167";
-    var api_key = "33b205837e294262bb3a3955a9b0f906";
+        var location_permission = true;
+        var website_id = "167";
+        var api_key = "33b205837e294262bb3a3955a9b0f906";
 
         function sendRequest(url, success, reject, method, data, headers) {
         var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
@@ -580,7 +580,7 @@ window["request_permission_new"] = function () {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";domain=.{{ short_host_url }};path=/";
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";domain=.aliii.ir;path=/";
     }
     function getCookie(name) {
         var cookieValue = null;
@@ -603,58 +603,6 @@ window["request_permission_new"] = function () {
     firebase.initializeApp(config);
 
     var messaging = firebase.messaging();
-messaging.onMessage(function (payload) {
-        if (!document.hidden) {
-            console.log(payload);
-
-            var expireTime = parseInt(payload.data.expireTime);
-
-            var notification = new Notification(
-                payload.data.title,
-                {
-                    body: payload.data.body,
-                    icon: payload.data.icon,
-                    requireInteraction: true,
-                    image: payload.data.image
-                }
-            );
-
-            notification.id = payload.data.notification_id;
-
-            notification.isClosedByScript = false;
-
-            notification.onclick = function () {
-                var url = "https://app.najva.com/redirect/?notification_id=" + payload.data.notification_id;
-                url += '&website_id=' + payload.data.website_id;
-                url += '&api_key=' + payload.data.api_key;
-                url += "&next=" + payload.data.url;
-
-                window.open(url, '_bl');
-                notification.isClosedByScript = true;
-                notification.close();
-            };
-
-            notification.onclose = function () {
-                if (!notification.isClosedByScript) {
-                    var xhr = new XMLHttpRequest();
-                    var url = '{{ host_url }}';
-                    url += 'api/v1/notification/closed/?notification_id=' + payload.data.notification_id;
-                    url += '&website_id=' + payload.data.website_id;
-                    url += '&api_key=' + payload.data.api_key;
-                    xhr.open('GET', url, true);
-                    xhr.withCredentials = true;
-                    xhr.send();
-                }
-            };
-
-            if (expireTime > 0) {
-                setTimeout(function () {
-                    notification.isClosedByScript = true;
-                    notification.close();
-                }, expireTime)
-            }
-        }
-    });
     navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
         console.log("initial permission state : ", permission.state);
 
@@ -681,9 +629,6 @@ messaging.onMessage(function (payload) {
 
                     console.log("unexpected error");
                     console.log("close4")
-                    setTimeout(function () {
-                        window.close();
-                    }, 5000);
                 });
             }
             else if (state == "denied") {
@@ -720,9 +665,6 @@ messaging.onMessage(function (payload) {
                 else {
                     console.log("couldn't get the token.");
                     console.log("close7")
-                    setTimeout(function () {
-                        window.close();
-                    }, 5000);
                 }
             });
         }
