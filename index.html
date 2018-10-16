@@ -202,9 +202,9 @@ function get_messaging_fn(call) {
             handle_permission()
         }
         function load_messaging() {
-            NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging(call))
+            NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging(call))
         }
-    NajvaloadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
+    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
 }
 function showPopUp() {
     if (showPopUp.hasAlreadyShown == true) {
