@@ -599,15 +599,6 @@ function setUserAgentParameters() {
     }
 }
 
-window["najvaSetLocation"] = function () {
-    var url = WEB_PUSH_HOST_URL + 'tlc/';
-    var exist_tlc = document.querySelector("#najva-tlc");
-    if (!exist_tlc) {
-        var iframe = "<iframe id='najva-tlc' style='display: none!important;' src='" + url + "'></iframe>";
-        document.body.appendChild(htmlToElement(iframe))
-    }
-
-};
 
         function najvaRetry(isDone, next) {
             var current_trial = 0,max_retry = 50,interval = 10,is_timeout = false;
