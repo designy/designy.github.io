@@ -172,32 +172,22 @@
         }
     };
 
-    window["NajvaloadScript"] = function (url, callback) {
 
-    var script = document.createElement("script")
-    script.type = "text/javascript";
 
-    if (script.readyState) {  //IE
-        script.onreadystatechange = function () {
-            if (script.readyState == "loaded" ||
-                script.readyState == "complete") {
-                script.onreadystatechange = null;
-                callback();
-            }
-        };
-    } else {  //Others
-        script.onload = function () {
-            callback();
-        };
-    }
-
-    script.src = url;
-    document.getElementsByTagName("head")[0].appendChild(script);
+window["NajvaloadScript"] = function (u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) {
+            o.addEventListener('load', function (e) {
+                c(null, e);
+            }, false);
+        }
+        s.parentNode.insertBefore(o, s);
 }
-    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
-    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging);
-
-
+NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js");
+NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js");
 
     function setHasShownCookie() {
         najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
