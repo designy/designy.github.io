@@ -173,8 +173,7 @@
     };
 
 
-
-window["NajvaLoadScript"] = function (u, c) {
+    window["NajvaLoadScript"] = function (u, c) {
         var d = document, t = 'script',
             o = d.createElement(t),
             s = d.getElementsByTagName(t)[0];
@@ -185,9 +184,9 @@ window["NajvaLoadScript"] = function (u, c) {
             }, false);
         }
         s.parentNode.insertBefore(o, s);
-}
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js");
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js");
+    }
+    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js");
+    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js");
 
     function setHasShownCookie() {
         najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
@@ -244,7 +243,7 @@ NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"
 
         function handle_permission() {
             var topic = window.webPushTopic;
-            var location_permission = location_permission;
+            var location_permission = window.location_permission;
             var website_id = window.webPushWebsite;
             var api_key = webPushApiKey;
 
