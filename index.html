@@ -122,7 +122,7 @@
         if (hasShownPopUp) {
             if (!hasSubscribed || !isLastActiveTimeUpToDate) {
                 var xhr = new XMLHttpRequest();
-                var url = WEB_PUSH_HOST_URL + 'api/v1/current/user/?topic=' + topic + '&website=' + website + "&api_key=" + webPushApiKey;
+                var url = 'https://app.najva.com/api/v1/current/user/?topic=' + topic + '&website=' + website + "&api_key=" + webPushApiKey;
 
                 if (!isLastActiveTimeUpToDate) {
                     url += "&update_time=1";
