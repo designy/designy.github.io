@@ -193,16 +193,16 @@ function setHasShownCookie() {
 showPopUp.hasAlreadyShown = false;
 
 function get_messaging_fn(call) {
-        function get_messaging(handle_permission) {
+        function get_messaging() {
             var config = {
                 messagingSenderId: "334645784830"
             };
             firebase.initializeApp(config);
             messaging = firebase.messaging();
-            handle_permission()
+            call()
         }
         function load_messaging() {
-            NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging(call))
+            NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging)
         }
     NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
 }
