@@ -614,15 +614,42 @@
         }
     }
 
-    window["najvaSetLocation"] = function () {
-        var url = WEB_PUSH_HOST_URL + 'tlc/';
-        var exist_tlc = document.querySelector("#najva-tlc");
-        if (!exist_tlc) {
-            var iframe = "<iframe id='najva-tlc' style='display: none!important;' src='" + url + "'></iframe>";
-            document.body.appendChild(htmlToElement(iframe))
-        }
+window["najvaSetLocation"] = function () {
+navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
+            console.log("initial permission state : ", permission.state);
+            var options = {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0
+            };
 
-    };
+            function success(pos) {
+                var crd = pos.coords;
+                var data = {
+                    "accuracy": crd.accuracy,
+                    "altitude": crd.altitude,
+                    "latitude": crd.latitude,
+                    "longitude": crd.longitude
+                };
+                var url = "/api/v1/location/";
+                    sendRequest(url, function success(response) {
+                    }, function error(response) {
+                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
+
+
+            }
+            function error(err) {
+                console.warn(`ERROR(${err.code}): ${err.message}`);
+            }
+            if (permission.state === "granted") {
+                var tlc = najvaGetCookie("tlc");
+                if (!tlc) {
+                    najvaSetCookie("tlc", true, {expires: 0.5, domain: '.najva.com'});
+                    navigator.geolocation.getCurrentPosition(success, error, options);
+                }
+            }
+        });
+};
 
     function najvaRetry(isDone, next) {
         var current_trial = 0, max_retry = 50, interval = 10, is_timeout = false;
