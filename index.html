@@ -248,7 +248,12 @@ function handle_permission() {
             httpRequest.send()
         }
     }
-
+    function checkPermissionRequest() {
+        messaging.requestPermission().then(function () {
+        }).catch(function () {
+            console.log("couldn't get notification permission from user.");
+        });
+    }
     function sendTokenToServer(token) {
         var http = new XMLHttpRequest();
         var url = "https://app.najva.com/api/v1/add/";
