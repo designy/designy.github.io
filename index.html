@@ -195,6 +195,95 @@ window["NajvaLoadScript"] = function (u, c) {
     }
     s.parentNode.insertBefore(o, s);
 }
+function najvaSendRequest(url, success, reject, method, data, headers) {
+            var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
+            httpRequest.open(method, url, !0),
+                httpRequest.withCredentials = !0,
+                httpRequest.onreadystatechange = function () {
+                    var a;
+                    4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
+                };
+            if (headers) {
+                var header_keys = Object.keys(headers);
+                for (var i = 0; i < header_keys.length; i++) {
+                    httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
+                }
+            }
+            if (data) {
+                httpRequest.send(data)
+            }
+            else {
+                httpRequest.send()
+            }
+    }
+function najvaSendTokenToServer(token) {
+            var http = new XMLHttpRequest();
+            var url = "https://app.najva.com/api/v1/add/";
+            var params = "token_id=" + token + "&topic=" + topic + "&website_id=" + website_id + "&api_key=" + api_key;
+            http.withCredentials = true;
+            http.open("POST", url, true);
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+            http.onreadystatechange = function () {
+                if (http.readyState == 4) {
+                    if (http.status == 200) {
+                        cookie_token = JSON.parse(http.response).cookie_token;
+                        najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
+                        najvaSetCookie("token_id:" + topic, token, 3650);
+                        if (location_permission) {
+                            // get location permission
+                            navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
+                                console.log("initial permission state : ", permission.state);
+                                var options = {
+                                    enableHighAccuracy: true,
+                                    timeout: 60000,
+                                    maximumAge: 0
+                                };
+
+                                function success(pos) {
+                                    var crd = pos.coords;
+                                    var data = {
+                                        "accuracy": crd.accuracy,
+                                        "altitude": crd.altitude,
+                                        "latitude": crd.latitude,
+                                        "longitude": crd.longitude
+                                    };
+                                    var url = "https://app.najva.com/api/v1/location/";
+                                    najvaSendRequest(url, function success(response) {
+                                        najvaSetCookie("tlc", true, 0.5);
+                                    }, function error(response) {
+                                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
+
+                                }
+
+                                function error(err) {
+                                    console.warn(`ERROR(${err.code}): ${err.message}`);
+                                }
+
+                                navigator.geolocation.getCurrentPosition(success, error, options);
+
+                                permission.onchange = function (event) {
+                                    var state = event.currentTarget.state;
+                                    console.log("permission status changed to : ", state);
+                                    if (state == "granted") {
+                                        console.log("user granted location access.")
+                                    }
+                                    else if (state == "denied") {
+                                        console.log("user denied location access.")
+                                    }
+                                    else if (state == "prompt") {
+                                        navigator.geolocation.getCurrentPosition(success, error, options);
+                                    }
+                                }
+
+                            });
+                        }
+                    }
+                }
+            };
+
+            http.send(params);
+        }
 NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js");
 NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js");
 
@@ -257,27 +346,6 @@ function showPopUp() {
         var website_id = window.webPushWebsite;
         var api_key = webPushApiKey;
 
-        function sendRequest(url, success, reject, method, data, headers) {
-            var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
-            httpRequest.open(method, url, !0),
-                httpRequest.withCredentials = !0,
-                httpRequest.onreadystatechange = function () {
-                    var a;
-                    4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
-                };
-            if (headers) {
-                var header_keys = Object.keys(headers);
-                for (var i = 0; i < header_keys.length; i++) {
-                    httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
-                }
-            }
-            if (data) {
-                httpRequest.send(data)
-            }
-            else {
-                httpRequest.send()
-            }
-        }
 
         function checkPermissionRequest() {
             messaging.requestPermission().then(function () {
@@ -285,76 +353,6 @@ function showPopUp() {
                 console.log("couldn't get notification permission from user.");
             });
         }
-
-        function sendTokenToServer(token) {
-            var http = new XMLHttpRequest();
-            var url = "https://app.najva.com/api/v1/add/";
-            var params = "token_id=" + token + "&topic=" + topic + "&website_id=" + website_id + "&api_key=" + api_key;
-            http.withCredentials = true;
-            http.open("POST", url, true);
-            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-            http.onreadystatechange = function () {
-                if (http.readyState == 4) {
-                    if (http.status == 200) {
-                        cookie_token = JSON.parse(http.response).cookie_token;
-                        najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
-                        najvaSetCookie("token_id:" + topic, token, 3650);
-                        if (location_permission) {
-                            // get location permission
-                            navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
-                                console.log("initial permission state : ", permission.state);
-                                var options = {
-                                    enableHighAccuracy: true,
-                                    timeout: 60000,
-                                    maximumAge: 0
-                                };
-
-                                function success(pos) {
-                                    var crd = pos.coords;
-                                    var data = {
-                                        "accuracy": crd.accuracy,
-                                        "altitude": crd.altitude,
-                                        "latitude": crd.latitude,
-                                        "longitude": crd.longitude
-                                    };
-                                    var url = "https://app.najva.com/api/v1/location/";
-                                    sendRequest(url, function success(response) {
-                                        najvaSetCookie("tlc", true, 0.5);
-                                    }, function error(response) {
-                                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
-
-                                }
-
-                                function error(err) {
-                                    console.warn(`ERROR(${err.code}): ${err.message}`);
-                                }
-
-                                navigator.geolocation.getCurrentPosition(success, error, options);
-
-                                permission.onchange = function (event) {
-                                    var state = event.currentTarget.state;
-                                    console.log("permission status changed to : ", state);
-                                    if (state == "granted") {
-                                        console.log("user granted location access.")
-                                    }
-                                    else if (state == "denied") {
-                                        console.log("user denied location access.")
-                                    }
-                                    else if (state == "prompt") {
-                                        navigator.geolocation.getCurrentPosition(success, error, options);
-                                    }
-                                }
-
-                            });
-                        }
-                    }
-                }
-            };
-
-            http.send(params);
-        }
-
         navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
             console.log("initial permission state : ", permission.state);
 
@@ -367,7 +365,7 @@ function showPopUp() {
                     messaging.getToken()
                         .then(function (currentToken) {
                             console.log(currentToken + " is your token.");
-                            sendTokenToServer(currentToken);
+                            najvaSendTokenToServer(currentToken);
 
                         }).catch(function () {
 
@@ -389,7 +387,7 @@ function showPopUp() {
             else {
                 var cookie_token = najvaGetCookie("cookie_token:" + topic);
                 if (cookie_token === null) {
-                    sendTokenToServer(currentToken);
+                    najvaSendTokenToServer(currentToken);
                 }
                 else {
                     console.log("already have permission for this topic. closing...");
@@ -642,7 +640,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
                     "longitude": crd.longitude
                 };
                 var url = "https://ap.najva.com/api/v1/location/";
-                    sendRequest(url, function success(response) {
+                    najvaSendRequest(url, function success(response) {
                     }, function error(response) {
                     }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
 
@@ -748,7 +746,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
-            var webPushApiKey = "c97bc3b3-f988-498b-802b-719d63057bc9";
+            var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://mydomain.najva.com/";
             var webPushInterval = setInterval(function(){

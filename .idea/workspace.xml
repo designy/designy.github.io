@@ -39,10 +39,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-end-line="786" />
+            <state relative-caret-position="166">
+              <caret line="391" column="37" selection-start-line="391" selection-start-column="20" selection-end-line="391" selection-end-column="37" />
               <folding>
-                <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,6 +89,12 @@
       <find>locat</find>
       <find>najvaSetL</find>
       <find>current/u</find>
+      <find>__cfduid</find>
+      <find>.najva</find>
+      <find>cookie_token:</find>
+      <find>api_key</find>
+      <find>sendTokenToServer</find>
+      <find>SendTokenToServer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -501,7 +508,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539782209711</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add file">
+      <created>1539844470974</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1539844470974</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add file">
+      <created>1539844832208</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1539844832209</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,7 +535,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34353268" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16133519" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21259843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -573,7 +594,8 @@
         <state relative-caret-position="1280">
           <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -600,7 +622,8 @@
         <state relative-caret-position="1460">
           <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,10 +721,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="75" column="4" lean-forward="true" selection-start-line="75" selection-end-line="786" />
+        <state relative-caret-position="166">
+          <caret line="391" column="37" selection-start-line="391" selection-start-column="20" selection-end-line="391" selection-end-column="37" />
           <folding>
-            <element signature="n#script#5;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
