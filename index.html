@@ -72,22 +72,21 @@
     })()
 </script>
 
-
 <script>
     var hasSubscribed = false;
 function get_domain_for_cookie(host) {
     var host_split = host.split(".");
     var top_domain = host_split[host_split.length -1];
     var domain_name = host_split[host_split.length -2];
-    var subdomain = host_split[host_split.length -3];
     if (domain_name.length > 2){
         return "." + domain_name + "." + top_domain
     }
-    else {
+    else if (host_split.length > 2){
+        var subdomain = host_split[host_split.length -3];
         return "." + subdomain + "." + domain_name + "." + top_domain
     }
 }
-var domain_for_cookie = get_domain_for_cookie(window.location.pathname);
+var domain_for_cookie = get_domain_for_cookie(window.location.hostname);
 window["webPushInitialize"] = function (topic, website, showBell) {
     window.webPushTopic = topic;
     window.webPushWebsite = website;
@@ -749,7 +748,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
-            var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
+            var webPushApiKey = "c97bc3b3-f988-498b-802b-719d63057bc9";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://mydomain.najva.com/";
             var webPushInterval = setInterval(function(){
@@ -779,6 +778,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
          }, 100);
 
 </script>
+
 </body>
 
 </html>
