@@ -643,7 +643,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
                     "latitude": crd.latitude,
                     "longitude": crd.longitude
                 };
-                var url = "https://ap.najva.com/api/v1/location/";
+                var url = "https://app.najva.com/api/v1/location/";
                     najvaSendRequest(url, function success(response) {
                     }, function error(response) {
                     }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
