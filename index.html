@@ -411,7 +411,7 @@ function showPopUp() {
 // somehow it was fixed by the 1 ms timeout.
 
 function hideRequestPanel() {
-    var item = document.querySelector("#najva-subscriber-notif-popup");
+    var item = document.querySelector("#najva-subscriber-native-help");
     item.classList.add("deactive");
 }
 
@@ -751,7 +751,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
-            var webPushApiKey = "c97bc3b3-f988-498b-802b-719d63057bc9";
+            var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://mydomain.najva.com/";
             var webPushInterval = setInterval(function(){
@@ -761,11 +761,11 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
                 if (!is_private) {
          najvaSetLocation();
             document.body.appendChild(
-            htmlToElement('<div id="najva-subscriber-native-help" class="subscriber-notif-popup deactive"><div class="subscriber-notif-popup__wrapper"><div class="subscriber-notif-popup__body clearfix"> <p class="subscriber-notif-popup__body-text"> آیا می‌خواهید مشترک شوید؟ </p> <div class="subscriber-notif-popup__body-btns float-left"><button class="subscriber-notif-popup__body-button positive" onclick="webPushYesButtonPressed()" href="javascript:void(0)">بله</button></div></div> </div> </div>'));
+            htmlToElement('<div id="najva-subscriber-native-help" class="subscriber-notif-popup"><div class="close-native-help">&times;</div><div class="subscriber-notif-popup__body-text">آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟</div><button class="subscriber-notif-popup__body-button" onclick="webPushYesButtonPressed()" href="javascript:void(0)">بله</button></div>'));
 
          webPushInitialize(673,167,1);
          webPushRequestPermission({delay : { enable: 1, value: 10 }, scroll: { enable: 0, value: 50 }, visit : { minimum : { enable: 1, value: 2 }, maximum : { enable: 0, value: 24 }, interval: { enable: 0, value: 3 } } });
-         var css = "#najva-subscriber-bell{ right: 30px;} #najva-subscriber-bell:hover {background-color: #007CFF;} #najva-subscriber-bell .circle {background-color: #FF0000;}";
+         var css = "#najva-subscriber-native-help{width:300px;height:115px;background-color:#fff;color:#000;position:fixed;left:15px;top:10px;padding:30px 15px;box-shadow:inset 0 0 3px #000}#najva-subscriber-native-help .close-native-help{position:absolute;top:1px;right:1px;font-size:14px;padding:0 7px;color:#747474;border:1px solid #e1e1e1;border-top:0;border-right:0}#najva-subscriber-native-help .subscriber-notif-popup__body-button{padding:3px 25px;outline:0;border:none;background-color:#00c9e9;font-weight:500;font-size:20px;transition:background-color .5s;color:#fff;font-family:inherit;position:absolute;left:15px;bottom:15px}#najva-subscriber-native-help .subscriber-notif-popup__body-button:hover{background-color:#00748d}#najva-subscriber-native-help .subscriber-notif-popup__body-text{line-height:1.7;direction:rtl}#najva-subscriber-bell{ right: 30px;} #najva-subscriber-bell:hover {background-color: #007CFF;} #najva-subscriber-bell .circle {background-color: #FF0000;}";
          var style = document.createElement("style");
          if (style.styleSheet) {
             style.styleSheet.cssText = css;
@@ -781,7 +781,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
 
 </script>
 
-<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/b8d20f059bf849e50449b66cfa8da63f_1.js" async></script>
+<!--<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/b8d20f059bf849e50449b66cfa8da63f_1.js" async></script>-->
 </body>
 
 </html>
