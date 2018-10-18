@@ -460,7 +460,9 @@ window["webPushRequestPermission"] = function (options) {
     if (!((browserName === "Chrome" && majorVersion >= 50) || (browserName === "Firefox" && majorVersion >= 44))) {
         return;
     }
-
+    if(window.document.location.protocol === "http:"){
+        return;
+    }
     // handling cookies.
     // the function wont do anything if the popUp has already been shown to the user in the past,
     // if the user has clicked on "No" button in the request panel.
