@@ -4,7 +4,6 @@ importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
 // configuration
 
 var config = {
-    apiKey: "AIzaSyDlgao6nGaw7RsZgjskbXsIhl0mwhOjZz4",
     messagingSenderId: "334645784830"
 };
 firebase.initializeApp(config);

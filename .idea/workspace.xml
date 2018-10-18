@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="sw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-messaging-sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sp-push-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/sp-push-worker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="175">
+              <caret line="459" column="77" selection-start-line="459" selection-start-column="77" selection-end-line="459" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -66,17 +64,17 @@
       <file leaf-file-name="sp-push-worker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-push-worker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            <state>
+              <caret column="135" selection-start-column="135" selection-end-column="135" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sp-push-manifest.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sp-push-manifest.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sp-push-manifest.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="32" />
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -92,11 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contain</find>
-      <find>onesi</find>
-      <find>najva</find>
-      <find>_new</find>
-      <find>checkPermissionRequest</find>
       <find>render</find>
       <find>host_url</find>
       <find>messaging</find>
@@ -122,6 +115,11 @@
       <find>api</find>
       <find>api_</find>
       <find>fire</find>
+      <find>showReq</find>
+      <find>chrio</find>
+      <find>brows</find>
+      <find>browserName</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,9 +132,9 @@
         <option value="$PROJECT_DIR$/bower_components/bootswatch-dist/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/test2.html" />
         <option value="$PROJECT_DIR$/assets/css/index.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
         <option value="$PROJECT_DIR$/sp-push-worker.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -220,20 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add file">
-      <created>1539613890089</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1539613890089</updated>
-    </task>
-    <task id="LOCAL-00026" summary="add file">
-      <created>1539615971170</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1539615971170</updated>
     </task>
     <task id="LOCAL-00027" summary="add file">
       <created>1539616316236</created>
@@ -564,11 +548,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539875773388</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="sw">
+      <created>1539877499110</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1539877499110</updated>
+    </task>
+    <task id="LOCAL-00075" summary="sw">
+      <created>1539877928436</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1539877928436</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="-7" width="1457" height="878" extended-state="6" />
+    <frame x="86" y="-7" width="1457" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -577,8 +575,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3588317" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3588317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -805,13 +803,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -821,15 +812,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sp-push-worker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state>
+          <caret column="135" selection-start-column="135" selection-end-column="135" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sp-push-manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="32" />
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="459" column="77" selection-start-line="459" selection-start-column="77" selection-end-line="459" selection-end-column="77" />
         </state>
       </provider>
     </entry>
