@@ -55,7 +55,7 @@ self.addEventListener('notificationclick', function(event) {
             type: "window"
         })
             .then(function(clientList) {
-                var url = "{{ host_url }}" + "redirect/?notification_id=" + event.notification.data.notification_id;
+                var url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
                 url += '&website_id=' + event.notification.data.website_id;
                 url += '&api_key=' + event.notification.data.api_key;
                 url += "&next=" + event.notification.data.url;
