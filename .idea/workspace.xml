@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="780" selection-start-line="780" selection-end-line="780" />
+            <state relative-caret-position="629">
+              <caret line="659" column="54" lean-forward="true" selection-start-line="659" selection-start-column="54" selection-end-line="659" selection-end-column="54" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
@@ -94,6 +92,7 @@
       <find>api_key</find>
       <find>sendTokenToServer</find>
       <find>SendTokenToServer</find>
+      <find>ap.n</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,13 +176,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add one signal">
-      <created>1536211278456</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1536211278456</updated>
     </task>
     <task id="LOCAL-00004" summary="add one signal">
       <created>1536211551440</created>
@@ -521,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539847356818</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add file">
+      <created>1539848040177</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1539848040177</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -534,7 +533,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3852573" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33657858" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21259843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -718,10 +717,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="4886" column="4" selection-start-line="4886" selection-start-column="4" selection-end-line="4886" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="780" selection-start-line="780" selection-end-line="780" />
+        <state relative-caret-position="629">
+          <caret line="659" column="54" lean-forward="true" selection-start-line="659" selection-start-column="54" selection-end-line="659" selection-end-column="54" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
