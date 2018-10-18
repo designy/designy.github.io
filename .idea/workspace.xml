@@ -34,20 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="459" column="77" selection-start-line="459" selection-start-column="77" selection-end-line="459" selection-end-column="77" />
+            <state relative-caret-position="280">
+              <caret line="14" column="32" selection-start-line="14" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+      <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+            <state relative-caret-position="40">
+              <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -119,7 +119,7 @@
       <find>chrio</find>
       <find>brows</find>
       <find>browserName</find>
-      <find />
+      <find>browserName ==</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/bower_components/bootswatch-dist/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/test2.html" />
         <option value="$PROJECT_DIR$/assets/css/index.css" />
-        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
         <option value="$PROJECT_DIR$/sp-push-worker.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/firebase-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -218,13 +218,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00027" summary="add file">
-      <created>1539616316236</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1539616316236</updated>
     </task>
     <task id="LOCAL-00028" summary="add file">
       <created>1539673032383</created>
@@ -562,11 +555,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539877928436</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="sw">
+      <created>1539878837717</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1539878837718</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="-7" width="1457" height="878" extended-state="7" />
+    <frame x="86" y="-7" width="1457" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -575,8 +575,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3588317" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3463143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -800,16 +800,6 @@
     <entry file="file://$PROJECT_DIR$/assets/css/index.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/manifest.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sp-push-worker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -826,8 +816,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="459" column="77" selection-start-line="459" selection-start-column="77" selection-end-line="459" selection-end-column="77" />
+        <state relative-caret-position="280">
+          <caret line="14" column="32" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
