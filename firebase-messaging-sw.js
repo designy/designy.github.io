@@ -59,7 +59,7 @@ self.addEventListener('notificationclick', function(event) {
                 url += '&website_id=' + event.notification.data.website_id;
                 url += '&api_key=' + event.notification.data.api_key;
                 url += "&next=" + event.notification.data.url;
-                console.log(url);
+
                 for (var i = 0; i < clientList.length; i++) {
                     var client = clientList[i];
                     if (client.url === url && 'focus' in client)

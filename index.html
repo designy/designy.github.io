@@ -99,7 +99,9 @@ window["webPushInitialize"] = function (topic, website, showBell) {
         hideSubscribeBell();
         return;
     }
-
+    if(window.document.location.protocol === "http:"){
+        return;
+    }
     if (showBell) {
         showSubscribeBell();
     }
