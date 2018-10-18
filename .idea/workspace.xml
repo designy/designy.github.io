@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="sw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/firebase-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/firebase-messaging-sw.js" afterDir="false" />
     </list>
@@ -65,8 +65,8 @@
       <file leaf-file-name="firebase-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="460">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -221,20 +221,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add firebase">
-      <created>1539610759547</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1539610759548</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add file">
-      <created>1539611878667</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1539611878667</updated>
     </task>
     <task id="LOCAL-00019" summary="add file">
       <created>1539611996086</created>
@@ -565,7 +551,21 @@
       <option name="project" value="LOCAL" />
       <updated>1539867744996</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="sw">
+      <created>1539868141731</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1539868141731</updated>
+    </task>
+    <task id="LOCAL-00067" summary="sw">
+      <created>1539868476614</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1539868476614</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -578,8 +578,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2294854" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20166898" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2154617" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -606,7 +606,8 @@
     <MESSAGE value="add firebase" />
     <MESSAGE value="add file" />
     <MESSAGE value="font" />
-    <option name="LAST_COMMIT_MESSAGE" value="font" />
+    <MESSAGE value="sw" />
+    <option name="LAST_COMMIT_MESSAGE" value="sw" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test2.html">
@@ -821,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firebase-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="460">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
         </state>
       </provider>
     </entry>

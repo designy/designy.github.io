@@ -83,7 +83,7 @@ self.addEventListener('notificationclose', function(event) {
         .then(function(clientList) {
             if (event.notification.data.notification_id){
             var id = event.notification.data.notification_id;
-            var url = "{{host_url}}api/v1/notification/closed?notification_id=" + id;
+            var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
             url += '&website_id=' + event.notification.data.website_id;
             url += '&api_key=' + event.notification.data.api_key;
             fetch(url, {
