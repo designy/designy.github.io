@@ -313,7 +313,6 @@ function showPopUp() {
 
 
         function checkPermissionRequest() {
-            debugger
             messaging.requestPermission().then(function () {
             }).catch(function () {
                 console.log("couldn't get notification permission from user.");
@@ -392,7 +391,6 @@ function showPopUp() {
 
         navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
             console.log("initial permission state : ", permission.state);
-            debugger
             permission.onchange = function (event) {
 
                 var state = event.currentTarget.state;
@@ -501,9 +499,9 @@ window["webPushRequestPermission"] = function (options) {
     window.not_want_cookie_key = 'pushNotification:notWantPopUp:' + window.webPushTopic;
 
 
-    if (najvaGetCookie(window.shown_pop_up_window_cookie_key) !== null) {
-        return;
-    }
+    // if (najvaGetCookie(window.shown_pop_up_window_cookie_key) !== null) {
+    //     return;
+    // }
 
     if (najvaGetCookie(window.not_want_cookie_key) !== null) {
         return;
