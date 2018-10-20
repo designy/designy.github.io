@@ -130,10 +130,10 @@ window["NajvaLoadScript"] = function (u, c) {
 }
 
 function get_messaging_app() {
-    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js")
+    NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-messaging.js")
 }
 
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", get_messaging_app);
+NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-app.js", get_messaging_app);
 
 window["webPushInitialize"] = function (topic, website, showBell) {
     window.webPushTopic = topic;
@@ -787,6 +787,7 @@ window["najvaSetLocation"] = function () {
          }, 100);
 
 </script>
+
 
 
 
