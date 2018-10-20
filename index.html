@@ -75,6 +75,7 @@
     })()
 </script>
 
+
 <script>
     var hasSubscribed = false;
 function get_domain_for_cookie(host) {
@@ -125,7 +126,10 @@ window["NajvaLoadScript"] = function (u, c) {
     }
     s.parentNode.insertBefore(o, s);
 }
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"));
+function get_messaging_app(){
+    NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js")
+}
+NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", get_messaging_app);
 
 window["webPushInitialize"] = function (topic, website, showBell) {
     window.webPushTopic = topic;
