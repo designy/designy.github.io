@@ -214,7 +214,6 @@ window["webPushYesButtonPressed"] = function () {
     showPopUp();
     // hideRequestPanel();
 };
-webPushYesButtonPressed();
 window["webPushNoButtonPressed"] = function () {
     setNotWantPopUpCookie();
     // hideRequestPanel();
@@ -251,9 +250,9 @@ window["najvaSendRequest"] = function (url, success, reject, method, data, heade
         }
 
 
-function setHasShownCookie() {
+window["setHasShownCookie"] = function () {
     najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
-}
+};
 
 // function setNotWantPopUpCookie() {
 //     najvaSetCookie(window.not_want_cookie_key, true, 3650);
@@ -454,7 +453,7 @@ function showRequestPanel() {
 
     // var item = document.querySelector("#najva-subscriber-native-help");
     // item.classList.remove("deactive");
-    webPushYesButtonPressed()
+    webPushYesButtonPressed();
 }
 
 // function showSubscribeBell() {
@@ -785,6 +784,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
          }, 100);
 
 </script>
+
 
 <!--<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/b8d20f059bf849e50449b66cfa8da63f_1.js" async></script>-->
 </body>
