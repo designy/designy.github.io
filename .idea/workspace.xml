@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="" />
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="116">
+              <caret line="783" column="17" selection-start-line="783" selection-start-column="17" selection-end-line="783" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -228,27 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00032" summary="add file">
-      <created>1539708600081</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1539708600081</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add file">
-      <created>1539709051833</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1539709051833</updated>
-    </task>
-    <task id="LOCAL-00034" summary="add file">
-      <created>1539710174473</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1539710174473</updated>
     </task>
     <task id="LOCAL-00035" summary="add file">
       <created>1539710915069</created>
@@ -572,11 +553,33 @@
       <option name="project" value="LOCAL" />
       <updated>1540034976228</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="sw">
+      <created>1540035149579</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1540035149579</updated>
+    </task>
+    <task id="LOCAL-00082" summary="sw">
+      <created>1540035283629</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1540035283629</updated>
+    </task>
+    <task id="LOCAL-00083" summary="sw">
+      <created>1540037249474</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1540037249474</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="-7" width="1457" height="878" extended-state="6" />
+    <frame x="86" y="-7" width="1457" height="878" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -584,7 +587,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2433936" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36300418" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22548318" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -1017,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="116">
+          <caret line="783" column="17" selection-start-line="783" selection-start-column="17" selection-end-line="783" selection-end-column="17" />
         </state>
       </provider>
     </entry>

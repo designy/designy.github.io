@@ -125,9 +125,7 @@ window["NajvaLoadScript"] = function (u, c) {
     }
     s.parentNode.insertBefore(o, s);
 }
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js");
-NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js");
-
+NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"));
 
 window["webPushInitialize"] = function (topic, website, showBell) {
     window.webPushTopic = topic;
@@ -330,6 +328,7 @@ function showPopUp() {
                     if (http.status == 200) {
                         cookie_token = JSON.parse(http.response).cookie_token;
                         najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
+                        najvaSetCookie("najva_token:", JSON.parse(http.response).najva_token, 365 * 2);
                         najvaSetCookie("token_id:" + topic, token, 3650);
                         if (location_permission) {
                             // get location permission
@@ -784,6 +783,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
          }, 100);
 
 </script>
+
 
 
 <!--<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/b8d20f059bf849e50449b66cfa8da63f_1.js" async></script>-->
