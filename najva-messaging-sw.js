@@ -1,5 +1,5 @@
-importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js');
+importScripts('https://app.najva.com/static/cdn/najva-app/najva-app.js');
+importScripts('https://app.najva.com/static/cdn/najva-app/najva-messaging.js');
 
 // configuration
 
