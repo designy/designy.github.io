@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="783" column="17" selection-start-line="783" selection-start-column="17" selection-end-line="783" selection-end-column="17" />
+            <state relative-caret-position="370">
+              <caret line="787" selection-start-line="787" selection-end-line="787" />
             </state>
           </provider>
         </entry>
@@ -230,20 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add file">
-      <created>1539710915069</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1539710915069</updated>
-    </task>
-    <task id="LOCAL-00036" summary="add file">
-      <created>1539711545183</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1539711545183</updated>
     </task>
     <task id="LOCAL-00037" summary="add file">
       <created>1539711793826</created>
@@ -574,11 +560,25 @@
       <option name="project" value="LOCAL" />
       <updated>1540037249474</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="sw">
+      <created>1540040263201</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1540040263201</updated>
+    </task>
+    <task id="LOCAL-00085" summary="sw">
+      <created>1540041143399</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1540041143399</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="-7" width="1457" height="878" extended-state="7" />
+    <frame x="86" y="-7" width="1457" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1020,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="783" column="17" selection-start-line="783" selection-start-column="17" selection-end-line="783" selection-end-column="17" />
+        <state relative-caret-position="370">
+          <caret line="787" selection-start-line="787" selection-end-line="787" />
         </state>
       </provider>
     </entry>

@@ -78,18 +78,20 @@
 
 <script>
     var hasSubscribed = false;
+
 function get_domain_for_cookie(host) {
     var host_split = host.split(".");
-    var top_domain = host_split[host_split.length -1];
-    var domain_name = host_split[host_split.length -2];
-    if (domain_name.length > 2){
+    var top_domain = host_split[host_split.length - 1];
+    var domain_name = host_split[host_split.length - 2];
+    if (domain_name.length > 2) {
         return "." + domain_name + "." + top_domain
     }
-    else if (host_split.length > 2){
-        var subdomain = host_split[host_split.length -3];
+    else if (host_split.length > 2) {
+        var subdomain = host_split[host_split.length - 3];
         return "." + subdomain + "." + domain_name + "." + top_domain
     }
 }
+
 var domain_for_cookie = get_domain_for_cookie(window.location.hostname);
 // cookie handling funcions
 window["najvaSetCookie"] = function (cname, cvalue, exdays) {
@@ -126,9 +128,11 @@ window["NajvaLoadScript"] = function (u, c) {
     }
     s.parentNode.insertBefore(o, s);
 }
-function get_messaging_app(){
+
+function get_messaging_app() {
     NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js")
 }
+
 NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", get_messaging_app);
 
 window["webPushInitialize"] = function (topic, website, showBell) {
@@ -141,7 +145,7 @@ window["webPushInitialize"] = function (topic, website, showBell) {
         // hideSubscribeBell();
         return;
     }
-    if(window.document.location.protocol === "http:"){
+    if (window.document.location.protocol === "http:") {
         return;
     }
     // if (showBell) {
@@ -230,63 +234,59 @@ window["webPushNoButtonPressed"] = function () {
 
 
 window["najvaSendRequest"] = function (url, success, reject, method, data, headers) {
-            var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
-            httpRequest.open(method, url, !0),
-                httpRequest.withCredentials = !0,
-                httpRequest.onreadystatechange = function () {
-                    var a;
-                    4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
-                };
-            if (headers) {
-                var header_keys = Object.keys(headers);
-                for (var i = 0; i < header_keys.length; i++) {
-                    httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
-                }
-            }
-            if (data) {
-                httpRequest.send(data)
-            }
-            else {
-                httpRequest.send()
-            }
+    var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
+    httpRequest.open(method, url, !0),
+        httpRequest.withCredentials = !0,
+        httpRequest.onreadystatechange = function () {
+            var a;
+            4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
+        };
+    if (headers) {
+        var header_keys = Object.keys(headers);
+        for (var i = 0; i < header_keys.length; i++) {
+            httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
         }
+    }
+    if (data) {
+        httpRequest.send(data)
+    }
+    else {
+        httpRequest.send()
+    }
+}
 
 
 window["setHasShownCookie"] = function () {
     najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
 };
 
-// function setNotWantPopUpCookie() {
-//     najvaSetCookie(window.not_want_cookie_key, true, 3650);
-// }
-
 showPopUp.hasAlreadyShown = false;
 
 function get_messaging_fn(call) {
-        var config = {
-            messagingSenderId: "334645784830"
-        };
+    var config = {
+        messagingSenderId: "334645784830"
+    };
 
-        function get_messaging() {
-            firebase.initializeApp(config);
-            messaging = firebase.messaging();
-            call()
-        }
-
-        function load_messaging() {
-            NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging)
-        }
-
-        try {
-            firebase.initializeApp(config);
-            messaging = firebase.messaging();
-            call();
-        }
-        catch (e) {
-            NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
-        }
-
+    function get_messaging() {
+        firebase.initializeApp(config);
+        messaging = firebase.messaging();
+        call()
     }
+
+    function load_messaging() {
+        NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging)
+    }
+
+    try {
+        firebase.initializeApp(config);
+        messaging = firebase.messaging();
+        call();
+    }
+    catch (e) {
+        NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
+    }
+
+}
 
 function showPopUp() {
     if (showPopUp.hasAlreadyShown == true) {
@@ -313,6 +313,7 @@ function showPopUp() {
 
 
         function checkPermissionRequest() {
+            debugger
             messaging.requestPermission().then(function () {
             }).catch(function () {
                 console.log("couldn't get notification permission from user.");
@@ -391,7 +392,7 @@ function showPopUp() {
 
         navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
             console.log("initial permission state : ", permission.state);
-
+            debugger
             permission.onchange = function (event) {
 
                 var state = event.currentTarget.state;
@@ -489,7 +490,7 @@ window["webPushRequestPermission"] = function (options) {
     if (!((browserName === "Chrome" && majorVersion >= 50) || (browserName === "Firefox" && majorVersion >= 44))) {
         return;
     }
-    if(window.document.location.protocol === "http:"){
+    if (window.document.location.protocol === "http:") {
         return;
     }
     // handling cookies.
@@ -579,7 +580,6 @@ window["webPushRequestPermission"] = function (options) {
 };
 
 
-
 var nVer = navigator.appVersion;
 var nAgt = navigator.userAgent;
 var browserName = navigator.appName;
@@ -638,40 +638,42 @@ function setUserAgentParameters() {
 }
 
 window["najvaSetLocation"] = function () {
-navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
-            console.log("initial permission state : ", permission.state);
-            var options = {
-                enableHighAccuracy: true,
-                timeout: 5000,
-                maximumAge: 0
+    navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
+        console.log("initial permission state : ", permission.state);
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            var crd = pos.coords;
+            var data = {
+                "accuracy": crd.accuracy,
+                "altitude": crd.altitude,
+                "latitude": crd.latitude,
+                "longitude": crd.longitude
             };
-
-            function success(pos) {
-                var crd = pos.coords;
-                var data = {
-                    "accuracy": crd.accuracy,
-                    "altitude": crd.altitude,
-                    "latitude": crd.latitude,
-                    "longitude": crd.longitude
-                };
-                var url = "https://app.najva.com/api/v1/location/";
-                    najvaSendRequest(url, function success(response) {
-                    }, function error(response) {
-                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
+            var url = "https://app.najva.com/api/v1/location/";
+            najvaSendRequest(url, function success(response) {
+            }, function error(response) {
+            }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
 
 
+        }
+
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+
+        if (permission.state === "granted") {
+            var tlc = najvaGetCookie("tlc");
+            if (!tlc) {
+                najvaSetCookie("tlc", true, 0.5);
+                navigator.geolocation.getCurrentPosition(success, error, options);
             }
-            function error(err) {
-                console.warn(`ERROR(${err.code}): ${err.message}`);
-            }
-            if (permission.state === "granted") {
-                var tlc = najvaGetCookie("tlc");
-                if (!tlc) {
-                    najvaSetCookie("tlc", true, 0.5);
-                    navigator.geolocation.getCurrentPosition(success, error, options);
-                }
-            }
-        });
+        }
+    });
 };
 
         function najvaRetry(isDone, next) {
