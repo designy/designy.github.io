@@ -1469,6 +1469,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
             var webPushInterval = setInterval(function(){
                 if(document.body){
+                    debugger
                 clearInterval(webPushInterval);
                 var run_functions = false;
                 detectPrivateMode(function (is_private) {
