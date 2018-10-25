@@ -743,11 +743,11 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
-            detectPrivateMode(function (is_private) {
-                if (!is_private) {
             var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
+            detectPrivateMode(function (is_private) {
+                if (!is_private) {
             var webPushInterval = setInterval(function(){
                 if(document.body){
                 clearInterval(webPushInterval);
@@ -1462,11 +1462,11 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
-            detectPrivateMode(function (is_private) {
-                if (!is_private) {
             var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
+            detectPrivateMode(function (is_private) {
+                if (!is_private) {
             var webPushInterval = setInterval(function(){
                 if(document.body){
                 clearInterval(webPushInterval);
@@ -1491,6 +1491,7 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             });
 
 </script>
+
 
 <!--<script type="text/javascript" async>-->
     <!--(function () {-->
