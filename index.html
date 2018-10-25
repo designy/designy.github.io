@@ -743,17 +743,14 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
+            detectPrivateMode(function (is_private) {
+                if (!is_private) {
             var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
             var webPushInterval = setInterval(function(){
                 if(document.body){
-                    debugger
                 clearInterval(webPushInterval);
-                var run_functions = false;
-                detectPrivateMode(function (is_private) {
-                if (!is_private && !run_functions) {
-                run_functions = true;
          najvaSetLocation();
             document.body.appendChild(
             htmlToElement('<div id="najva-subscriber-native-help" class="subscriber-notif-popup deactive"><div class="subscriber-notif-popup__body-text">آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟</div><button class="subscriber-yes-button" onclick="webPushYesButtonPressed()" href="javascript:void(0)">بله</button><button class="subscriber-no-button" onclick="webPushNoButtonPressed()">خیر</button></div>'));
@@ -770,9 +767,9 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
          }
          document.getElementsByTagName("head")[0].appendChild(style);
          }
-         });
-         }
          }, 100);
+                              }
+            });
 
 </script>
 <script>
@@ -1465,17 +1462,14 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
             function htmlToElement(html) {
                 var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
             }
+            detectPrivateMode(function (is_private) {
+                if (!is_private) {
             var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
             var location_permission = true;
             var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
             var webPushInterval = setInterval(function(){
                 if(document.body){
-                    debugger
                 clearInterval(webPushInterval);
-                var run_functions = false;
-                detectPrivateMode(function (is_private) {
-                if (!is_private && !run_functions) {
-                run_functions = true;
          najvaSetLocation();
             document.body.appendChild(
             htmlToElement('<div id="najva-subscriber-native-help" class="subscriber-notif-popup deactive"><div class="subscriber-notif-popup__body-text">آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟</div><button class="subscriber-yes-button" onclick="webPushYesButtonPressed()" href="javascript:void(0)">بله</button><button class="subscriber-no-button" onclick="webPushNoButtonPressed()">خیر</button></div>'));
@@ -1492,11 +1486,12 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
          }
          document.getElementsByTagName("head")[0].appendChild(style);
          }
-         });
-         }
          }, 100);
+                              }
+            });
 
 </script>
+
 <!--<script type="text/javascript" async>-->
     <!--(function () {-->
         <!--var now = new Date();-->
