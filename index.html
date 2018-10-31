@@ -73,39 +73,83 @@
         // script.src = "https://app.najva.com/static/js/scripts/aliii153-673-33b20583-7e29-4262-bb3a-3955a9b0f906.js" + "?v=" + version;
         // head.appendChild(script);
         var hasSubscribed = false;
+
 function get_domain_for_cookie(host) {
     var host_split = host.split(".");
-    var top_domain = host_split[host_split.length -1];
-    var domain_name = host_split[host_split.length -2];
-    if (domain_name.length > 2){
+    var top_domain = host_split[host_split.length - 1];
+    var domain_name = host_split[host_split.length - 2];
+    if (domain_name.length > 2) {
         return "." + domain_name + "." + top_domain
     }
-    else if (host_split.length > 2){
-        var subdomain = host_split[host_split.length -3];
+    else if (host_split.length > 2) {
+        var subdomain = host_split[host_split.length - 3];
         return "." + subdomain + "." + domain_name + "." + top_domain
     }
 }
+
 var domain_for_cookie = get_domain_for_cookie(window.location.hostname);
+// cookie handling funcions
+window["najvaSetCookie"] = function (cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";domain=" + domain_for_cookie + ";path=/";
+}
+window["najvaGetCookie"] = function (name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
+window["NajvaLoadScript"] = function (u, c) {
+    var url_parts = u.split("/");
+    var name = url_parts[url_parts.length -1].split(".")[0];
+    if (!document.querySelector("#" + name)){
+    var d = document, t = 'script',
+        o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    o.id = name;
+    if (c) {
+        o.addEventListener('load', function (e) {
+            c(null, e);
+        }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+    }
+};
+
+function get_najva_messaging() {
+    NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-messaging.js")
+}
+
+NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-app.js", get_najva_messaging);
+
 window["webPushInitialize"] = function (topic, website, showBell) {
     window.webPushTopic = topic;
     window.webPushWebsite = website;
 
     setUserAgentParameters();
-
+    //todo: browser support
     if (!((browserName === "Chrome" && majorVersion >= 50) || (browserName === "Firefox" && majorVersion >= 44))) {
-        hideSubscribeBell();
         return;
     }
-    if(window.document.location.protocol === "http:"){
+    if (window.document.location.protocol === "http:") {
         return;
-    }
-    if (showBell) {
-        showSubscribeBell();
     }
 
     var isLastActiveTimeUpToDate = true;
 
-    var cookie_token = najvaGetCookie('cookie_token:' + topic);
     var hasShownPopUp = najvaGetCookie('pushNotification:hasShownPopUp:' + topic);
 
     var lastActiveTimeString = najvaGetCookie('najva_last_active_time:' + topic);
@@ -124,9 +168,9 @@ window["webPushInitialize"] = function (topic, website, showBell) {
         najvaSetCookie('najva_last_active_time:' + topic, todayString, 3650);
     }
 
+    var cookie_token = najvaGetCookie('cookie_token:' + topic);
     if (cookie_token !== null) {
         hasSubscribed = true;
-        hideSubscribeBell();
     } else {
         isLastActiveTimeUpToDate = true;
     }
@@ -156,7 +200,7 @@ window["webPushInitialize"] = function (topic, website, showBell) {
                     if (response.status === "found") {
                         najvaSetCookie('cookie_token:' + topic, response.cookie_token, 3650);
                         hasSubscribed = true;
-                        hideSubscribeBell();
+                        // hideSubscribeBell();
                     }
                 }
             };
@@ -169,110 +213,119 @@ window["webPushInitialize"] = function (topic, website, showBell) {
 
 window["webPushYesButtonPressed"] = function () {
     showPopUp();
-    hideRequestPanel();
 };
-
 window["webPushNoButtonPressed"] = function () {
     setNotWantPopUpCookie();
-    hideRequestPanel();
 };
-
-window["webPushBellButtonPressed"] = function () {
-    hideRequestPanel();
-    if (!hasSubscribed) {
-        showPopUp();
-    }
-};
-
-window["NajvaLoadScript"] = function (u, c) {
-    var url_parts = u.split("/");
-    var name = url_parts[url_parts.length -1].split(".")[0];
-    if (!document.querySelector("#" + name)){
-    var d = document, t = 'script',
-        o = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    o.id = name;
-    if (c) {
-        o.addEventListener('load', function (e) {
-            c(null, e);
-        }, false);
-    }
-    s.parentNode.insertBefore(o, s);
-    }
-};
-function get_messaging_app() {
-    NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-messaging.js")
-}
-
-NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-app.js", get_messaging_app);
-
 window["najvaSendRequest"] = function (url, success, reject, method, data, headers) {
-            var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
-            httpRequest.open(method, url, !0),
-                httpRequest.withCredentials = !0,
-                httpRequest.onreadystatechange = function () {
-                    var a;
-                    4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
-                };
-            if (headers) {
-                var header_keys = Object.keys(headers);
-                for (var i = 0; i < header_keys.length; i++) {
-                    httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
-                }
-            }
-            if (data) {
-                httpRequest.send(data)
-            }
-            else {
-                httpRequest.send()
-            }
+    var httpRequest = "undefined" != typeof XMLHttpRequest ? new XMLHttpRequest : new ActiveXObject("Microsoft.XMLHTTP");
+    httpRequest.open(method, url, !0),
+        httpRequest.withCredentials = !0,
+        httpRequest.onreadystatechange = function () {
+            var a;
+            4 == httpRequest.readyState && (a = httpRequest.status, 200 == a ? success && success(httpRequest.response) : reject && reject(a))
+        };
+    if (headers) {
+        var header_keys = Object.keys(headers);
+        for (var i = 0; i < header_keys.length; i++) {
+            httpRequest.setRequestHeader(header_keys[i], headers[header_keys[i]])
         }
-
-
-function setHasShownCookie() {
-    najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
+    }
+    if (data) {
+        httpRequest.send(data)
+    }
+    else {
+        httpRequest.send()
+    }
 }
-
-// function setNotWantPopUpCookie() {
-//     najvaSetCookie(window.not_want_cookie_key, true, 3650);
-// }
+window["setHasShownCookie"] = function () {
+    najvaSetCookie(window.shown_pop_up_window_cookie_key, true, 3650);
+};
 
 showPopUp.hasAlreadyShown = false;
 
 function get_messaging_fn(call) {
-        var config = {
-            messagingSenderId: "334645784830"
-        };
+    var config = {
+        messagingSenderId: "334645784830"
+    };
 
-        function get_messaging() {
-            firebase.initializeApp(config);
-            messaging = firebase.messaging();
-            call()
-        }
-
-        function load_messaging() {
-            NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-messaging.js", get_messaging)
-        }
-
-        try {
-            firebase.initializeApp(config);
-            messaging = firebase.messaging();
-            call();
-        }
-        catch (e) {
-            NajvaLoadScript("https://app.najva.com/static/cdn/najva-app/najva-app.js", load_messaging);
-        }
-
+    function get_messaging() {
+        firebase.initializeApp(config);
+        messaging = firebase.messaging();
+        call()
     }
 
+    function load_messaging() {
+        NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js", get_messaging)
+    }
+
+    try {
+        firebase.initializeApp(config);
+        messaging = firebase.messaging();
+        call();
+    }
+    catch (e) {
+        NajvaLoadScript("https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js", load_messaging);
+    }
+
+}
+function show_message_when_user_is_in_site() {
+        messaging.onMessage(function (payload) {
+        if (!document.hidden) {
+            var expireTime = parseInt(payload.data.expireTime);
+            var notification = new Notification(
+                payload.data.title,
+                {
+                    body: payload.data.body,
+                    icon: payload.data.icon,
+                    requireInteraction: true,
+                    image: payload.data.image
+                }
+            );
+
+            notification.id = payload.data.notification_id;
+
+            notification.isClosedByScript = false;
+
+            notification.onclick = function () {
+                var url = "https://click.najva.com/redirect/?notification_id=" + payload.data.notification_id;
+                url += '&website_id=' + payload.data.website_id;
+                url += '&api_key=' + payload.data.api_key;
+                url += "&next=" + payload.data.url;
+
+                window.open(url, '_bl');
+                notification.isClosedByScript = true;
+                notification.close();
+            };
+
+            notification.onclose = function () {
+                if (!notification.isClosedByScript) {
+                    var xhr = new XMLHttpRequest();
+                    var url = 'https://app.najva.com/api/v1/notification/closed/?notification_id=' + payload.data.notification_id;
+                    url += '&website_id=' + payload.data.website_id;
+                    url += '&api_key=' + payload.data.api_key;
+                    xhr.open('GET', url, true);
+                    xhr.withCredentials = true;
+                    xhr.send();
+                }
+            };
+
+            if (expireTime > 0) {
+                setTimeout(function () {
+                    notification.isClosedByScript = true;
+                    notification.close();
+                }, expireTime)
+            }
+        }
+    });
+}
 function showPopUp() {
     if (showPopUp.hasAlreadyShown == true) {
         return;
     }
     showPopUp.hasAlreadyShown = true;
 
-    hideSubscribeBell();
+    // hideSubscribeBell();
     setHasShownCookie();
 
     // var url = WEB_PUSH_HOST_URL + "request/permission/?topics=" + window.webPushTopic + "&website=" + window.webPushWebsite + "&api_key=" + webPushApiKey;
@@ -281,9 +334,9 @@ function showPopUp() {
     // if (window.focus) {
     //     new_window.focus()
     // }
-    get_messaging_fn(handle_permission)
-
+    get_messaging_fn(handle_permission);
     function handle_permission() {
+        show_message_when_user_is_in_site();
         var topic = window.webPushTopic;
         var location_permission = window.location_permission;
         var website_id = window.webPushWebsite;
@@ -310,6 +363,7 @@ function showPopUp() {
                     if (http.status == 200) {
                         cookie_token = JSON.parse(http.response).cookie_token;
                         najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
+                        najvaSetCookie("najva_token:", JSON.parse(http.response).najva_token, 365 * 2);
                         najvaSetCookie("token_id:" + topic, token, 3650);
                         if (location_permission) {
                             // get location permission
@@ -368,7 +422,6 @@ function showPopUp() {
 
         navigator.permissions.query({ name: 'notifications' }).then(function (permission) {
             console.log("initial permission state : ", permission.state);
-
             permission.onchange = function (event) {
 
                 var state = event.currentTarget.state;
@@ -386,7 +439,7 @@ function showPopUp() {
                     });
                 }
                 else if (state == "denied") {
-                    checkPermissionRequest();
+                    webPushNoButtonPressed();
                 }
                 else if (state == "prompt") {
                     checkPermissionRequest();
@@ -413,16 +466,6 @@ function showPopUp() {
     return false;
 }
 
-// in normal situation, the panel will be shown on page load. Then if it has subscriber-notif-deactive class it will fade away.
-// so we added a display:none to it. when it's going to display it, we remove the display:none and then remove
-// the subscriber-notif-deactive class and it will fade in. But unfortunately in didn't work in the way we thought it does and
-// somehow it was fixed by the 1 ms timeout.
-
-function hideRequestPanel() {
-    var item = document.querySelector("#najva-subscriber-native-help");
-    item.classList.add("deactive");
-}
-
 showRequestPanel.hasAlreadyShown = false;
 
 function showRequestPanel() {
@@ -431,22 +474,10 @@ function showRequestPanel() {
     }
     showRequestPanel.hasAlreadyShown = true;
 
-    var item = document.querySelector("#najva-subscriber-native-help");
-    item.classList.remove("deactive");
+    // var item = document.querySelector("#najva-subscriber-native-help");
+    // item.classList.remove("deactive");
+    webPushYesButtonPressed();
 }
-
-function showSubscribeBell() {
-    var element = document.getElementById("najva-subscriber-bell");
-    if (element)
-        element.style.visibility = 'visible';
-}
-
-function hideSubscribeBell() {
-    var element = document.getElementById("najva-subscriber-bell");
-    if (element)
-        element.style.visibility = 'hidden';
-}
-
 
 function getScrollPercent() {
     var h = document.documentElement,
@@ -465,7 +496,7 @@ window["webPushRequestPermission"] = function (options) {
     if (!((browserName === "Chrome" && majorVersion >= 50) || (browserName === "Firefox" && majorVersion >= 44))) {
         return;
     }
-    if(window.document.location.protocol === "http:"){
+    if (window.document.location.protocol === "http:") {
         return;
     }
     // handling cookies.
@@ -476,9 +507,9 @@ window["webPushRequestPermission"] = function (options) {
     window.not_want_cookie_key = 'pushNotification:notWantPopUp:' + window.webPushTopic;
 
 
-    if (najvaGetCookie(window.shown_pop_up_window_cookie_key) !== null) {
-        return;
-    }
+    // if (najvaGetCookie(window.shown_pop_up_window_cookie_key) !== null) {
+    //     return;
+    // }
 
     if (najvaGetCookie(window.not_want_cookie_key) !== null) {
         return;
@@ -554,31 +585,6 @@ window["webPushRequestPermission"] = function (options) {
     }
 };
 
-// cookie handling funcions
-
-window["najvaSetCookie"] = function (cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";domain=" + domain_for_cookie + ";path=/";
-}
-
-
-window["najvaGetCookie"] = function (name) {
-    var cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        var cookies = document.cookie.split(';');
-        for (var i = 0; i < cookies.length; i++) {
-            var cookie = cookies[i].trim();
-            // Does this cookie string begin with the name we want?
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
-    }
-    return cookieValue;
-}
 
 var nVer = navigator.appVersion;
 var nAgt = navigator.userAgent;
@@ -638,40 +644,42 @@ function setUserAgentParameters() {
 }
 
 window["najvaSetLocation"] = function () {
-navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
-            console.log("initial permission state : ", permission.state);
-            var options = {
-                enableHighAccuracy: true,
-                timeout: 5000,
-                maximumAge: 0
+    navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
+        console.log("initial permission state : ", permission.state);
+        var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+
+        function success(pos) {
+            najvaSetCookie("tlc", true, 0.5);
+            var crd = pos.coords;
+            var data = {
+                "accuracy": crd.accuracy,
+                "altitude": crd.altitude,
+                "latitude": crd.latitude,
+                "longitude": crd.longitude
             };
-
-            function success(pos) {
-                var crd = pos.coords;
-                var data = {
-                    "accuracy": crd.accuracy,
-                    "altitude": crd.altitude,
-                    "latitude": crd.latitude,
-                    "longitude": crd.longitude
-                };
-                var url = "https://app.najva.com/api/v1/location/";
-                    najvaSendRequest(url, function success(response) {
-                    }, function error(response) {
-                    }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
+            var url = "https://app.najva.com/api/v1/location/";
+            najvaSendRequest(url, function success(response) {
+            }, function error(response) {
+            }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
 
 
+        }
+
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+
+        if (permission.state === "granted") {
+            var tlc = najvaGetCookie("tlc");
+            if (!tlc) {
+                navigator.geolocation.getCurrentPosition(success, error, options);
             }
-            function error(err) {
-                console.warn(`ERROR(${err.code}): ${err.message}`);
-            }
-            if (permission.state === "granted") {
-                var tlc = najvaGetCookie("tlc");
-                if (!tlc) {
-                    najvaSetCookie("tlc", true, 0.5);
-                    navigator.geolocation.getCurrentPosition(success, error, options);
-                }
-            }
-        });
+        }
+    });
 };
 
         function najvaRetry(isDone, next) {
@@ -770,9 +778,6 @@ navigator.permissions.query({ name: 'geolocation' }).then(function (permission) 
                     if(document.body){
                     clearInterval(webPushInterval);
          najvaSetLocation();
-            document.body.appendChild(
-            htmlToElement('<div id="najva-subscriber-native-help" class="subscriber-notif-popup deactive"><div class="subscriber-notif-popup__body-text">آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟</div><button class="subscriber-yes-button" onclick="webPushYesButtonPressed()" href="javascript:void(0)">بله</button><button class="subscriber-no-button" onclick="webPushNoButtonPressed()">خیر</button></div>'));
-
          webPushInitialize(673,167,1);
          webPushRequestPermission({delay : { enable: 1, value: 10 }, scroll: { enable: 0, value: 50 }, visit : { minimum : { enable: 1, value: 2 }, maximum : { enable: 0, value: 24 }, interval: { enable: 0, value: 3 } } });
          var css = "#najva-subscriber-native-help.deactive{opacity:0!important;visibility:hidden!important}#najva-subscriber-native-help{border-radius:2px;width:300px;background-color:#0d1b21;color:#fff;position:fixed;left:15px;top:10px;padding:15px;z-index:2147483646;border:1px solid #393939}#najva-subscriber-native-help .subscriber-no-button,#najva-subscriber-native-help .subscriber-yes-button{color:#fff;float:left;cursor:pointer;padding:3px 15px;outline:0;font-size:1em;font-family:inherit;display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;line-height:1.5}#najva-subscriber-native-help .subscriber-yes-button{background-color:#00aeca;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;border-radius:.25rem;-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;-o-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}#najva-subscriber-native-help .subscriber-no-button:hover{background-color:#6e6e6e}#najva-subscriber-native-help .subscriber-no-button{margin-left:5px;background-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;border-radius:.25rem;-webkit-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;-o-transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out}#najva-subscriber-native-help .subscriber-notif-popup__body-button:hover{background-color:#00748d}#najva-subscriber-native-help .subscriber-notif-popup__body-text{line-height:1.7;direction:rtl;text-align:right}@media screen and (max-width:767px){#najva-subscriber-native-help{width:100%;top:0;left:5px;right:5px}}#najva-subscriber-bell{ right: 30px;} #najva-subscriber-bell:hover {background-color: #7A7A7A;} #najva-subscriber-bell .circle {background-color: #444444;}";
