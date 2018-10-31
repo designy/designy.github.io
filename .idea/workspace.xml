@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/najva-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/najva-messaging-sw.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2306">
-              <caret line="795" selection-start-line="795" selection-end-line="795" />
+            <state relative-caret-position="335">
+              <caret line="797" column="10" selection-start-line="797" selection-start-column="10" selection-end-line="797" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -55,8 +56,8 @@
       <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -84,15 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1100">
               <caret line="55" selection-end-line="90" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sp-push-worker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sp-push-worker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="135" selection-start-column="135" selection-end-column="135" />
             </state>
           </provider>
         </entry>
@@ -251,20 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00061" summary="font">
-      <created>1539866421385</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1539866421385</updated>
-    </task>
-    <task id="LOCAL-00062" summary="font">
-      <created>1539866462069</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1539866462069</updated>
     </task>
     <task id="LOCAL-00063" summary="font">
       <created>1539866525790</created>
@@ -595,7 +573,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540982403280</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="fix">
+      <created>1540985961357</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1540985961357</updated>
+    </task>
+    <task id="LOCAL-00111" summary="fix">
+      <created>1540985971732</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1540985971732</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -608,8 +600,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3838665" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20246734" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32823366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19956459" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -1052,15 +1044,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2306">
-          <caret line="795" selection-start-line="795" selection-end-line="795" />
+        <state relative-caret-position="335">
+          <caret line="797" column="10" selection-start-line="797" selection-start-column="10" selection-end-line="797" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="60">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
