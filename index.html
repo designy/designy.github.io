@@ -644,6 +644,7 @@ function setUserAgentParameters() {
 }
 
 window["najvaSetLocation"] = function () {
+    debugger
     navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
         console.log("initial permission state : ", permission.state);
         var options = {
