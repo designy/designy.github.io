@@ -361,6 +361,7 @@ function showPopUp() {
             http.onreadystatechange = function () {
                 if (http.readyState == 4) {
                     if (http.status == 200) {
+                        debugger
                         cookie_token = JSON.parse(http.response).cookie_token;
                         najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
                         najvaSetCookie("najva_token:", JSON.parse(http.response).najva_token, 365 * 2);
@@ -644,7 +645,6 @@ function setUserAgentParameters() {
 }
 
 window["najvaSetLocation"] = function () {
-    debugger
     navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
         console.log("initial permission state : ", permission.state);
         var options = {
