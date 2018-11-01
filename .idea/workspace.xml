@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="363" column="32" selection-start-line="363" selection-start-column="32" selection-end-line="363" selection-end-column="32" />
+            <state relative-caret-position="299">
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -100,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get_messaging_fn</find>
       <find>append_ext_script</find>
       <find>NajvaLoadScript</find>
       <find>locat</find>
@@ -130,6 +130,7 @@
       <find>registration</find>
       <find>najvaSetLocation</find>
       <find>http.onreadystatechange</find>
+      <find>loca</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,20 +234,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00070" summary="sw">
-      <created>1539873663610</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1539873663610</updated>
-    </task>
-    <task id="LOCAL-00071" summary="sw">
-      <created>1539873858532</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1539873858532</updated>
     </task>
     <task id="LOCAL-00072" summary="sw">
       <created>1539874957778</created>
@@ -577,7 +564,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541050912399</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="fix">
+      <created>1541051184266</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1541051184266</updated>
+    </task>
+    <task id="LOCAL-00120" summary="fix">
+      <created>1541052546354</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1541052546354</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +591,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29485396" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2753825" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17053701" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -625,6 +626,7 @@
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/inkarnet.com/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/topmoviez-dl.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/tecknonews.ir/article.v1.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/bnrs/fs_bnr.js" />
       </list>
     </option>
   </component>
@@ -1041,8 +1043,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="363" column="32" selection-start-line="363" selection-start-column="32" selection-end-line="363" selection-end-column="32" />
+        <state relative-caret-position="299">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
         </state>
       </provider>
     </entry>
