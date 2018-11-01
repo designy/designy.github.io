@@ -361,7 +361,6 @@ function showPopUp() {
             http.onreadystatechange = function () {
                 if (http.readyState == 4) {
                     if (http.status == 200) {
-                        debugger
                         cookie_token = JSON.parse(http.response).cookie_token;
                         najvaSetCookie("cookie_token:" + topic, cookie_token, 3650);
                         najvaSetCookie("najva_token:", JSON.parse(http.response).najva_token, 365 * 2);
@@ -770,9 +769,9 @@ window["najvaSetLocation"] = function () {
         function htmlToElement(html) {
             var template = document.createElement("div"); template.innerHTML = html; return template.firstChild;
         }
-        var webPushApiKey = "33b205837e294262bb3a3955a9b0f906";
-        var location_permission = true;
-        var WEB_PUSH_HOST_URL = "https://chetor726.najva.com/";
+        window['webPushApiKey'] = "33b205837e294262bb3a3955a9b0f906";
+        window['location_permission'] = true;
+        window['WEB_PUSH_HOST_URL']  = "https://chetor726.najva.com/";
         detectPrivateMode(function (is_private) {
             if (!is_private) {
                 var webPushInterval = setInterval(function(){
