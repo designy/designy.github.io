@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,27 +18,14 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#18456#18462#0" expanded="true" />
-                <element signature="e#18644#18650#0" expanded="true" />
-                <element signature="e#19158#19164#0" expanded="true" />
-                <element signature="e#19375#19381#0" expanded="true" />
-                <element signature="e#19418#19424#0" expanded="true" />
-                <element signature="e#19564#19570#0" expanded="true" />
-                <element signature="e#19704#19710#0" expanded="true" />
-                <element signature="e#19710#19716#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+            <state relative-caret-position="328">
+              <caret line="73" column="61" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -48,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -112,7 +98,7 @@
       <find>chrio</find>
       <find>brows</find>
       <find>browserName</find>
-      <find>browserName ==</find>
+      <find />
       <find>get_messaging_app</find>
       <find>run</find>
       <find>document.body</find>
@@ -152,9 +138,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="width" value="1500" />
-    <option name="height" value="910" />
+    <option name="x" value="130" />
+    <option name="width" value="1800" />
+    <option name="height" value="1094" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -191,6 +177,7 @@
     <property name="SearchEverywhereHistoryKey" value="bootst&#9;FILE&#9;file://C:/Repos/gitlab/designy.github.io/bower_components/bootswatch-dist/css/bootstrap.min.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -225,13 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00075" summary="sw">
-      <created>1539877928436</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1539877928436</updated>
     </task>
     <task id="LOCAL-00076" summary="sw">
       <created>1539878837717</created>
@@ -569,12 +549,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541072566411</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="fix">
+      <created>1541074050593</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1541074050593</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="105" y="-7" width="1438" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -582,8 +568,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30458972" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17053701" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29902643" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17924528" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -618,6 +604,15 @@
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/topmoviez-dl.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/tecknonews.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/bnrs/fs_bnr.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/iframe/article_fastclick.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/get_json/get_json.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/detect_screen/detect_screen.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/variables/variables.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/detect_mobile_os/detect_mobile_os.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/html_to_element/html_to_element.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/insert_after/insert_after.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/check_mobile_user_agent/check_mobile_user_agent.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/script/doc_ready/doc_ready.js" />
       </list>
     </option>
   </component>
@@ -656,20 +651,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,20 +696,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -765,20 +734,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -819,16 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
           <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,16 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
           <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,16 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
           <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,16 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
           <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,16 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
           <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -957,20 +863,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#18456#18462#0" expanded="true" />
-            <element signature="e#18644#18650#0" expanded="true" />
-            <element signature="e#19158#19164#0" expanded="true" />
-            <element signature="e#19375#19381#0" expanded="true" />
-            <element signature="e#19418#19424#0" expanded="true" />
-            <element signature="e#19564#19570#0" expanded="true" />
-            <element signature="e#19704#19710#0" expanded="true" />
-            <element signature="e#19710#19716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/fonts/_font.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -1028,14 +921,14 @@
     <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        <state relative-caret-position="328">
+          <caret line="73" column="61" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="61" />
         </state>
       </provider>
     </entry>
