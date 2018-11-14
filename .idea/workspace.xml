@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="" />
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="fix" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+            <state relative-caret-position="-28">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -158,12 +158,6 @@
               <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -210,13 +204,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00078" summary="sw">
-      <created>1539882997853</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1539882997854</updated>
     </task>
     <task id="LOCAL-00079" summary="sw">
       <created>1540021533348</created>
@@ -554,12 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541918294457</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="fix">
+      <created>1542119270500</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1542119270500</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="127" y="-7" width="1416" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -567,8 +560,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2837274" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18510324" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31293464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1880531" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -603,15 +596,6 @@
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/topmoviez-dl.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/tecknonews.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/bnrs/fs_bnr.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/iframe/article_fastclick.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/get_json/get_json.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/detect_screen/detect_screen.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/variables/variables.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/detect_mobile_os/detect_mobile_os.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/html_to_element/html_to_element.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/insert_after/insert_after.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/shared_functions/check_mobile_user_agent/check_mobile_user_agent.js" />
-        <option value="$PROJECT_DIR$/../MyGearBox-CDN/utils/script/doc_ready/doc_ready.js" />
       </list>
     </option>
   </component>
@@ -926,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state relative-caret-position="-28">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
         </state>
       </provider>
     </entry>
