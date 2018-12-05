@@ -3352,8 +3352,15 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                   "longitude": crd.longitude
                 };
                 var url = "https://app.najva.com/api/v1/location/";
-                najvaSendRequest(url, function success(response) {}, function error(response) {}, "POST", JSON.stringify(data), {
-                  "Content-Type": "application/json"
+                sendRequest({
+                  method: "POST",
+                  url: url,
+                  data: data,
+                  headers: {
+                    "Content-Type": "application/json"
+                  }
+                }).then(function (response) {
+                  setCookie("tlc", true, 0.5);
                 });
               }
 
@@ -3411,10 +3418,15 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                                   "longitude": crd.longitude
                                 };
                                 var url = "https://app.najva.com/api/v1/location/";
-                                najvaSendRequest(url, function success(response) {
+                                sendRequest({
+                                  method: "POST",
+                                  url: url,
+                                  data: data,
+                                  headers: {
+                                    "Content-Type": "application/json"
+                                  }
+                                }).then(function (response) {
                                   setCookie("tlc", true, 0.5);
-                                }, function error(response) {}, "POST", JSON.stringify(data), {
-                                  "Content-Type": "application/json"
                                 });
                               };
 
@@ -3773,7 +3785,6 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
 
 /***/ })
 /******/ ]);
-
 </script>
 <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 <!--<script>-->

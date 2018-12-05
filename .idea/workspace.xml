@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+            <state relative-caret-position="182">
+              <caret line="3413" column="48" selection-start-line="3413" selection-start-column="48" selection-end-line="3413" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -97,8 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>NajvaLoadScript</find>
-      <find>locat</find>
       <find>najvaSetL</find>
       <find>current/u</find>
       <find>__cfduid</find>
@@ -127,6 +124,8 @@
       <find>http.onreadystatechange</find>
       <find>loca</find>
       <find>show_message_when_user_is_in_site</find>
+      <find>formData</find>
+      <find>najvaSendRequest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,9 +157,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="975" />
-    <option name="height" value="1050" />
+    <option name="x" value="110" />
+    <option name="width" value="1500" />
+    <option name="height" value="910" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -226,27 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00086" summary="sw">
-      <created>1540045422584</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1540045422585</updated>
-    </task>
-    <task id="LOCAL-00087" summary="sw">
-      <created>1540045951037</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1540045951037</updated>
-    </task>
-    <task id="LOCAL-00088" summary="sw">
-      <created>1540047057270</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1540047057270</updated>
     </task>
     <task id="LOCAL-00089" summary="sw">
       <created>1540047444286</created>
@@ -570,12 +548,32 @@
       <option name="project" value="LOCAL" />
       <updated>1544000829209</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="fix">
+      <created>1544000978643</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1544000978643</updated>
+    </task>
+    <task id="LOCAL-00136" summary="fix">
+      <created>1544001149896</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1544001149897</updated>
+    </task>
+    <task id="LOCAL-00137" summary="fix">
+      <created>1544003178617</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1544003178617</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="-7" width="1388" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -583,7 +581,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3908206" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32962447" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21159638" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -937,8 +935,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+        <state relative-caret-position="182">
+          <caret line="3413" column="48" selection-start-line="3413" selection-start-column="48" selection-end-line="3413" selection-end-column="48" />
         </state>
       </provider>
     </entry>
