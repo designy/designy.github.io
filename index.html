@@ -3011,9 +3011,13 @@ function sendRequest(options) {
         for (var _i2 = 0; _i2 < data_keys.length; _i2++) {
           form_data.set(data_keys[_i2], data[data_keys[_i2]]);
         }
+        httpRequest.send(form_data);
+      }
+      else{
+          httpRequest.send(data);
       }
 
-      httpRequest.send(data);
+
     } else {
       httpRequest.send();
     }
