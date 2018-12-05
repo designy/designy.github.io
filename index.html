@@ -3452,6 +3452,7 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                         };
 
                         checkPermissionRequest = function _ref() {
+                            debugger
                           messaging.requestPermission().then(function () {
                             messaging.getToken().then(function (currentToken) {
                               sendTokenToServer(currentToken);
@@ -3490,6 +3491,7 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                         }
 
                         messaging.getToken().then(function (currentToken) {
+                            debugger
                           if (!currentToken) {
                             checkPermissionRequest();
                           } else {

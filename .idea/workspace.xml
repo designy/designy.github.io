@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="3750" column="13" lean-forward="true" selection-start-line="3750" selection-start-column="13" selection-end-line="3750" selection-end-column="13" />
+            <state relative-caret-position="201">
+              <caret line="3453" column="66" lean-forward="true" selection-start-line="3453" selection-start-column="66" selection-end-line="3453" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -225,20 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00091" summary="sw">
-      <created>1540393549982</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1540393549982</updated>
-    </task>
-    <task id="LOCAL-00092" summary="sw">
-      <created>1540393768674</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1540393768674</updated>
     </task>
     <task id="LOCAL-00093" summary="sw">
       <created>1540395647250</created>
@@ -569,7 +556,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544006348619</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="fix">
+      <created>1544019324885</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1544019324886</updated>
+    </task>
+    <task id="LOCAL-00141" summary="fix">
+      <created>1544019661088</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1544019661088</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -582,8 +583,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32545203" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21159638" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25173852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21460843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -936,8 +937,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="3750" column="13" lean-forward="true" selection-start-line="3750" selection-start-column="13" selection-end-line="3750" selection-end-column="13" />
+        <state relative-caret-position="201">
+          <caret line="3453" column="66" lean-forward="true" selection-start-line="3453" selection-start-column="66" selection-end-line="3453" selection-end-column="66" />
         </state>
       </provider>
     </entry>
