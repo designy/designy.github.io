@@ -3452,15 +3452,19 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                         };
 
                         checkPermissionRequest = function _ref() {
-                            debugger
                           messaging.requestPermission().then(function () {
-                            messaging.getToken().then(function (currentToken) {
-                              sendTokenToServer(currentToken);
-                            }).catch(function (err) {
-                              console.error(err);
-                            });
+                            if (!state.flags.notificationPermissionObject) {
+                              messaging.getToken().then(function (currentToken) {
+                                sendTokenToServer(currentToken);
+                              }).catch(function (err) {
+                                console.error(err);
+                              });
+                            }
                           }).catch(function () {
-                            setNotWantPopUpCookie();
+                            if (!state.flags.notificationPermissionObject) {
+                              setNotWantPopUpCookie();
+                            }
+
                             console.log("couldn't get notification permission from user.");
                           });
                         };
@@ -3491,7 +3495,6 @@ function _3_asyncToGenerator(fn) { return function () { var self = this, args = 
                         }
 
                         messaging.getToken().then(function (currentToken) {
-                            debugger
                           if (!currentToken) {
                             checkPermissionRequest();
                           } else {
