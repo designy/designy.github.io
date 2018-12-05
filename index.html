@@ -76,6 +76,7 @@
 */
 
 
+
         window.najvaSettings = {
         api_key: "33b205837e294262bb3a3955a9b0f906",
         location_permission: true,
@@ -3054,11 +3055,6 @@ function sendRequest(options) {
       var content_type = headers['Content-type'];
 
       if (content_type && content_type === 'application/x-www-form-urlencoded') {
-        // const data_keys = Object.keys(data);
-        // let form_data = new FormData();
-        // for (let i = 0; i < data_keys.length; i++) {
-        //     form_data.set(data_keys[i], data[data_keys[i]]);
-        // }
         var urlEncodedData = "";
         var urlEncodedDataPairs = [];
         var name; // Turn the data object into an array of URL-encoded key/value pairs.
@@ -3072,7 +3068,7 @@ function sendRequest(options) {
         urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
         httpRequest.send(urlEncodedData);
       } else {
-        httpRequest.send(data);
+        httpRequest.send(JSON.stringify(data));
       }
     } else {
       httpRequest.send();
