@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="3453" column="66" lean-forward="true" selection-start-line="3453" selection-start-column="66" selection-end-line="3453" selection-end-column="66" />
+            <state relative-caret-position="347">
+              <caret line="3811" column="7" selection-start-line="3811" selection-start-column="7" selection-end-line="3811" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -97,10 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>najvaSetL</find>
-      <find>current/u</find>
-      <find>__cfduid</find>
-      <find>.najva</find>
       <find>cookie_token:</find>
       <find>api_key</find>
       <find>sendTokenToServer</find>
@@ -127,6 +122,10 @@
       <find>show_message_when_user_is_in_site</find>
       <find>formData</find>
       <find>najvaSendRequest</find>
+      <find>debugg</find>
+      <find>getToken</find>
+      <find>req</find>
+      <find>checkPermissionRequest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -226,20 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00093" summary="sw">
-      <created>1540395647250</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1540395647251</updated>
-    </task>
-    <task id="LOCAL-00094" summary="sw">
-      <created>1540458854034</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1540458854035</updated>
     </task>
     <task id="LOCAL-00095" summary="sw">
       <created>1540459723064</created>
@@ -570,7 +555,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544019661088</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="fix">
+      <created>1544019802772</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1544019802773</updated>
+    </task>
+    <task id="LOCAL-00143" summary="fix">
+      <created>1544026968353</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1544026968353</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,7 +582,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25173852" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2642559" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21460843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -937,8 +936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="3453" column="66" lean-forward="true" selection-start-line="3453" selection-start-column="66" selection-end-line="3453" selection-end-column="66" />
+        <state relative-caret-position="347">
+          <caret line="3811" column="7" selection-start-line="3811" selection-start-column="7" selection-end-line="3811" selection-end-column="7" />
         </state>
       </provider>
     </entry>
