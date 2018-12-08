@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="revert onesignal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="116" column="43937" selection-start-line="116" selection-start-column="43937" selection-end-line="116" selection-end-column="43937" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="631">
+              <caret line="117" column="44129" selection-start-line="117" selection-start-column="44129" selection-end-line="117" selection-end-column="44129" />
             </state>
           </provider>
         </entry>
@@ -228,13 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00104" summary="fix">
-      <created>1540649344952</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1540649344952</updated>
     </task>
     <task id="LOCAL-00105" summary="fix">
       <created>1540740456043</created>
@@ -572,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544253491045</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="revert onesignal">
+      <created>1544253641358</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1544253641358</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -585,7 +583,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32684284" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32684284" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21460843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -636,6 +634,11 @@
     <MESSAGE value="fix" />
     <MESSAGE value="revert onesignal" />
     <option name="LAST_COMMIT_MESSAGE" value="revert onesignal" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sp-push-manifest.json">
@@ -940,11 +943,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="116" column="43937" selection-start-line="116" selection-start-column="43937" selection-end-line="116" selection-end-column="43937" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="631">
+          <caret line="117" column="44129" selection-start-line="117" selection-start-column="44129" selection-end-line="117" selection-end-column="44129" />
         </state>
       </provider>
     </entry>
