@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="" />
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,12 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="3802" column="12" selection-start-line="3802" selection-start-column="12" selection-end-line="3802" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="398">
+              <caret line="115" column="43251" selection-start-line="115" selection-start-column="43251" selection-end-line="115" selection-end-column="43251" />
             </state>
           </provider>
         </entry>
@@ -98,8 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>api_key</find>
-      <find>sendTokenToServer</find>
       <find>SendTokenToServer</find>
       <find>ap.n</find>
       <find>bell</find>
@@ -114,7 +111,6 @@
       <find />
       <find>get_messaging_app</find>
       <find>run</find>
-      <find>document.body</find>
       <find>sendp</find>
       <find>registration</find>
       <find>najvaSetLocation</find>
@@ -128,6 +124,9 @@
       <find>req</find>
       <find>checkPermissionRequest</find>
       <find>onesi</find>
+      <find>docuem</find>
+      <find>document.body</find>
+      <find>najva-subscriber-bell</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,27 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00098" summary="fix">
-      <created>1540465186863</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1540465186863</updated>
-    </task>
-    <task id="LOCAL-00099" summary="fix">
-      <created>1540470845405</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1540470845405</updated>
-    </task>
-    <task id="LOCAL-00100" summary="fix">
-      <created>1540471013061</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1540471013061</updated>
     </task>
     <task id="LOCAL-00101" summary="fix">
       <created>1540621848064</created>
@@ -571,7 +549,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544100066474</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="revert onesignal">
+      <created>1544100210328</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1544100210328</updated>
+    </task>
+    <task id="LOCAL-00148" summary="revert onesignal">
+      <created>1544100263765</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1544100263765</updated>
+    </task>
+    <task id="LOCAL-00149" summary="revert onesignal">
+      <created>1544250131461</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1544250131461</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -939,12 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="3802" column="12" selection-start-line="3802" selection-start-column="12" selection-end-line="3802" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="398">
+          <caret line="115" column="43251" selection-start-line="115" selection-start-column="43251" selection-end-line="115" selection-end-column="43251" />
         </state>
       </provider>
     </entry>
