@@ -117,7 +117,8 @@
             bell_tooltip: "مشترک شوید",
             };
 
-  /******/ (function(modules) { // webpackBootstrap
+
+              /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -3105,6 +3106,7 @@ function sendRequest(options) {
 function updateUserActivity(settings) {
   var today = new Date();
   var todayString = today.getFullYear() + ('0' + today.getMonth()).slice(-2) + ('0' + today.getUTCDate()).slice(-2);
+  setCookie("najva_last_active_time:".concat(settings.campaign_id), todayString, 3650);
   sendRequest({
     method: 'GET',
     url: 'https://app.najva.com/api/v1/current/user/',
@@ -3118,10 +3120,9 @@ function updateUserActivity(settings) {
   }).then(function (data) {
     setCookie("cookie_token:".concat(settings.campaign_id), data.cookie_token, 3650);
     setCookie("token_id:".concat(settings.campaign_id), data.token_id, 3650);
-  }).reject(function (err) {
+  }).catch(function (err) {
     console.error(err);
   });
-  setCookie("najva_last_active_time:".concat(settings.campaign_id), todayString, 3650);
 }
 ;
 // CONCATENATED MODULE: ./Core/static/src/js/script_templates/actions/index.js
@@ -3701,13 +3702,13 @@ function withoutPopUp_asyncToGenerator(fn) { return function () { var self = thi
                 return;
               }
 
-              if (state.flags.locationPermission === "granted" && state.cookies.todayLocationCookie === null) {
-                najvaSetLocation();
-              }
-
               if (state.cookies.notWantPopUp && !(state.cookies.cookieToken || state.cookies.tokenId) && state.flags.notificationPermission !== 'denied') {
                 setCookie("pushNotification:notWantPopUp:".concat(najvaSettings.campaign_id), false, -1);
                 state.cookies.notWantPopUp = null;
+              }
+
+              if (state.flags.locationPermission === "granted" && state.cookies.todayLocationCookie === null) {
+                najvaSetLocation();
               }
 
               if ((state.flags.hasSubscribed || state.flags.hasFirebaseToken) && state.flags.activityIsOutdated && state.flags.notificationPermission === 'granted') {
@@ -3811,9 +3812,7 @@ function withoutPopUp_asyncToGenerator(fn) { return function () { var self = thi
             // showPopUp.hasAlreadyShown = false;
 
 
-            ;
-
-          case 23:
+          case 22:
           case "end":
             return _context3.stop();
         }
