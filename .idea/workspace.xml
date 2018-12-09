@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="3829" column="12" selection-start-line="3829" selection-start-column="12" selection-end-line="3829" selection-end-column="12" />
+            <state relative-caret-position="274">
+              <caret line="119" column="44679" selection-start-line="119" selection-start-column="44679" selection-end-line="119" selection-end-column="44679" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -228,20 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00111" summary="fix">
-      <created>1540985971732</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1540985971732</updated>
-    </task>
-    <task id="LOCAL-00112" summary="fix">
-      <created>1540991346729</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1540991346729</updated>
     </task>
     <task id="LOCAL-00113" summary="fix">
       <created>1540991464318</created>
@@ -572,12 +558,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544338832202</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="revert onesignal">
+      <created>1544343964835</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1544343964835</updated>
+    </task>
+    <task id="LOCAL-00161" summary="revert onesignal">
+      <created>1544349461165</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1544349461166</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="-7" width="1388" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -585,7 +584,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3379694" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36300418" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21460843" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -945,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="3829" column="12" selection-start-line="3829" selection-start-column="12" selection-end-line="3829" selection-end-column="12" />
+        <state relative-caret-position="274">
+          <caret line="119" column="44679" selection-start-line="119" selection-start-column="44679" selection-end-line="119" selection-end-column="44679" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
           </folding>
