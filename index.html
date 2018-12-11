@@ -118,6 +118,7 @@ console.log("hi2")
             };
 
 
+
             /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -6815,8 +6816,6 @@ function privateModeDetector_asyncGeneratorStep(gen, resolve, reject, _next, _th
 
 function privateModeDetector_asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { privateModeDetector_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { privateModeDetector_asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _readOnlyError(name) { throw new Error("\"" + name + "\" is read-only"); }
-
 function najvaRetry(isDone, next) {
   var currentTrial = 0;
   var maxRetry = 50;
@@ -6827,9 +6826,9 @@ function najvaRetry(isDone, next) {
       next(isTimeout);
     }
 
-    if ((_readOnlyError("currentTrial"), currentTrial++) > maxRetry) {
+    if (currentTrial++ > maxRetry) {
       window.clearInterval(id);
-      isTimeout = (_readOnlyError("isTimeout"), true);
+      isTimeout = true;
       next(isTimeout);
     }
   }, 10);
@@ -6863,7 +6862,7 @@ function _detectPrivateMode() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            return _context.abrupt("return", Promise(function (resolve) {
+            return _context.abrupt("return", new Promise(function (resolve) {
               var isPrivate;
 
               if (window.webkitRequestFileSystem) {
