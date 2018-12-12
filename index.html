@@ -77,7 +77,7 @@
 
 
 
-console.log("hi17")
+console.log("hi18")
             window.najvaSettings = {
             api_key: "33b205837e294262bb3a3955a9b0f906",
             location_permission: true,
@@ -118,7 +118,6 @@ console.log("hi17")
             };
 //
         //
-
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -7063,11 +7062,13 @@ function _checkTriggerConditions() {
                   if (state.flags.currentCount <= options.visit.maximum.value) {
                     if ((state.flags.currentCount - options.visit.minimum.value) % options.visit.interval.value === 0) {
                       if (!options.delay.enable && !options.scroll.enable) {
+                        console.log("resolve1");
                         resolve();
                       } else {
                         if (options.scroll.enable) {
                           window.addEventListener('scroll', function () {
                             if (getScrollPercent() > options.scroll.value) {
+                              console.log("resolve2");
                               resolve();
                             }
                           });
@@ -7075,6 +7076,7 @@ function _checkTriggerConditions() {
 
                         if (options.delay.enable) {
                           setTimeout(function () {
+                            console.log("resolve3");
                             resolve();
                           }, options.delay.value * 1000);
                         }
@@ -7083,12 +7085,16 @@ function _checkTriggerConditions() {
                   }
                 }
               } else {
+                console.log("else");
+
                 if (!options.delay.enable && !options.scroll.enable) {
+                  console.log("resolve4");
                   resolve();
                 } else {
                   if (options.scroll.enable) {
                     window.addEventListener('scroll', function () {
                       if (getScrollPercent() > options.scroll.value) {
+                        console.log("resolve5");
                         resolve();
                       }
                     });
@@ -7096,6 +7102,7 @@ function _checkTriggerConditions() {
 
                   if (options.delay.enable) {
                     setTimeout(function () {
+                      console.log("resolve6");
                       resolve();
                     }, options.delay.value * 1000);
                   }
@@ -7450,6 +7457,7 @@ function withoutPopUp_asyncToGenerator(fn) { return function () { var self = thi
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=withoutPopUp-prod.js.map
 //# sourceMappingURL=withoutPopUp-prod.js.map
 </script>
 <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
