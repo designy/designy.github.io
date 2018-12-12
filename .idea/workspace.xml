@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,9 +25,10 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
-              <caret line="7452" column="45" selection-start-line="7452" selection-start-column="45" selection-end-line="7452" selection-end-column="45" />
+              <caret line="7459" column="45" selection-start-line="7459" selection-start-column="45" selection-end-line="7459" selection-end-column="45" />
               <folding>
-                <element signature="e#3796#3804#0" />
+                <element signature="e#3795#3803#0" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -229,20 +229,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00141" summary="fix">
-      <created>1544019661088</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1544019661088</updated>
-    </task>
-    <task id="LOCAL-00142" summary="fix">
-      <created>1544019802772</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1544019802773</updated>
     </task>
     <task id="LOCAL-00143" summary="fix">
       <created>1544026968353</created>
@@ -573,7 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544631124171</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="revert onesignal">
+      <created>1544632026899</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1544632026900</updated>
+    </task>
+    <task id="LOCAL-00191" summary="revert onesignal">
+      <created>1544632271698</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1544632271698</updated>
+    </task>
+    <option name="localTasksCounter" value="192" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -586,7 +586,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3449235" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29207233" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2251506" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -947,9 +947,10 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
-          <caret line="7452" column="45" selection-start-line="7452" selection-start-column="45" selection-end-line="7452" selection-end-column="45" />
+          <caret line="7459" column="45" selection-start-line="7459" selection-start-column="45" selection-end-line="7459" selection-end-column="45" />
           <folding>
-            <element signature="e#3796#3804#0" />
+            <element signature="e#3795#3803#0" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
