@@ -24,11 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="383">
+              <caret line="128" column="45665" selection-start-line="128" selection-start-column="45665" selection-end-line="128" selection-end-column="45665" />
             </state>
           </provider>
         </entry>
@@ -228,20 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00127" summary="fix">
-      <created>1542119270500</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1542119270500</updated>
-    </task>
-    <task id="LOCAL-00128" summary="fix">
-      <created>1542198223025</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1542198223025</updated>
     </task>
     <task id="LOCAL-00129" summary="fix">
       <created>1542199188986</created>
@@ -572,7 +555,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544627104165</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="revert onesignal">
+      <created>1544627445313</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1544627445314</updated>
+    </task>
+    <task id="LOCAL-00177" summary="revert onesignal">
+      <created>1544627716396</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1544627716396</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -945,11 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="383">
+          <caret line="128" column="45665" selection-start-line="128" selection-start-column="45665" selection-end-line="128" selection-end-column="45665" />
         </state>
       </provider>
     </entry>
