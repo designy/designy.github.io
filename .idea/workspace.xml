@@ -24,8 +24,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="128" column="76769" selection-start-line="128" selection-start-column="76769" selection-end-line="128" selection-end-column="76769" />
+            <state relative-caret-position="561">
+              <caret line="129" column="76796" selection-start-line="129" selection-start-column="76796" selection-end-line="129" selection-end-column="76796" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -160,9 +160,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
+    <option name="x" value="108" />
     <option name="width" value="1500" />
-    <option name="height" value="910" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -228,20 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00148" summary="revert onesignal">
-      <created>1544100263765</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1544100263765</updated>
-    </task>
-    <task id="LOCAL-00149" summary="revert onesignal">
-      <created>1544250131461</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1544250131461</updated>
     </task>
     <task id="LOCAL-00150" summary="revert onesignal">
       <created>1544250314166</created>
@@ -572,11 +558,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544698551689</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="revert onesignal">
+      <created>1544698836095</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1544698836095</updated>
+    </task>
+    <task id="LOCAL-00198" summary="revert onesignal">
+      <created>1544699688699</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1544699688699</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="155" y="-7" width="1388" height="878" extended-state="6" />
+    <frame x="156" y="-7" width="1131" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -585,8 +585,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29207233" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19503012" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36458334" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24183007" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -945,8 +945,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="128" column="76769" selection-start-line="128" selection-start-column="76769" selection-end-line="128" selection-end-column="76769" />
+        <state relative-caret-position="561">
+          <caret line="129" column="76796" selection-start-line="129" selection-start-column="76796" selection-end-line="129" selection-end-column="76796" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
           </folding>
