@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="298">
+              <caret line="867" column="43" lean-forward="true" selection-start-line="867" selection-start-column="43" selection-end-line="867" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -214,20 +212,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00156" summary="revert onesignal">
-      <created>1544284966679</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1544284966679</updated>
-    </task>
-    <task id="LOCAL-00157" summary="revert onesignal">
-      <created>1544337895639</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1544337895639</updated>
     </task>
     <task id="LOCAL-00158" summary="revert onesignal">
       <created>1544338287298</created>
@@ -558,7 +542,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544868518410</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="revert onesignal">
+      <created>1544890731151</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1544890731151</updated>
+    </task>
+    <task id="LOCAL-00206" summary="revert onesignal">
+      <created>1544890981630</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1544890981630</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -571,8 +569,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34909597" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21460843" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34909597" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22138554" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -931,11 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="298">
+          <caret line="867" column="43" lean-forward="true" selection-start-line="867" selection-start-column="43" selection-end-line="867" selection-end-column="43" />
         </state>
       </provider>
     </entry>
