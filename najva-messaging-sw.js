@@ -46,7 +46,6 @@ messaging.setBackgroundMessageHandler(function(payload) {
 
 
 self.addEventListener('notificationclick', function(event) {
-    debugger
     console.log('On notification click: ', event.notification);
     event.notification.close();
 
@@ -73,7 +72,6 @@ self.addEventListener('notificationclick', function(event) {
 });
 
 self.addEventListener('notificationclose', function(event) {
-    debugger
     console.log('On notification close: ', event.notification);
     // event.notification.close();
 
