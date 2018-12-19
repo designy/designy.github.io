@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="102">
+              <caret line="142" selection-start-line="142" selection-start-column="4" selection-end-line="152" selection-end-column="14" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
               </folding>
@@ -200,20 +201,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00177" summary="revert onesignal">
-      <created>1544627716396</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1544627716396</updated>
-    </task>
-    <task id="LOCAL-00178" summary="revert onesignal">
-      <created>1544628756556</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1544628756556</updated>
     </task>
     <task id="LOCAL-00179" summary="revert onesignal">
       <created>1544628768595</created>
@@ -544,7 +531,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545205376497</updated>
     </task>
-    <option name="localTasksCounter" value="226" />
+    <task id="LOCAL-00226" summary="revert onesignal">
+      <created>1545205789116</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1545205789117</updated>
+    </task>
+    <task id="LOCAL-00227" summary="revert onesignal">
+      <created>1545206084585</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1545206084585</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -917,8 +918,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="102">
+          <caret line="142" selection-start-line="142" selection-start-column="4" selection-end-line="152" selection-end-column="14" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
           </folding>
