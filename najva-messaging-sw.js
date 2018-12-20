@@ -23,7 +23,6 @@ messaging.setBackgroundMessageHandler(function(payload) {
         image : payload.data.image,
         requireInteraction : true,
         data : payload.data,
-        dir: "rtl"
     };
 
     var notificationPromise = self.registration.showNotification(notificationTitle,
