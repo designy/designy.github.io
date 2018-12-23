@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="fix">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+            <state relative-caret-position="113">
+              <caret line="137" column="84691" selection-start-line="137" selection-start-column="84691" selection-end-line="137" selection-end-column="84691" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -128,9 +128,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="width" value="1500" />
-    <option name="height" value="910" />
+    <option name="x" value="-10" />
+    <option name="width" value="975" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -191,13 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00191" summary="revert onesignal">
-      <created>1544632271698</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1544632271698</updated>
     </task>
     <task id="LOCAL-00192" summary="revert onesignal">
       <created>1544632813657</created>
@@ -535,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545497924315</updated>
     </task>
-    <option name="localTasksCounter" value="240" />
+    <task id="LOCAL-00240" summary="fix">
+      <created>1545498723977</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1545498723978</updated>
+    </task>
+    <option name="localTasksCounter" value="241" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -548,7 +548,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.255911" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.255911" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16082802" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -584,6 +584,7 @@
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/topmoviez-dl.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/tecknonews.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/bnrs/fs_bnr.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/bigwallet.ir/article.v2.js" />
       </list>
     </option>
   </component>
@@ -908,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
+        <state relative-caret-position="113">
+          <caret line="137" column="84691" selection-start-line="137" selection-start-column="84691" selection-end-line="137" selection-end-column="84691" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
           </folding>
