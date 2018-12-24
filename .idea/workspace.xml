@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,20 +25,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="21268">
               <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
+              <folding>
+                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="329">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
@@ -111,8 +114,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/service-worker.js" />
         <option value="$PROJECT_DIR$/templates/content.html" />
-        <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -189,20 +192,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00201" summary="revert onesignal">
-      <created>1544860845112</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1544860845112</updated>
-    </task>
-    <task id="LOCAL-00202" summary="revert onesignal">
-      <created>1544861629228</created>
-      <option name="number" value="00202" />
-      <option name="presentableId" value="LOCAL-00202" />
-      <option name="project" value="LOCAL" />
-      <updated>1544861629228</updated>
     </task>
     <task id="LOCAL-00203" summary="revert onesignal">
       <created>1544868485689</created>
@@ -533,7 +522,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545637435304</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="fix">
+      <created>1545657863499</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1545657863499</updated>
+    </task>
+    <task id="LOCAL-00251" summary="fix">
+      <created>1545661719328</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1545661719328</updated>
+    </task>
+    <option name="localTasksCounter" value="252" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -546,8 +549,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26737967" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14007308" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26737967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14007308" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -899,17 +902,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="21268">
+          <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
+        <state relative-caret-position="329">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>

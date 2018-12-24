@@ -55,10 +55,13 @@ self.addEventListener('notificationclick', function(event) {
         })
             .then(function(clientList) {
                 var url = "";
+                console.log("complete url is:" + event.notification.data.complete_url);
                 if (event.notification.data.complete_url) {
+                    console.log("in if")
                     url = event.notification.data.complete_url
                 }
                 else {
+                    console.log("in else")
                     url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
                     url += '&website_id=' + event.notification.data.website_id;
                     url += '&api_key=' + event.notification.data.api_key;
