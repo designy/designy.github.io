@@ -54,10 +54,16 @@ self.addEventListener('notificationclick', function(event) {
             type: "window"
         })
             .then(function(clientList) {
-                var url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
-                url += '&website_id=' + event.notification.data.website_id;
-                url += '&api_key=' + event.notification.data.api_key;
-                url += "&next=" + event.notification.data.url;
+                var url = "";
+                if (event.notification.data.complete_url) {
+                    url = event.notification.data.complete_url
+                }
+                else {
+                    url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
+                    url += '&website_id=' + event.notification.data.website_id;
+                    url += '&api_key=' + event.notification.data.api_key;
+                    url += "&next=" + event.notification.data.url;
+                }
 
                 for (var i = 0; i < clientList.length; i++) {
                     var client = clientList[i];
