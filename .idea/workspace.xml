@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,12 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2163">
-              <caret line="137" column="86447" selection-start-line="137" selection-start-column="86447" selection-end-line="137" selection-end-column="86447" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="147">
+              <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
             </state>
           </provider>
         </entry>
@@ -192,20 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00199" summary="revert onesignal">
-      <created>1544709308021</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1544709308021</updated>
-    </task>
-    <task id="LOCAL-00200" summary="revert onesignal">
-      <created>1544711120959</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1544711120960</updated>
     </task>
     <task id="LOCAL-00201" summary="revert onesignal">
       <created>1544860845112</created>
@@ -536,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545630782426</updated>
     </task>
-    <option name="localTasksCounter" value="248" />
+    <task id="LOCAL-00248" summary="fix">
+      <created>1545637302957</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1545637302958</updated>
+    </task>
+    <task id="LOCAL-00249" summary="fix">
+      <created>1545637435304</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1545637435304</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -586,6 +583,7 @@
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/tecknonews.ir/article.v1.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/template/bnrs/fs_bnr.js" />
         <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/bigwallet.ir/article.v2.js" />
+        <option value="$PROJECT_DIR$/../MyGearBox-CDN/js/mojnews.com/article.v3.js" />
       </list>
     </option>
   </component>
@@ -910,12 +908,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2163">
-          <caret line="137" column="86447" selection-start-line="137" selection-start-column="86447" selection-end-line="137" selection-end-column="86447" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="147">
+          <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
         </state>
       </provider>
     </entry>
