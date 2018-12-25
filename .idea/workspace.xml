@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,12 +29,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="593">
+              <caret line="136" column="98454" selection-start-line="136" selection-start-column="98454" selection-end-line="136" selection-end-column="98454" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_font.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/fonts/_font.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -68,7 +74,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>run</find>
       <find>sendp</find>
       <find>registration</find>
       <find>najvaSetLocation</find>
@@ -98,6 +103,7 @@
       <find>forg</find>
       <find>forground</find>
       <find>in foreground payload</find>
+      <find>font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,6 +152,17 @@
               <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -192,20 +209,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00209" summary="revert onesignal">
-      <created>1544945289086</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1544945289086</updated>
-    </task>
-    <task id="LOCAL-00210" summary="revert onesignal">
-      <created>1544945575018</created>
-      <option name="number" value="00210" />
-      <option name="presentableId" value="LOCAL-00210" />
-      <option name="project" value="LOCAL" />
-      <updated>1544945575018</updated>
     </task>
     <task id="LOCAL-00211" summary="revert onesignal">
       <created>1544945746265</created>
@@ -536,11 +539,25 @@
       <option name="project" value="LOCAL" />
       <updated>1545720397061</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="fix">
+      <created>1545722196466</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1545722196466</updated>
+    </task>
+    <task id="LOCAL-00259" summary="fix template">
+      <created>1545722770496</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1545722770496</updated>
+    </task>
+    <option name="localTasksCounter" value="260" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="226" y="-8" width="1702" height="1096" extended-state="7" />
+    <frame x="226" y="-8" width="1702" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -549,8 +566,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26737967" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14190012" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26737967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14190012" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -601,7 +618,8 @@
     <MESSAGE value="sw" />
     <MESSAGE value="revert onesignal" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix template" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/fonts/_font.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -909,14 +920,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fonts/_font.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="593">
+          <caret line="136" column="98454" selection-start-line="136" selection-start-column="98454" selection-end-line="136" selection-end-column="98454" />
         </state>
       </provider>
     </entry>
