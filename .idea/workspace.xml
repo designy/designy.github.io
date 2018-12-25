@@ -25,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21268">
-              <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
+            <state relative-caret-position="333">
+              <caret line="137" column="63713" selection-start-line="137" selection-start-column="63713" selection-end-line="137" selection-end-column="63713" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="1540">
+              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,9 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>browserName</find>
-      <find />
-      <find>get_messaging_app</find>
       <find>run</find>
       <find>sendp</find>
       <find>registration</find>
@@ -98,6 +95,9 @@
       <find>foxpush</find>
       <find>Notification(</find>
       <find>push</find>
+      <find>forg</find>
+      <find>forground</find>
+      <find>in foreground payload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,13 +192,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00203" summary="revert onesignal">
-      <created>1544868485689</created>
-      <option name="number" value="00203" />
-      <option name="presentableId" value="LOCAL-00203" />
-      <option name="project" value="LOCAL" />
-      <updated>1544868485689</updated>
     </task>
     <task id="LOCAL-00204" summary="revert onesignal">
       <created>1544868518410</created>
@@ -536,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545661719328</updated>
     </task>
-    <option name="localTasksCounter" value="252" />
+    <task id="LOCAL-00252" summary="fix">
+      <created>1545663653251</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1545663653251</updated>
+    </task>
+    <option name="localTasksCounter" value="253" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="226" y="-8" width="1702" height="1096" extended-state="6" />
+    <frame x="226" y="-8" width="1702" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -549,8 +549,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.26737967" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14007308" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26737967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14190012" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -902,21 +902,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21268">
-          <caret line="137" column="88829" selection-start-line="137" selection-start-column="88829" selection-end-line="137" selection-end-column="88829" />
+        <state relative-caret-position="333">
+          <caret line="137" column="63713" selection-start-line="137" selection-start-column="63713" selection-end-line="137" selection-end-column="63713" />
           <folding>
             <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
