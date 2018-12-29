@@ -29,9 +29,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+            <state relative-caret-position="277">
+              <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
               <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -139,9 +140,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="width" value="1219" />
-    <option name="height" value="1313" />
+    <option name="x" value="-12" />
+    <option name="width" value="1170" />
+    <option name="height" value="1260" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -165,7 +166,7 @@
               <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,13 +214,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00218" summary="revert onesignal">
-      <created>1545039608425</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1545039608425</updated>
     </task>
     <task id="LOCAL-00219" summary="revert onesignal">
       <created>1545119205985</created>
@@ -557,12 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545807123790</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="add subdomain">
+      <created>1545808033802</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1545808033802</updated>
+    </task>
+    <option name="localTasksCounter" value="268" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="227" y="-7" width="1316" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="226" y="-8" width="1702" height="1096" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -570,8 +570,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34770516" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550955" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34770516" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1272838" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -623,7 +623,8 @@
     <MESSAGE value="revert onesignal" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix template" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix template" />
+    <MESSAGE value="add subdomain" />
+    <option name="LAST_COMMIT_MESSAGE" value="add subdomain" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,9 +934,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+        <state relative-caret-position="277">
+          <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#src#0;n#img#0;n#div#0;n#!!top" expanded="true" />
           </folding>
