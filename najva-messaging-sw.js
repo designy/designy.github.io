@@ -53,7 +53,7 @@ self.addEventListener('notificationclick', function (event) {
 
     event.waitUntil(
         clients.matchAll({
-            type: "window"
+            type: "window", includeUncontrolled: true
         })
             .then(function (clientList) {
                 var url = "";
