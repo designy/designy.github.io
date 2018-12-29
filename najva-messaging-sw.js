@@ -10,7 +10,7 @@ firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
 
-messaging.setBackgroundMessageHandler(function(payload) {
+messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
 
     const notificationTitle = payload.data.title;
@@ -18,25 +18,24 @@ messaging.setBackgroundMessageHandler(function(payload) {
     var expireTime = parseInt(payload.data.expireTime);
 
     const notificationOptions = {
-        body : payload.data.body,
-        icon : payload.data.icon,
-        image : payload.data.image,
-        requireInteraction : true,
-        data : payload.data,
+        body: payload.data.body,
+        icon: payload.data.icon,
+        image: payload.data.image,
+        requireInteraction: true,
+        data: payload.data,
     };
 
     var notificationPromise = self.registration.showNotification(notificationTitle,
         notificationOptions);
 
-    notificationPromise.then(function(){
-        registration.getNotifications().then(function(notifications){
+    notificationPromise.then(function () {
+        registration.getNotifications().then(function (notifications) {
             var current_notification = notifications[notifications.length - 1];
             console.log(current_notification);
-            if(expireTime > 0)
-            {
-                setTimeout(function() {
+            if (expireTime > 0) {
+                setTimeout(function () {
                     current_notification.close()
-                },expireTime);
+                }, expireTime);
             }
         });
     });
@@ -45,7 +44,7 @@ messaging.setBackgroundMessageHandler(function(payload) {
 });
 
 
-self.addEventListener('notificationclick', function(event) {
+self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
     event.notification.close();
 
@@ -53,15 +52,13 @@ self.addEventListener('notificationclick', function(event) {
         clients.matchAll({
             type: "window"
         })
-            .then(function(clientList) {
+            .then(function (clientList) {
                 var url = "";
                 console.log("complete url is:" + event.notification.data.complete_url);
                 if (event.notification.data.complete_url) {
-                    console.log("in if")
                     url = event.notification.data.complete_url
                 }
                 else {
-                    console.log("in else")
                     url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
                     url += '&website_id=' + event.notification.data.website_id;
                     url += '&api_key=' + event.notification.data.api_key;
@@ -80,7 +77,7 @@ self.addEventListener('notificationclick', function(event) {
     );
 });
 
-self.addEventListener('notificationclose', function(event) {
+self.addEventListener('notificationclose', function (event) {
     console.log('On notification close: ', event.notification);
     // event.notification.close();
 
@@ -88,17 +85,39 @@ self.addEventListener('notificationclose', function(event) {
         clients.matchAll({
             type: "window"
         })
-        .then(function(clientList) {
-            if (event.notification.data.notification_id){
-            var id = event.notification.data.notification_id;
-            var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
-            url += '&website_id=' + event.notification.data.website_id;
-            url += '&api_key=' + event.notification.data.api_key;
-            fetch(url, {
-                credentials: "include"
-            });
-            }
-        })
+            .then(function (clientList) {
+                event.notification.onclick = function (ev) {
+                    var url = "";
+                    console.log("complete url is:" + event.notification.data.complete_url);
+                    if (event.notification.data.complete_url) {
+                        url = event.notification.data.complete_url
+                    }
+                    else {
+                        url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
+                        url += '&website_id=' + event.notification.data.website_id;
+                        url += '&api_key=' + event.notification.data.api_key;
+                        url += "&next=" + event.notification.data.url;
+                    }
+
+                    for (var i = 0; i < clientList.length; i++) {
+                        var client = clientList[i];
+                        if (client.url === url && 'focus' in client)
+                            return client.focus();
+                    }
+                    if (clients.openWindow) {
+                        return clients.openWindow(url);
+                    }
+                };
+                if (event.notification.data.notification_id) {
+                    var id = event.notification.data.notification_id;
+                    var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
+                    url += '&website_id=' + event.notification.data.website_id;
+                    url += '&api_key=' + event.notification.data.api_key;
+                    fetch(url, {
+                        credentials: "include"
+                    });
+                }
+            })
     );
 });
 
