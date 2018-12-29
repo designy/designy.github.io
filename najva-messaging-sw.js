@@ -80,50 +80,50 @@ self.addEventListener('notificationclick', function (event) {
     );
 });
 
-self.addEventListener('notificationclose', function (event) {
-    console.log('On notification close: ', event.notification);
-    // event.notification.close();
-
-    event.waitUntil(
-        clients.matchAll({
-            type: "window",
-            includeUncontrolled: true
-        })
-            .then(function (clientList) {
-                event.notification.onclick = function (ev) {
-                    var url = "";
-                    console.log("complete url is:" + event.notification.data.complete_url);
-                    if (event.notification.data.complete_url) {
-                        url = event.notification.data.complete_url
-                    }
-                    else {
-                        url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
-                        url += '&website_id=' + event.notification.data.website_id;
-                        url += '&api_key=' + event.notification.data.api_key;
-                        url += "&next=" + event.notification.data.url;
-                    }
-
-                    for (var i = 0; i < clientList.length; i++) {
-                        var client = clientList[i];
-                        if (client.url === url && 'focus' in client)
-                            return client.focus();
-                    }
-                    if (clients.openWindow) {
-                        return clients.openWindow(url);
-                    }
-                };
-                if (event.notification.data.notification_id) {
-                    var id = event.notification.data.notification_id;
-                    var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
-                    url += '&website_id=' + event.notification.data.website_id;
-                    url += '&api_key=' + event.notification.data.api_key;
-                    fetch(url, {
-                        credentials: "include"
-                    });
-                }
-            })
-    );
-});
+// self.addEventListener('notificationclose', function (event) {
+//     console.log('On notification close: ', event.notification);
+//     // event.notification.close();
+//
+//     event.waitUntil(
+//         clients.matchAll({
+//             type: "window",
+//             includeUncontrolled: true
+//         })
+//             .then(function (clientList) {
+//                 event.notification.onclick = function (ev) {
+//                     var url = "";
+//                     console.log("complete url is:" + event.notification.data.complete_url);
+//                     if (event.notification.data.complete_url) {
+//                         url = event.notification.data.complete_url
+//                     }
+//                     else {
+//                         url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
+//                         url += '&website_id=' + event.notification.data.website_id;
+//                         url += '&api_key=' + event.notification.data.api_key;
+//                         url += "&next=" + event.notification.data.url;
+//                     }
+//
+//                     for (var i = 0; i < clientList.length; i++) {
+//                         var client = clientList[i];
+//                         if (client.url === url && 'focus' in client)
+//                             return client.focus();
+//                     }
+//                     if (clients.openWindow) {
+//                         return clients.openWindow(url);
+//                     }
+//                 };
+//                 if (event.notification.data.notification_id) {
+//                     var id = event.notification.data.notification_id;
+//                     var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
+//                     url += '&website_id=' + event.notification.data.website_id;
+//                     url += '&api_key=' + event.notification.data.api_key;
+//                     fetch(url, {
+//                         credentials: "include"
+//                     });
+//                 }
+//             })
+//     );
+// });
 
 self.onnotificationclick = function(event) {
   console.log('On notification click: ', event.notification.tag);
