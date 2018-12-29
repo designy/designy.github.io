@@ -12,7 +12,7 @@ const messaging = firebase.messaging();
 
 messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
-
+    console.log("in set backgroundHandler")
     const notificationTitle = payload.data.title;
 
     var expireTime = parseInt(payload.data.expireTime);
