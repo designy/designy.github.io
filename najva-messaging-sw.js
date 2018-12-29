@@ -28,10 +28,13 @@ messaging.setBackgroundMessageHandler(function (payload) {
         notificationOptions);
 
     notificationPromise.then(function () {
-        console.log("notification then promise:" + notificationPromise);
         registration.getNotifications().then(function (notifications) {
             var current_notification = notifications[notifications.length - 1];
             console.log(current_notification);
+            current_notification.onclick = function (ev) {
+            var url = 'https://click.najva.com/redirect/?notification_id='
+            window.open(url, '_bl');
+            };
             if (expireTime > 0) {
                 setTimeout(function () {
                     current_notification.close()
