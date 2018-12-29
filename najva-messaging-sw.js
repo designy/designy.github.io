@@ -9,7 +9,56 @@ var config = {
 firebase.initializeApp(config);
 
 const messaging = firebase.messaging();
+messaging.onMessage(function (payload) {
+        console.log('in messaging in service worker!!');
+        if (document.hidden) {
+            return;
+        }
+        var expireTime = parseInt(payload.data.expireTime);
+        var notification = new Notification(
+            payload.data.title,
+            {
+                body: payload.data.body,
+                icon: payload.data.icon,
+                requireInteraction: true,
+                image: payload.data.image,
+            }
+        );
 
+        notification.id = payload.data.notification_id;
+
+        notification.isClosedByScript = false;
+
+        notification.onclick = function () {
+            var url = 'https://click.najva.com/redirect/?notification_id=' + payload.data.notification_id;
+            url += '&website_id=' + payload.data.website_id;
+            url += '&api_key=' + payload.data.api_key;
+            url += '&next=' + payload.data.url;
+
+            window.open(url, '_bl');
+            notification.isClosedByScript = true;
+            notification.close();
+        };
+
+        notification.onclose = function () {
+            if (!notification.isClosedByScript) {
+                var xhr = new XMLHttpRequest();
+                var url = 'https://app.najva.com/api/v1/notification/closed/?notification_id=' + payload.data.notification_id;
+                url += '&website_id=' + payload.data.website_id;
+                url += '&api_key=' + payload.data.api_key;
+                xhr.open('GET', url, true);
+                xhr.withCredentials = true;
+                xhr.send();
+            }
+        };
+
+        if (expireTime > 0) {
+            setTimeout(function () {
+                notification.isClosedByScript = true;
+                notification.close();
+            }, expireTime);
+        }
+    });
 messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
     console.log("in set backgroundHandler")
