@@ -32,8 +32,8 @@ messaging.setBackgroundMessageHandler(function (payload) {
             var current_notification = notifications[notifications.length - 1];
             console.log(current_notification);
             current_notification.onclick = function (ev) {
-            var url = 'https://click.najva.com/redirect/?notification_id='
-            window.open(url, '_bl');
+                var url = 'https://click.najva.com/redirect/?notification_id='
+                window.open(url, '_bl');
             };
             if (expireTime > 0) {
                 setTimeout(function () {
@@ -50,34 +50,22 @@ messaging.setBackgroundMessageHandler(function (payload) {
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
     event.notification.close();
-
-    event.waitUntil(
-        clients.matchAll({
-            includeUncontrolled: true
-        })
-            .then(function (clientList) {
-                var url = "";
-                console.log("complete url is:" + event.notification.data.complete_url);
-                if (event.notification.data.complete_url) {
-                    url = event.notification.data.complete_url
-                }
-                else {
-                    url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
-                    url += '&website_id=' + event.notification.data.website_id;
-                    url += '&api_key=' + event.notification.data.api_key;
-                    url += "&next=" + event.notification.data.url;
-                }
-
-                for (var i = 0; i < clientList.length; i++) {
-                    var client = clientList[i];
-                    if (client.url === url && 'focus' in client)
-                        return client.focus();
-                }
-                if (clients.openWindow) {
-                    return clients.openWindow(url);
-                }
-            })
-    );
+    var url = "";
+    console.log("complete url is:" + event.notification.data.complete_url);
+    if (event.notification.data.complete_url) {
+        url = event.notification.data.complete_url
+    }
+    else {
+        url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
+        url += '&website_id=' + event.notification.data.website_id;
+        url += '&api_key=' + event.notification.data.api_key;
+        url += "&next=" + event.notification.data.url;
+    }
+    // Check if it exists
+    if (url) {
+        // Open the target URL in a new tab/window
+        event.waitUntil(clients.openWindow(url));
+    }
 });
 
 // self.addEventListener('notificationclose', function (event) {
@@ -125,21 +113,21 @@ self.addEventListener('notificationclick', function (event) {
 //     );
 // });
 
-self.onnotificationclick = function(event) {
-  console.log('On notification click: ', event.notification.tag);
-  event.notification.close();
+self.onnotificationclick = function (event) {
+    console.log('On notification click: ', event.notification.tag);
+    event.notification.close();
 
-  // This looks to see if the current is already open and
-  // focuses if it is
-  event.waitUntil(clients.matchAll({
-      includeUncontrolled: true
-  }).then(function(clientList) {
-    for (var i = 0; i < clientList.length; i++) {
-      var client = clientList[i];
-      if (client.url == 'http://google.com' && 'focus' in client)
-        return client.focus();
-    }
-    if (clients.openWindow)
-      return clients.openWindow('http://google.com');
-  }));
+    // This looks to see if the current is already open and
+    // focuses if it is
+    event.waitUntil(clients.matchAll({
+        includeUncontrolled: true
+    }).then(function (clientList) {
+        for (var i = 0; i < clientList.length; i++) {
+            var client = clientList[i];
+            if (client.url == 'http://google.com' && 'focus' in client)
+                return client.focus();
+        }
+        if (clients.openWindow)
+            return clients.openWindow('http://google.com');
+    }));
 };
