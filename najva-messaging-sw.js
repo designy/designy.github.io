@@ -86,6 +86,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 
 self.addEventListener('notificationclick', function (event) {
     console.log("click handler")
+    event.notification.clicked = true;
     event.waitUntil(
         self.clients.matchAll().then(function (clientList) {
             console.log(clientList);
@@ -103,12 +104,14 @@ self.addEventListener('notificationclose', function (event) {
     // event.notification.onclick = function (ev) {
     //     console.log("after close clicked")
     // };
-    event.waitUntil(
-        self.clients.matchAll().then(function (clientList) {
-            event.notification.onclick = function (ev) {
-                console.log("close click handler")
+    var p = new Promise(function (resolve, reject) {
+        setInterval(function () {
+            if (event.notification.clicked) {
+                resolve('foo');
             }
-        }))
+        }, 5000);
+    });
+    event.waitUntil(p);
 
     event.notification.close();
 
@@ -130,7 +133,7 @@ self.addEventListener('notificationclose', function (event) {
     // );
 });
 
-self.onnotificationclick = function(event) {
+self.onnotificationclick = function (event) {
     event.notification.close();
     event.waitUntil(clients.openWindow('weather/advisory'));
 }
