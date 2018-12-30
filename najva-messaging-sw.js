@@ -31,6 +31,9 @@ messaging.setBackgroundMessageHandler(function (payload) {
     notificationPromise.then(function () {
         registration.getNotifications().then(function (notifications) {
             var current_notification = notifications[notifications.length - 1];
+            current_notification.onclick = function (ev) {
+                console.log("set bak click handler")
+            }
             console.log(current_notification);
             console.log(expireTime);
             if (expireTime > 0) {
@@ -82,6 +85,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 // });
 
 self.addEventListener('notificationclick', function (event) {
+    console.log("click handler")
     event.waitUntil(
         self.clients.matchAll().then(function (clientList) {
             console.log(clientList);
@@ -99,6 +103,13 @@ self.addEventListener('notificationclose', function (event) {
     // event.notification.onclick = function (ev) {
     //     console.log("after close clicked")
     // };
+    event.waitUntil(
+        self.clients.matchAll().then(function (clientList) {
+            event.notification.onclick = function (ev) {
+                console.log("close click handler")
+            }
+        }))
+
     event.notification.close();
 
     // event.waitUntil(
