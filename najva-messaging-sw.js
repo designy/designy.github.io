@@ -94,9 +94,9 @@ self.addEventListener('notificationclick', function (event) {
 
 self.addEventListener('notificationclose', function (event) {
     console.log('On notification close: ', event.notification);
-    event.notification.onclick = function (ev) {
-        console.log("after close clicked")
-    };
+    // event.notification.onclick = function (ev) {
+    //     console.log("after close clicked")
+    // };
     event.notification.close();
 
     // event.waitUntil(
