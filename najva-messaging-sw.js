@@ -82,6 +82,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 self.addEventListener('notificationclick', function (event) {
     event.waitUntil(
         self.clients.matchAll().then(function (clientList) {
+            console.log(clientList);
             if (clientList.length > 0) {
                 return clientList[0].focus();
             }
