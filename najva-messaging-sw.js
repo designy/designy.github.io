@@ -130,3 +130,7 @@ self.addEventListener('notificationclose', function (event) {
     // );
 });
 
+self.onnotificationclick = function(event) {
+    event.notification.close();
+    event.waitUntil(clients.openWindow('weather/advisory'));
+}
