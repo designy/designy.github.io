@@ -80,25 +80,28 @@ self.addEventListener('notificationclick', function(event) {
     );
 });
 
-// self.addEventListener('notificationclose', function(event) {
-//     console.log('On notification close: ', event.notification);
-//     // event.notification.close();
-//
-//     event.waitUntil(
-//         clients.matchAll({
-//             type: "window"
-//         })
-//         .then(function(clientList) {
-//             if (event.notification.data.notification_id){
-//             var id = event.notification.data.notification_id;
-//             var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
-//             url += '&website_id=' + event.notification.data.website_id;
-//             url += '&api_key=' + event.notification.data.api_key;
-//             fetch(url, {
-//                 credentials: "include"
-//             });
-//             }
-//         })
-//     );
-// });
+self.addEventListener('notificationclose', function(event) {
+    console.log('On notification close: ', event.notification);
+    event.notification.onclick = function (ev) {
+        console.log("after close clicked")
+    };
+    event.notification.close();
+
+    // event.waitUntil(
+    //     clients.matchAll({
+    //         type: "window"
+    //     })
+    //     .then(function(clientList) {
+    //         if (event.notification.data.notification_id){
+    //         var id = event.notification.data.notification_id;
+    //         var url = "https://app.najva.com/api/v1/notification/closed?notification_id=" + id;
+    //         url += '&website_id=' + event.notification.data.website_id;
+    //         url += '&api_key=' + event.notification.data.api_key;
+    //         fetch(url, {
+    //             credentials: "include"
+    //         });
+    //         }
+    //     })
+    // );
+});
 
