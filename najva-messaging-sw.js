@@ -32,6 +32,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
         registration.getNotifications().then(function (notifications) {
             var current_notification = notifications[notifications.length - 1];
             console.log(current_notification);
+            console.log(expireTime);
             if (expireTime > 0) {
                 setTimeout(function () {
                     current_notification.close()
