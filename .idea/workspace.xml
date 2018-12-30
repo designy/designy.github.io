@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/najva-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/najva-messaging-sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
+            <state relative-caret-position="499">
               <caret line="126" selection-start-line="126" selection-end-line="126" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="-895">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,8 +182,8 @@
         <option value="$PROJECT_DIR$/sp-push-worker.js" />
         <option value="$PROJECT_DIR$/service-worker.js" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -273,27 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00264" summary="fix template">
-      <created>1545753172851</created>
-      <option name="number" value="00264" />
-      <option name="presentableId" value="LOCAL-00264" />
-      <option name="project" value="LOCAL" />
-      <updated>1545753172851</updated>
-    </task>
-    <task id="LOCAL-00265" summary="fix template">
-      <created>1545805346147</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1545805346147</updated>
-    </task>
-    <task id="LOCAL-00266" summary="fix template">
-      <created>1545807123790</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1545807123790</updated>
     </task>
     <task id="LOCAL-00267" summary="fix template">
       <created>1546008776871</created>
@@ -617,7 +596,28 @@
       <option name="project" value="LOCAL" />
       <updated>1546179232418</updated>
     </task>
-    <option name="localTasksCounter" value="313" />
+    <task id="LOCAL-00313" summary="git push">
+      <created>1546179494914</created>
+      <option name="number" value="00313" />
+      <option name="presentableId" value="LOCAL-00313" />
+      <option name="project" value="LOCAL" />
+      <updated>1546179494914</updated>
+    </task>
+    <task id="LOCAL-00314" summary="git push">
+      <created>1546179560853</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1546179560853</updated>
+    </task>
+    <task id="LOCAL-00315" summary="git push">
+      <created>1546180325709</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1546180325709</updated>
+    </task>
+    <option name="localTasksCounter" value="316" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -979,16 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -1002,8 +992,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="-895">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
