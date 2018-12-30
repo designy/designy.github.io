@@ -105,11 +105,9 @@ self.addEventListener('notificationclose', function (event) {
     //     console.log("after close clicked")
     // };
     var p = new Promise(function (resolve, reject) {
-        setInterval(function () {
             if (event.notification.clicked) {
                 resolve('foo');
             }
-        }, 5000);
     });
     event.waitUntil(p);
 
