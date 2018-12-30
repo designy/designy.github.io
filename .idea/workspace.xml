@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +67,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+            <state relative-caret-position="81">
+              <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -81,8 +79,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="8998" column="41" lean-forward="true" selection-start-line="8998" selection-start-column="41" selection-end-line="8998" selection-end-column="41" />
+            <state relative-caret-position="720">
+              <caret line="8383" column="68" selection-start-line="8383" selection-start-column="68" selection-end-line="8383" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -135,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>formData</find>
       <find>najvaSendRequest</find>
       <find>debugg</find>
       <find>getToken</find>
@@ -165,6 +162,7 @@
       <find>shouldOpenNotificationUrl</find>
       <find>showNotification</find>
       <find>notificationclick</find>
+      <find>debug</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -240,15 +238,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
+      <recent name="C:\Repos\gitlab\designy.github.io" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
       <recent name="C:\Users\tnt\PycharmProjects\designy.github.io\assets\js" />
       <recent name="C:\Repos\gitlab\designy.github.io" />
       <recent name="C:\Repos\gitlab\designy.github.io\assets" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Repos\gitlab\designy.github.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,13 +272,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00257" summary="fix">
-      <created>1545720397061</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1545720397061</updated>
     </task>
     <task id="LOCAL-00258" summary="fix">
       <created>1545722196466</created>
@@ -617,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546167707441</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="git push">
+      <created>1546175439988</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1546175439988</updated>
+    </task>
+    <option name="localTasksCounter" value="307" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -927,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="16020" column="5" selection-start-line="16020" selection-start-column="5" selection-end-line="16020" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/fonts/_font.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -986,10 +978,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="3003" column="16" lean-forward="true" selection-start-line="3003" selection-start-column="16" selection-end-line="3003" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="8998" column="41" lean-forward="true" selection-start-line="8998" selection-start-column="41" selection-end-line="8998" selection-end-column="41" />
+        <state relative-caret-position="720">
+          <caret line="8383" column="68" selection-start-line="8383" selection-start-column="68" selection-end-line="8383" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -999,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="126" column="27" selection-start-line="126" selection-start-column="27" selection-end-line="126" selection-end-column="27" />
+        <state relative-caret-position="81">
+          <caret line="107" column="31" lean-forward="true" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
