@@ -11,8 +11,8 @@ firebase.initializeApp(config);
 const messaging = firebase.messaging();
 
 messaging.setBackgroundMessageHandler(function(payload) {
-    console.log(payload);
-
+    // console.log(payload);
+    console.log("setback handlers")
     const notificationTitle = payload.data.title;
 
     var expireTime = parseInt(payload.data.expireTime);
@@ -31,7 +31,10 @@ messaging.setBackgroundMessageHandler(function(payload) {
     notificationPromise.then(function(){
         registration.getNotifications().then(function(notifications){
             var current_notification = notifications[notifications.length - 1];
-            console.log(current_notification);
+            // console.log(current_notification);
+            current_notification.onclick = function (ev) {
+                console.log("click insite show last notif")
+            }
             if(expireTime > 0)
             {
                 setTimeout(function() {
