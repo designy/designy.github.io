@@ -53,7 +53,6 @@ self.addEventListener('notificationclick', function (event) {
 
     event.waitUntil(
         clients.matchAll({
-            type: "window",
             includeUncontrolled: true
         })
             .then(function (clientList) {
@@ -133,7 +132,7 @@ self.onnotificationclick = function(event) {
   // This looks to see if the current is already open and
   // focuses if it is
   event.waitUntil(clients.matchAll({
-    type: "window",includeUncontrolled: true
+      includeUncontrolled: true
   }).then(function(clientList) {
     for (var i = 0; i < clientList.length; i++) {
       var client = clientList[i];
