@@ -35,6 +35,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
             console.log(expireTime);
             if (expireTime > 0) {
                 setTimeout(function () {
+                    console.log("closed by expire")
                     current_notification.close()
                 }, expireTime);
             }
