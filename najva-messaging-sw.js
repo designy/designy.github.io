@@ -57,6 +57,7 @@ self.addEventListener('notificationclick', function(event) {
             type: "window"
         })
             .then(function(clientList) {
+                console.log("here")
                 var url = "";
                 console.log("complete url is:" + event.notification.data.complete_url);
                 if (event.notification.data.complete_url) {
