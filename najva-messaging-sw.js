@@ -47,7 +47,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
     event.notification.close();
-
+    event.notification.clicked = true;
     event.waitUntil(
         clients.matchAll({
             type: "window",
@@ -77,47 +77,29 @@ self.addEventListener('notificationclick', function (event) {
     );
 });
 
-// self.addEventListener('notificationclose', function (event) {
-//     console.log('On notification close: ', event.notification);
-//     event.notification.close();
-//
-//     event.waitUntil(
-//         clients.matchAll({
-//             type: "window",
-//             includeUncontrolled: true
-//         })
-//             .then(function (clientList) {
-//             })
-//     );
-// });
-self.onnotificationclick = function (event) {
-    console.log("clicked")
-    event.waitUntil(
-        clients.matchAll({
-            type: "window",
-            includeUncontrolled: true
-        })
-            .then(function (clientList) {
-                var url = "";
-                if (event.notification.data.complete_url) {
-                    url = event.notification.data.complete_url
-                }
-                else {
-                    url = "https://click.najva.com/redirect/?notification_id=" + event.notification.data.notification_id;
-                    url += '&website_id=' + event.notification.data.website_id;
-                    url += '&api_key=' + event.notification.data.api_key;
-                    url += "&next=" + event.notification.data.url;
-                }
+self.addEventListener('notificationclose', function (event) {
+    console.log('On notification close: ', event.notification);
+    console.log("after close clicked")
+    // event.notification.close();
+    //
+    // event.waitUntil(
+    //     clients.matchAll({
+    //         type: "window",
+    //         includeUncontrolled: true
+    //     })
+    //         .then(function (clientList) {
+    //
+    //         })
+    // );
+        var p = new Promise(function (resolve, reject) {
+            if (event.notification.clicked) {
+                console.log("hey")
+                resolve('foo');
+            }
+    });
+    event.waitUntil(p);
+    console.log("terminate")
+    event.notification.close();
+});
 
-                for (var i = 0; i < clientList.length; i++) {
-                    var client = clientList[i];
-                    if (client.url === url && 'focus' in client)
-                        return client.focus();
-                }
-                if (clients.openWindow) {
-                    return clients.openWindow(url);
-                }
-            })
-    );
-};
 
