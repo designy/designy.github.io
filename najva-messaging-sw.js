@@ -77,18 +77,18 @@ self.addEventListener('notificationclick', function (event) {
     );
 });
 
-self.addEventListener('notificationclose', function (event) {
-    console.log('On notification close: ', event.notification);
-    // event.notification.close();
-
-    event.waitUntil(
-        clients.matchAll({
-            type: "window",
-            includeUncontrolled: true
-        })
-            .then(function (clientList) {
-            })
-    );
-});
+// self.addEventListener('notificationclose', function (event) {
+//     console.log('On notification close: ', event.notification);
+//     // event.notification.close();
+//
+//     event.waitUntil(
+//         clients.matchAll({
+//             type: "window",
+//             includeUncontrolled: true
+//         })
+//             .then(function (clientList) {
+//             })
+//     );
+// });
 
 
