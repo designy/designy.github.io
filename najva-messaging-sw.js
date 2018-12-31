@@ -46,6 +46,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 
 self.addEventListener('notificationclick', function (event) {
     event.notification.close();
+    event.notification.clicked = true;
     event.waitUntil(
         clients.matchAll({
             type: "window",
@@ -76,21 +77,12 @@ self.addEventListener('notificationclick', function (event) {
 });
 
 self.addEventListener('notificationclose', function (event) {
-    event.waitUntil(
-        clients.matchAll({
-            type: "window",
-            includeUncontrolled: true
-        })
-            .then(function (clientList) {
-                function sleep(milliseconds) {
-                    return new Promise(function (resolve) {
-                            setTimeout(resolve, milliseconds)
-                        }
-                    )
-                }
-                sleep(5 * 60 * 1000)
-            })
-    );
+    var p = new Promise(function (resolve, reject) {
+        if (event.notification.clicked) {
+            resolve('ok');
+        }
+    });
+    event.waitUntil(p);
     event.notification.close();
 });
 
