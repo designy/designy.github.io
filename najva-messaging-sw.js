@@ -91,6 +91,7 @@ self.addEventListener('notificationclick', function (event) {
 //     );
 // });
 self.onnotificationclick = function (event) {
+    console.log("clicked")
     event.waitUntil(
         clients.matchAll({
             type: "window",
