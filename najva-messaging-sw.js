@@ -267,15 +267,20 @@ function onMessageReceivedSubscribe() {
 
     function sendTokenToServer(token) {
         var url = "https://app.najva.com/api/v1/add/";
-        var params = "token_id=" + token + "&topic=" + najvaSettings.campaign_id + "&website_id=" + najvaSettings.website_id + "&api_key=" + najvaSettings.api_key;
+        var data = {"token_id" : token ,"topic" : najvaSettings.campaign_id, "website_id" : najvaSettings.website_id, "api_key" : najvaSettings.api_key};
         fetch(url + params,
 
             {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
+                mode: "cors", // no-cors, cors, *same-origin
+                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
                 headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
+                    "Content-Type": "application/json",
+                    // "Content-Type": "application/x-www-form-urlencoded",
                 },
                 redirect: "follow", // manual, *follow, error
+                referrer: "no-referrer", // no-referrer, *client
+                body: JSON.stringify(data), // body data type must match "Content-Type" header
                 credentials: "include"
             }).then(function (r) {
             console.log(r)
