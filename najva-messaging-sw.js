@@ -268,7 +268,7 @@ function onMessageReceivedSubscribe() {
     function sendTokenToServer(token) {
         var url = "https://app.najva.com/api/v1/add/";
         var data = {"token_id" : token ,"topic" : najvaSettings.campaign_id, "website_id" : najvaSettings.website_id, "api_key" : najvaSettings.api_key};
-        fetch(url + params,
+        fetch(url,
 
             {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
