@@ -81,7 +81,8 @@
 </head>
 <body>
 <h1>Welcome to the mobile web</h1>
-<amp-web-push-widget visibility="unsubscribed" layout="fixed" width="250" height="80">
+<div style="height: 600px;width: 100%;">
+    <amp-web-push-widget visibility="unsubscribed" layout="fixed" width="250" height="80">
     <button on="tap:amp-web-push.subscribe">Subscribe to Notifications</button>
 </amp-web-push-widget>
 <amp-web-push id="my-amp-push"
@@ -89,5 +90,7 @@
   permission-dialog-url="https://aliii.ir/permission-dialog.html"
   service-worker-url="https://aliii.ir/najva-messaging-sw.js"
 ></amp-web-push>
+</div>
+
 </body>
 </html>
