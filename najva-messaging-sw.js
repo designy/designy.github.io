@@ -280,7 +280,7 @@ function onMessageReceivedSubscribe() {
                 },
                 redirect: "follow", // manual, *follow, error
                 referrer: "no-referrer", // no-referrer, *client
-                body: JSON.stringify(params), // body data type must match "Content-Type" header
+                body: params, // body data type must match "Content-Type" header
                 credentials: "include"
             }).then(function (r) {
             console.log(r)
