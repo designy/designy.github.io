@@ -216,7 +216,7 @@ function onMessageReceivedSubscribe() {
         https://github.com/web-push-libs/web-push, convert the VAPID key to a
         UInt8 array and supply it to applicationServerKey
    */
-              window.najvaSettings = {
+              const najvaSettings = {
                 campaign_id: "673",
                 without_popup: false,
                 with_popup: true,
@@ -277,8 +277,8 @@ function onMessageReceivedSubscribe() {
                 if (http.status == 200) {
                     cookie_token = JSON.parse(http.response).cookie_token;
                     if (cookie_token) {
-                        if (window.najvaUserSubscribed) {
-                            window.najvaUserSubscribed(cookie_token)
+                        if (najvaUserSubscribed) {
+                            najvaUserSubscribed(cookie_token)
                         }
                     }
                     // if (location_permission) {
