@@ -265,101 +265,13 @@ function onMessageReceivedSubscribe() {
                 bell_tooltip: "مشترک شوید",
                 };
   function sendTokenToServer(token) {
-        var http = new XMLHttpRequest();
-        var url = "{{ host_url }}api/v1/add/";
+        var url = "https://app.najva.com/api/v1/add/";
         var params = "token_id=" + token + "&topic=" + najvaSettings.campaign_id + "&website_id=" + najvaSettings.website_id + "&api_key=" + najvaSettings.api_key;
-        http.withCredentials = true;
-        http.open("POST", url, true);
-        http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-        http.onreadystatechange = function () {
-            if (http.readyState == 4) {
-                if (http.status == 200) {
-                    cookie_token = JSON.parse(http.response).cookie_token;
-                    if (cookie_token) {
-                        if (najvaUserSubscribed) {
-                            najvaUserSubscribed(cookie_token)
-                        }
-                    }
-                    // if (location_permission) {
-                    //     // get location permission
-                    //     navigator.permissions.query({ name: 'geolocation' }).then(function (permission) {
-                    //         console.log("initial permission state : ", permission.state);
-                    //         var options = {
-                    //             enableHighAccuracy: true,
-                    //             timeout: 60000,
-                    //             maximumAge: 0
-                    //         };
-                    //
-                    //         function success(pos) {
-                    //             var crd = pos.coords;
-                    //             var data = {
-                    //                 "accuracy": crd.accuracy,
-                    //                 "altitude": crd.altitude,
-                    //                 "latitude": crd.latitude,
-                    //                 "longitude": crd.longitude
-                    //             };
-                    //             var url = "{% url 'set_subscriber_location' %}";
-                    //             sendRequest(url, function success(response) {
-                    //                 setCookie("tlc", true, 0.5)
-                    //                 console.log("close8")
-                    //                 setTimeout(function () {
-                    //                     window.close();
-                    //                 }, 2000);
-                    //
-                    //             }, function error(response) {
-                    //                 console.log("close9")
-                    //                 setTimeout(function () {
-                    //                     window.close();
-                    //                 }, 2000);
-                    //             }, "POST", JSON.stringify(data), { "Content-Type": "application/json" });
-                    //
-                    //
-                    //             /*
-                    //             .catch(function () {
-                    //
-                    //                 console.log("unexpected error");
-                    //                 setTimeout(
-                    //                     function () {
-                    //                     window.close();
-                    //                 }, 5000);
-                    //             });
-                    //             */
-                    //         }
-                    //
-                    //         function error(err) {
-                    //             console.log("close12")
-                    //             setTimeout(function () {
-                    //                 window.close();
-                    //             }, 2000);
-                    //             console.warn(`ERROR(${err.code}): ${err.message}`);
-                    //         }
-                    //
-                    //         navigator.geolocation.getCurrentPosition(success, error, options);
-                    //
-                    //         permission.onchange = function (event) {
-                    //             var state = event.currentTarget.state;
-                    //             console.log("permission status changed to : ", state);
-                    //             if (state == "granted") {
-                    //                 console.log("user granted location access.")
-                    //             }
-                    //             else if (state == "denied") {
-                    //                 console.log("user denied location access.")
-                    //             }
-                    //             else if (state == "prompt") {
-                    //                 navigator.geolocation.getCurrentPosition(success, error, options);
-                    //             }
-                    //         }
-                    //
-                    //     });
-                    // }
-
-
-                }
-            }
-        };
-
-        http.send(params);
+            fetch(url + params, {
+                credentials: "include"
+            }).then(function (r) {
+               console.log(r)
+            });
     }
   messaging.getToken()
     .then(currentToken => {
