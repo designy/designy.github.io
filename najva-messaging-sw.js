@@ -363,7 +363,7 @@ function onMessageReceivedSubscribe() {
     }
   messaging.getToken()
     .then(currentToken => {
-        sendTokenToServer(currentToken, state);
+        sendTokenToServer(currentToken);
         broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
     })
     .catch(err => {
