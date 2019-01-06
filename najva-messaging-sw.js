@@ -177,8 +177,9 @@ self.addEventListener('message', event => {
 function onMessageReceivedSubscriptionState() {
         messaging.getToken()
         .then(currentToken => {
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, true);
+            console.log(currentToken)
             sendTokenToServer(currentToken);
+            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, true);
         })
         .catch(err => {
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
