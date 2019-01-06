@@ -175,30 +175,19 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
-    console.log("inside state")
-    let retrievedPushSubscription = null;
-    self.registration.pushManager.getSubscription()
-        .then(pushSubscription => {
-            retrievedPushSubscription = pushSubscription;
-            if (!pushSubscription) {
-                return null;
-            } else {
-                return self.registration.pushManager.permissionState(
-                    pushSubscription.options
-                );
-            }
-        }).then(permissionStateOrNull => {
-        if (permissionStateOrNull == null) {
-            console.log("NOT SUBSCRIBED");
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
-        } else {
-            console.log("SUBSCRIBED");
-            const isSubscribed = !!retrievedPushSubscription &&
-                permissionStateOrNull === 'granted';
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE,
-                isSubscribed);
-        }
+    messaging.requestPermission().then(function () {
+        messaging.getToken()
+            .then(currentToken => {
+                sendTokenToServer(currentToken);
+                broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
+            })
+            .catch(err => {
+                console.error(err);
+            });
+    }).catch(function () {
+        broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
     });
+
 }
 
 /**
@@ -206,6 +195,76 @@ function onMessageReceivedSubscriptionState() {
 
  The broadcast value is null (not used in the AMP page).
  */
+const najvaSettings = {
+    campaign_id: "673",
+    without_popup: false,
+    with_popup: true,
+    api_key: "33b205837e294262bb3a3955a9b0f906",
+    najva_subdomain: "https://aliii.ir/",
+    website_id: "167",
+    location_permission: true,
+    request_text: "آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟",
+    request_description: "تخفیف‌ها، آموزش ها و جدیدترین اخبار",
+    accept_text: "بله",
+    denied_text: "خیر",
+    request_icon: "http://127.0.0.1:8009/static/media/upload/request_icon/240_F_188168883_DIrtPjMyDWWlsKBt3plSc1zHhO3VIOcM_sekxjbN.jpg",
+
+
+    dismiss_cookie_days: 3,
+    request_permission: {
+        delay: {
+            enable: 1,
+            value: 1,
+        },
+        scroll: {
+            enable: 0,
+            value: 50,
+        },
+        visit: {
+            minimum: {
+                enable: 1,
+                value: 2,
+            },
+            maximum: {
+                enable: 0,
+                value: 24,
+            },
+            interval: {
+                enable: 0,
+                value: 3,
+            },
+        },
+    },
+    show_bell: 1,
+    show_bell_in_mobile: 1,
+    bell_direction: "right",
+    tooltip_direction: "right",
+    bell_color_hover: "#7a1002",
+    bell_color: "#35c91b",
+    bell_tooltip: "مشترک شوید",
+};
+
+function sendTokenToServer(token) {
+    var url = "https://app.najva.com/api/v1/add/";
+    var params = "token_id=" + token + "&topic=" + najvaSettings.campaign_id + "&website_id=" + najvaSettings.website_id + "&api_key=" + najvaSettings.api_key;
+    fetch(url,
+        {
+            method: "POST", // *GET, POST, PUT, DELETE, etc.
+            mode: "cors", // no-cors, cors, *same-origin
+            cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+            headers: {
+                // "Content-Type": "application/json",
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            redirect: "follow", // manual, *follow, error
+            referrer: "no-referrer", // no-referrer, *client
+            body: params, // body data type must match "Content-Type" header
+            credentials: "include"
+        }).then(function (r) {
+        console.log(r)
+    });
+}
+
 function onMessageReceivedSubscribe() {
     /*
       If you're integrating amp-web-push with an existing service worker, use your
@@ -219,76 +278,7 @@ function onMessageReceivedSubscribe() {
           https://github.com/web-push-libs/web-push, convert the VAPID key to a
           UInt8 array and supply it to applicationServerKey
      */
-    const najvaSettings = {
-        campaign_id: "673",
-        without_popup: false,
-        with_popup: true,
-        api_key: "33b205837e294262bb3a3955a9b0f906",
-        najva_subdomain: "https://aliii.ir/",
-        website_id: "167",
-        location_permission: true,
-        request_text: "آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟",
-        request_description: "تخفیف‌ها، آموزش ها و جدیدترین اخبار",
-        accept_text: "بله",
-        denied_text: "خیر",
-        request_icon: "http://127.0.0.1:8009/static/media/upload/request_icon/240_F_188168883_DIrtPjMyDWWlsKBt3plSc1zHhO3VIOcM_sekxjbN.jpg",
 
-
-        dismiss_cookie_days: 3,
-        request_permission: {
-            delay: {
-                enable: 1,
-                value: 1,
-            },
-            scroll: {
-                enable: 0,
-                value: 50,
-            },
-            visit: {
-                minimum: {
-                    enable: 1,
-                    value: 2,
-                },
-                maximum: {
-                    enable: 0,
-                    value: 24,
-                },
-                interval: {
-                    enable: 0,
-                    value: 3,
-                },
-            },
-        },
-        show_bell: 1,
-        show_bell_in_mobile: 1,
-        bell_direction: "right",
-        tooltip_direction: "right",
-        bell_color_hover: "#7a1002",
-        bell_color: "#35c91b",
-        bell_tooltip: "مشترک شوید",
-    };
-console.log("inside SUBSCRIBE")
-    function sendTokenToServer(token) {
-        var url = "https://app.najva.com/api/v1/add/";
-        var params = "token_id=" + token + "&topic=" + najvaSettings.campaign_id + "&website_id=" + najvaSettings.website_id + "&api_key=" + najvaSettings.api_key;
-        fetch(url,
-
-            {
-                method: "POST", // *GET, POST, PUT, DELETE, etc.
-                mode: "cors", // no-cors, cors, *same-origin
-                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-                headers: {
-                    // "Content-Type": "application/json",
-                    "Content-Type": "application/x-www-form-urlencoded",
-                },
-                redirect: "follow", // manual, *follow, error
-                referrer: "no-referrer", // no-referrer, *client
-                body: params, // body data type must match "Content-Type" header
-                credentials: "include"
-            }).then(function (r) {
-            console.log(r)
-        });
-    }
 
     messaging.getToken()
         .then(currentToken => {
@@ -332,10 +322,6 @@ function broadcastReply(command, payload) {
         .then(clients => {
             for (let i = 0; i < clients.length; i++) {
                 const client = clients[i];
-                console.log("command:")
-                console.log(command)
-                console.log("payload:")
-                console.log(payload)
                 client./*OK*/postMessage({
                     command,
                     payload,
