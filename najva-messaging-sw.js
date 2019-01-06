@@ -175,23 +175,36 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
-    console.log("in state")
-    messaging.requestPermission().then(function () {
-        console.log("get permission")
-        messaging.getToken()
-            .then(currentToken => {
-                console.log("get token")
-                sendTokenToServer(currentToken);
-                broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
-            })
-            .catch(err => {
-                console.log("error token")
-                console.error(err);
-            });
-    }).catch(function () {
-        console.log("error permission")
-        broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
-    });
+    let retrievedPushSubscription = null;
+    self.registration.pushManager.getSubscription()
+        .then(pushSubscription => {
+            console.log("get subsc")
+            console.log(pushSubscription)
+            retrievedPushSubscription = pushSubscription;
+            if (!pushSubscription) {
+                return null;
+            } else {
+                console.log("return permission")
+                return self.registration.pushManager.permissionState(
+                    pushSubscription.options
+                );
+            }
+        }).then(permissionStateOrNull => {
+            console.log("return promise permission")
+        console.log(permissionStateOrNull)
+            if (permissionStateOrNull == null) {
+                console.log("send false")
+                broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
+            } else {
+                                console.log("send true")
+
+                const isSubscribed = !!retrievedPushSubscription &&
+                    permissionStateOrNull === 'granted';
+                broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE,
+                    isSubscribed);
+            }
+        });
+
 
 }
 
