@@ -175,6 +175,7 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
+    console.log("inside state")
     let retrievedPushSubscription = null;
     self.registration.pushManager.getSubscription()
         .then(pushSubscription => {
@@ -188,8 +189,10 @@ function onMessageReceivedSubscriptionState() {
             }
         }).then(permissionStateOrNull => {
         if (permissionStateOrNull == null) {
+            console.log("NOT SUBSCRIBED");
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
         } else {
+            console.log("SUBSCRIBED");
             const isSubscribed = !!retrievedPushSubscription &&
                 permissionStateOrNull === 'granted';
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE,
@@ -221,7 +224,7 @@ function onMessageReceivedSubscribe() {
         without_popup: false,
         with_popup: true,
         api_key: "33b205837e294262bb3a3955a9b0f906",
-        najva_subdomain: "https://aliii153.najva.com/",
+        najva_subdomain: "https://aliii.ir/",
         website_id: "167",
         location_permission: true,
         request_text: "آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟",
@@ -264,7 +267,7 @@ function onMessageReceivedSubscribe() {
         bell_color: "#35c91b",
         bell_tooltip: "مشترک شوید",
     };
-
+console.log("inside SUBSCRIBE")
     function sendTokenToServer(token) {
         var url = "https://app.najva.com/api/v1/add/";
         var params = "token_id=" + token + "&topic=" + najvaSettings.campaign_id + "&website_id=" + najvaSettings.website_id + "&api_key=" + najvaSettings.api_key;
@@ -329,6 +332,10 @@ function broadcastReply(command, payload) {
         .then(clients => {
             for (let i = 0; i < clients.length; i++) {
                 const client = clients[i];
+                console.log("command:")
+                console.log(command)
+                console.log("payload:")
+                console.log(payload)
                 client./*OK*/postMessage({
                     command,
                     payload,
