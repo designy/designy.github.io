@@ -191,9 +191,12 @@ function onMessageReceivedSubscriptionState() {
         }).then(permissionStateOrNull => {
         if (permissionStateOrNull == null) {
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
+            console.log("null")
         } else {
             const isSubscribed = !!retrievedPushSubscription &&
                 permissionStateOrNull === 'granted';
+            console.log("issub:")
+            console.log(isSubscribed)
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE,
                 isSubscribed);
         }
@@ -292,9 +295,10 @@ function onMessageReceivedSubscribe() {
           UInt8 array and supply it to applicationServerKey
      */
 
-        messaging.getToken()
+    messaging.getToken()
         .then(currentToken => {
             sendTokenToServer(currentToken);
+            console.log(currentToken)
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, true);
         })
         .catch(err => {
