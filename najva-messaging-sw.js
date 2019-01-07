@@ -175,18 +175,29 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
-    console.log("in state")
-    messaging.getToken().then(function (currentToken) {
-        console.log(currentToken)
-        if (currentToken) {
-            sendTokenToServer(currentToken);
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, true);
-        } else {
+    let retrievedPushSubscription = null;
+    self.registration.pushManager.getSubscription()
+        .then(pushSubscription => {
+            retrievedPushSubscription = pushSubscription;
+            if (!pushSubscription) {
+                return null;
+            } else {
+                return self.registration.pushManager.permissionState(
+                    pushSubscription.options
+                );
+            }
+        }).then(permissionStateOrNull => {
+        if (permissionStateOrNull == null) {
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, false);
+        } else {
+            const isSubscribed = !!retrievedPushSubscription &&
+                permissionStateOrNull === 'granted';
+            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE,
+                isSubscribed);
         }
-    }).catch(function (err) {
-        console.log('An error occurred while retrieving token. ', err);
     });
+
+
 }
 
 /**
@@ -278,7 +289,7 @@ function onMessageReceivedSubscribe() {
           UInt8 array and supply it to applicationServerKey
      */
 
-    messaging.getToken()
+        messaging.getToken()
         .then(currentToken => {
             sendTokenToServer(currentToken);
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
