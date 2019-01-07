@@ -80,7 +80,7 @@ self.addEventListener('notificationclick', function (event) {
                 .then(function (clientList) {
                     const action = event.notification.data.btn1_action;
                     console.log(action)
-                                                console.log("tel:" + event.notification.data.btn2_final_address);
+                        console.log("tel:" + event.notification.data.btn1_final_address);
 
                     if (action === "open-link") {
                         if (clients.openWindow) {
