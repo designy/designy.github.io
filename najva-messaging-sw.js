@@ -70,6 +70,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
+    console.log(event.action)
     if (event.action === "btn1_clicked") {
         event.waitUntil(
             clients.matchAll({
@@ -104,6 +105,7 @@ self.addEventListener('notificationclick', function (event) {
         );
     }
     else if (event.action === "btn2_clicked") {
+        console.log("btn2")
         event.waitUntil(
             clients.matchAll({
                 type: "window",
