@@ -175,7 +175,9 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
+    console.log("in state")
     messaging.getToken().then(function (currentToken) {
+        console.log(currentToken)
         if (currentToken) {
             sendTokenToServer(currentToken);
             broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIPION_STATE, true);
