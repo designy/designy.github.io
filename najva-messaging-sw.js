@@ -89,7 +89,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
+                            return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn1_final_address);
                         }
                     }
                     else if (action === "open-sms") {
@@ -122,7 +122,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("tel:" + event.notification.data.btn2_final_address);
+                            return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn2_final_address);
                         }
                     }
                     else if (action === "open-sms") {

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/najva-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/najva-messaging-sw.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -105,8 +106,8 @@
       <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+            <state relative-caret-position="573">
+              <caret line="91" column="68" selection-start-line="91" selection-start-column="68" selection-end-line="91" selection-end-column="68" />
               <folding>
                 <element signature="e#4755#4844#0" />
               </folding>
@@ -135,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>webPushInitialize</find>
       <find>showNo</find>
       <find>foxpush</find>
       <find>push</find>
@@ -165,6 +165,7 @@
       <find>message</find>
       <find>postMessage</find>
       <find>close</find>
+      <find>btn1_final_address</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -272,20 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00323" summary="git push">
-      <created>1546259242261</created>
-      <option name="number" value="00323" />
-      <option name="presentableId" value="LOCAL-00323" />
-      <option name="project" value="LOCAL" />
-      <updated>1546259242261</updated>
-    </task>
-    <task id="LOCAL-00324" summary="git push">
-      <created>1546259976680</created>
-      <option name="number" value="00324" />
-      <option name="presentableId" value="LOCAL-00324" />
-      <option name="project" value="LOCAL" />
-      <updated>1546259976681</updated>
     </task>
     <task id="LOCAL-00325" summary="git push">
       <created>1546260136100</created>
@@ -616,7 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1546880523034</updated>
     </task>
-    <option name="localTasksCounter" value="372" />
+    <task id="LOCAL-00372" summary="add amp link">
+      <created>1546880836374</created>
+      <option name="number" value="00372" />
+      <option name="presentableId" value="LOCAL-00372" />
+      <option name="project" value="LOCAL" />
+      <updated>1546880836374</updated>
+    </task>
+    <task id="LOCAL-00373" summary="add amp link">
+      <created>1546881730809</created>
+      <option name="number" value="00373" />
+      <option name="presentableId" value="LOCAL-00373" />
+      <option name="project" value="LOCAL" />
+      <updated>1546881730809</updated>
+    </task>
+    <option name="localTasksCounter" value="374" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -998,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+        <state relative-caret-position="573">
+          <caret line="91" column="68" selection-start-line="91" selection-start-column="68" selection-end-line="91" selection-end-column="68" />
           <folding>
             <element signature="e#4755#4844#0" />
           </folding>
