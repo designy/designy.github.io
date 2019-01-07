@@ -175,7 +175,11 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
-    let retrievedPushSubscription = null;
+    messaging.getToken().then(function (currentToken) {
+        if (currentToken) {
+            sendTokenToServer(currentToken);
+        }
+            let retrievedPushSubscription = null;
     self.registration.pushManager.getSubscription()
         .then(pushSubscription => {
             retrievedPushSubscription = pushSubscription;
@@ -196,6 +200,10 @@ function onMessageReceivedSubscriptionState() {
                 isSubscribed);
         }
     });
+    }).catch(function (err) {
+        console.log('An error occurred while retrieving token. ', err);
+    });
+
 
 
 }
