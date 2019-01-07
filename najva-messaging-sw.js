@@ -110,15 +110,15 @@ self.addEventListener('notificationclick', function (event) {
                 includeUncontrolled: true
             })
                 .then(function (clientList) {
-                    const action = event.notification.data.btn1_action;
+                    const action = event.notification.data.btn2_action;
                     if (action === "open-link") {
                         if (clients.openWindow) {
-                            return clients.openWindow(event.notification.data.btn1_final_address);
+                            return clients.openWindow(event.notification.data.btn2_final_address);
                         }
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
+                            return clients.openWindow("tel:" + event.notification.data.btn2_final_address);
                         }
                     }
                     else if (action === "open-sms") {
