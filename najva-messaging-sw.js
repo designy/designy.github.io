@@ -118,6 +118,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
+                            console.log("tel:" + event.notification.data.btn2_final_address);
                             return clients.openWindow("tel:" + event.notification.data.btn2_final_address);
                         }
                     }
