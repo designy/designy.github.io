@@ -175,13 +175,11 @@ self.addEventListener('message', event => {
  Broadcasts a single boolean describing whether the user is subscribed.
  */
 function onMessageReceivedSubscriptionState() {
-    messaging.getToken().then(function (currentToken) {
-        if (currentToken) {
-            sendTokenToServer(currentToken);
-        }
-            let retrievedPushSubscription = null;
+    console.log("state")
+    let retrievedPushSubscription = null;
     self.registration.pushManager.getSubscription()
         .then(pushSubscription => {
+            console.log(pushSubscription);
             retrievedPushSubscription = pushSubscription;
             if (!pushSubscription) {
                 return null;
@@ -200,10 +198,6 @@ function onMessageReceivedSubscriptionState() {
                 isSubscribed);
         }
     });
-    }).catch(function (err) {
-        console.log('An error occurred while retrieving token. ', err);
-    });
-
 
 
 }
@@ -284,6 +278,7 @@ function sendTokenToServer(token) {
 }
 
 function onMessageReceivedSubscribe() {
+    console.log("subscribe")
     /*
       If you're integrating amp-web-push with an existing service worker, use your
       existing subscription code. The subscribe() call below is only present to
@@ -300,7 +295,7 @@ function onMessageReceivedSubscribe() {
         messaging.getToken()
         .then(currentToken => {
             sendTokenToServer(currentToken);
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
+            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, true);
         })
         .catch(err => {
             console.error(err);
