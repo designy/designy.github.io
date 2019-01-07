@@ -299,7 +299,7 @@ function onMessageReceivedSubscribe() {
         .then(currentToken => {
             sendTokenToServer(currentToken);
             console.log(currentToken)
-            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, true);
+            broadcastReply(WorkerMessengerCommand.AMP_SUBSCRIBE, null);
         })
         .catch(err => {
             console.error(err);
