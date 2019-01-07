@@ -79,6 +79,9 @@ self.addEventListener('notificationclick', function (event) {
             })
                 .then(function (clientList) {
                     const action = event.notification.data.btn1_action;
+                    console.log(action)
+                                                console.log("tel:" + event.notification.data.btn2_final_address);
+
                     if (action === "open-link") {
                         if (clients.openWindow) {
                             return clients.openWindow(event.notification.data.btn1_final_address);
@@ -105,7 +108,6 @@ self.addEventListener('notificationclick', function (event) {
         );
     }
     else if (event.action === "btn2_clicked") {
-        console.log("btn2")
         event.waitUntil(
             clients.matchAll({
                 type: "window",
@@ -120,7 +122,6 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            console.log("tel:" + event.notification.data.btn2_final_address);
                             return clients.openWindow("tel:" + event.notification.data.btn2_final_address);
                         }
                     }
