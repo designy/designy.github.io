@@ -92,6 +92,26 @@
     <amp-web-push-widget visibility="unsubscribed" layout="fixed" width="250" height="80">
         <button on="tap:amp-web-push.subscribe">Subscribe to Notifications</button>
     </amp-web-push-widget>
+    <amp-web-push-widget visibility="subscribed" layout="fixed" width="500" height="180">
+        <button class="ampstart-btn m1" on="tap:amp-web-push.unsubscribe">Unsubscribe from Notifications</button>
+        <form method="post" class="m1" action-xhr="/send-push" target="_top">
+            <input type="submit" value="Send Web Push" class="ampstart-btn">
+            <br/><br/>
+            <div submitting>
+                Sending Push message...
+            </div>
+            <div submit-success>
+                Web Push sent!
+            </div>
+            <div submit-error>
+                Something went wrong.
+            </div>
+        </form>
+    </amp-web-push-widget>
+    <amp-web-push-widget visibility="blocked" layout="fixed" width="250" height="80">
+        Looks like you've blocked notifications!
+    </amp-web-push-widget>
+
 </div>
 
 </body>

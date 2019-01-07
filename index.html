@@ -1,118 +1,143 @@
-<!doctype html>
-<html amp lang="en">
+<!DOCTYPE HTML>
+
+<html lang="fa">
+
 <head>
-    <meta charset="utf-8">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "headline": "Open-source framework for publishing content",
-        "datePublished": "2015-10-07T12:02:41Z",
-        "image": [
-          "logo.jpg"
-        ]
-      }
-
-
-    </script>
-    <script async custom-element="amp-web-push" src="https://cdn.ampproject.org/v0/amp-web-push-0.1.js"></script>
-    <style amp-boilerplate>body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-
-    @-webkit-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-        to {
-            visibility: visible
-        }
-    }
-
-    @-moz-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-        to {
-            visibility: visible
-        }
-    }
-
-    @-ms-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-        to {
-            visibility: visible
-        }
-    }
-
-    @-o-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-        to {
-            visibility: visible
-        }
-    }
-
-    @keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-        to {
-            visibility: visible
-        }
-    }</style>
-    <noscript>
-        <style amp-boilerplate>body {
-            -webkit-animation: none;
-            -moz-animation: none;
-            -ms-animation: none;
-            animation: none
-        }</style>
-    </noscript>
+    <!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>-->
+    <!--<script>-->
+    <!--var OneSignal = window.OneSignal || [];-->
+    <!--OneSignal.push(function () {-->
+    <!--OneSignal.init({-->
+    <!--appId: "6f586003-93c7-4535-b12c-8ff55e4c6368",-->
+    <!--});-->
+    <!--});-->
+    <!--</script>-->
+    <link rel="manifest" href="/manifest.json">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bower_components/bootswatch-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Designy</title>
 </head>
-<body>
-<amp-web-push id="amp-web-push" layout="nodisplay"
-              helper-iframe-url="https://aliii.ir/helper-frame.html"
-              permission-dialog-url="https://aliii.ir/permission-dialog.html"
-              service-worker-url="https://aliii.ir/najva-messaging-sw.js"
-></amp-web-push>
 
-<h1>Welcome to the mobile web</h1>
-<div style="height: 600px;width: 100%;">
-    <amp-web-push-widget visibility="unsubscribed" layout="fixed" width="250" height="80">
-        <button on="tap:amp-web-push.subscribe">Subscribe to Notifications</button>
-    </amp-web-push-widget>
-    <amp-web-push-widget visibility="subscribed" layout="fixed" width="500" height="180">
-        <button class="ampstart-btn m1" on="tap:amp-web-push.unsubscribe">Unsubscribe from Notifications</button>
-        <form method="post" class="m1" action-xhr="/send-push" target="_top">
-            <input type="submit" value="Send Web Push" class="ampstart-btn">
-            <br/><br/>
-            <div submitting>
-                Sending Push message...
-            </div>
-            <div submit-success>
-                Web Push sent!
-            </div>
-            <div submit-error>
-                Something went wrong.
-            </div>
-        </form>
-    </amp-web-push-widget>
-    <amp-web-push-widget visibility="blocked" layout="fixed" width="250" height="80">
-        Looks like you've blocked notifications!
-    </amp-web-push-widget>
+<body style="background-color: #ededed;color: #000;font-family: fanum;">
 
+<header>
+    <nav>
+        <ul>
+        </ul>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class='onesignal-customlink-container'></div>
+    <div class="row">
+        <section class="col-md-8">
+            <div id="content"></div>
+        </section>
+
+        <aside class="col-md-4">
+            <h2>About section</h2>
+            <p></p>
+        </aside>
+    </div>
+    <div class="row">
+        <footer class="col-md-12 text-center">
+            <p>Copyright 2016 Designy</p>
+        </footer>
+    </div>
 </div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootswatch-dist/js/bootstrap.min.js"></script>
+<script src="bower_components/nunjucks/browser/nunjucks.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+
+<!--<script type="text/javascript">-->
+    <!--console.log("hi7")-->
+            <!--window.najvaSettings = {-->
+                <!--campaign_id: "673",-->
+                <!--without_popup: false,-->
+                <!--with_popup: true,-->
+                <!--api_key: "33b205837e294262bb3a3955a9b0f906",-->
+                <!--najva_subdomain: "https://aliii153.najva.com/",-->
+                <!--website_id: "167",-->
+                <!--location_permission: true,-->
+                <!--request_text: "آیا میخواهید پربازدیدترین موضوعات برای شما ارسال شود؟",-->
+                <!--request_description: "تخفیف‌ها، آموزش ها و جدیدترین اخبار",-->
+                <!--accept_text: "بله",-->
+                <!--denied_text: "خیر",-->
+                <!--request_icon: "http://127.0.0.1:8009/static/media/upload/request_icon/240_F_188168883_DIrtPjMyDWWlsKBt3plSc1zHhO3VIOcM_sekxjbN.jpg",-->
+
+
+                <!--dismiss_cookie_days: 3,-->
+                <!--request_permission: {-->
+                    <!--delay: {-->
+                        <!--enable: 1,-->
+                        <!--value: 1,-->
+                    <!--},-->
+                    <!--scroll: {-->
+                        <!--enable: 0,-->
+                        <!--value: 50,-->
+                    <!--},-->
+                    <!--visit: {-->
+                        <!--minimum: {-->
+                            <!--enable: 1,-->
+                            <!--value: 2,-->
+                        <!--},-->
+                        <!--maximum: {-->
+                            <!--enable: 0,-->
+                            <!--value: 24,-->
+                        <!--},-->
+                        <!--interval: {-->
+                            <!--enable: 0,-->
+                            <!--value: 3,-->
+                        <!--},-->
+                    <!--},-->
+                <!--},-->
+                <!--show_bell: 1,-->
+                <!--show_bell_in_mobile: 1,-->
+                <!--bell_direction: "right",-->
+                <!--tooltip_direction: "right",-->
+                <!--bell_color_hover: "#7a1002",-->
+                <!--bell_color: "#35c91b",-->
+                <!--bell_tooltip: "مشترک شوید",-->
+                <!--};-->
+<!--</script>-->
+<script>
+    window.najvaUserSubscribed = function (s) {
+        alert(s);
+    }
+</script>
+<!--<script src="assets/js/withoutPopUp-prod.js"></script>-->
+<!--<script src="assets/js/withPopUp-prod.js"></script>-->
+<!--<script src="assets/js/withWindow-prod.js"></script>-->
+
+<script type="text/javascript" async> (function () {
+    var now = new Date();
+    var version = now.getFullYear().toString() + "0" + now.getMonth() + "0" + now.getDate() + "0" + now.getHours();
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;
+    head.appendChild(link);
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://app.najva.com/static/js/scripts/aliii153-673-33b20583-7e29-4262-bb3a-3955a9b0f906.js" + "?v=" + version;
+    head.appendChild(script);
+})() </script>
+
+<!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "6f586003-93c7-4535-b12c-8ff55e4c6368",
+    });
+  });
+</script>-->
 
 </body>
 </html>
