@@ -85,6 +85,8 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
+                                                    console.log("tel:" + event.notification.data.btn1_final_address)
+
                         if (clients.openWindow) {
                             console.log("tel:" + event.notification.data.btn1_final_address)
                             return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
@@ -125,6 +127,8 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
+                                                                                console.log("tel:" + event.notification.data.btn1_final_address)
+
                         if (clients.openWindow) {
                                                         console.log("tel:" + event.notification.data.btn1_final_address)
 
