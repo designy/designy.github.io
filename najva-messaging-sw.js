@@ -86,7 +86,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("//tel:+0912382323");
+                            return clients.openWindow("https://aliii.ir/b");
                         }
                     }
                     else if (action === "open-sms") {
@@ -125,7 +125,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            clients.openWindow("//tel:+091283123");
+                            clients.openWindow("https://aliii.ir/b");
                         }
                     }
                     else if (action === "open-sms") {
