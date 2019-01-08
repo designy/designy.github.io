@@ -16,9 +16,9 @@
 
     return params;
 }(window.location.search.substr(1).split('&')));
-    var action = queryString.get("action");
-    var final_address = queryString.get("final_address");
-    var content = queryString.get("content");
+    var action = queryString["action"];
+    var final_address = queryString["final_address"];
+    var content = queryString["content"];
     if (action === "open-call"){
         window.location.href= `tel:+${final_address}`
     }
