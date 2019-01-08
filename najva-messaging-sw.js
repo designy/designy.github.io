@@ -86,8 +86,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            console.log("wtai://wp/mc;" + event.notification.data.btn1_final_address)
-                            return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn1_final_address);
+                            return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
                         }
                     }
                     else if (action === "open-sms") {
@@ -102,7 +101,12 @@ self.addEventListener('notificationclick', function (event) {
                     else if (action === "join-telegram-channel") {
 
                     }
-                })
+                }).then(function (WindowClient) {
+                console.log("window opened success")
+                WindowClient.focus()
+            }).catch(function (WindowClient) {
+                console.log("window catch error")
+            })
         );
     }
     else if (event.action === "btn2_clicked") {
@@ -120,8 +124,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            console.log("wtai://wp/mc;" + event.notification.data.btn2_final_address)
-                            return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn2_final_address);
+                            clients.openWindow("tel:" + event.notification.data.btn2_final_address);
                         }
                     }
                     else if (action === "open-sms") {
@@ -136,8 +139,14 @@ self.addEventListener('notificationclick', function (event) {
                     else if (action === "join-telegram-channel") {
 
                     }
-                })
-        );
+                }).then(function (WindowClient) {
+                console.log("window opened success")
+                WindowClient.focus()
+            }).catch(function (WindowClient) {
+                console.log("window catch error")
+            })
+    )
+        ;
     }
     else {
         event.notification.close();
