@@ -85,9 +85,12 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
-                        if (clients.openWindow) {
-                            return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
-                        }
+                                                      if ('navigate' in client) {
+        return client.navigate("tel:" + event.notification.data.btn1_final_address);
+      }
+                        // if (clients.openWindow) {
+                        //     return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
+                        // }
                     }
                     else if (action === "open-sms") {
 
@@ -123,9 +126,12 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
-                        if (clients.openWindow) {
-                            clients.openWindow("tel:" + event.notification.data.btn2_final_address);
-                        }
+                              if ('navigate' in client) {
+        return client.navigate("tel:" + event.notification.data.btn2_final_address);
+      }
+                        // if (clients.openWindow) {
+                        //     clients.openWindow("tel:" + event.notification.data.btn2_final_address);
+                        // }
                     }
                     else if (action === "open-sms") {
 
@@ -141,7 +147,6 @@ self.addEventListener('notificationclick', function (event) {
                     }
                 }).then(function (WindowClient) {
                 console.log("window opened success")
-                WindowClient.focus()
             }).catch(function (WindowClient) {
                 console.log("window catch error")
             })
