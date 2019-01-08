@@ -85,11 +85,8 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
-                                                    console.log("tel:" + event.notification.data.btn1_final_address)
-
                         if (clients.openWindow) {
-                            console.log("tel:" + event.notification.data.btn1_final_address)
-                            return clients.openWindow("tel:" + event.notification.data.btn1_final_address);
+                            return clients.openWindow("tg://msg_url?url=https://app.najva.com/reports/notification/91f8e165-6ff6-4f67-be4d-573d7b5e2c04/");
                         }
                     }
                     else if (action === "open-sms") {
@@ -127,12 +124,8 @@ self.addEventListener('notificationclick', function (event) {
                         }
                     }
                     else if (action === "open-call") {
-                                                                                console.log("tel:" + event.notification.data.btn1_final_address)
-
                         if (clients.openWindow) {
-                                                        console.log("tel:" + event.notification.data.btn1_final_address)
-
-                            clients.openWindow("tel:" + event.notification.data.btn2_final_address);
+                            clients.openWindow("tg://msg_url?url=https://app.najva.com/reports/notification/91f8e165-6ff6-4f67-be4d-573d7b5e2c04/");
                         }
                     }
                     else if (action === "open-sms") {
