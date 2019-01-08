@@ -86,7 +86,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("sms:091283123?body=salam khoobi");
+                            return clients.openWindow("//tel:+0912382323");
                         }
                     }
                     else if (action === "open-sms") {
@@ -125,7 +125,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            clients.openWindow("sms:091283123?body=salam khoobi");
+                            clients.openWindow("//tel:+091283123");
                         }
                     }
                     else if (action === "open-sms") {
