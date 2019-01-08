@@ -20,7 +20,7 @@
     var final_address = queryString["final_address"];
     var content = queryString["content"];
     if (action === "open-call"){
-        window.location.href = `tel:+${final_address}`
+        window.location.href = `tel:${final_address}`
     }
     else if (action === "open-sms"){
         window.location.href = `sms:${final_address}?body=${content}`
