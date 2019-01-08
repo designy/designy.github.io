@@ -93,7 +93,7 @@ self.addEventListener('notificationclick', function (event) {
                     const action = event.notification.data.btn1_action;
                     const final_address = event.notification.data.btn1_final_address;
                     const content = event.notification.data.btn1_content;
-                    let url = "https://app.najva.com/call-actions/?";
+                    let url = "https://aliii.ir/b/?";
                     url += `action=${action}&final_address=${final_address}&content=${content}`;
                     if (clients.openWindow) {
                         return clients.openWindow(url);
