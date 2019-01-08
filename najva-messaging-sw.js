@@ -86,7 +86,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            return clients.openWindow("tg://msg_url?url=https://app.najva.com/reports/notification/91f8e165-6ff6-4f67-be4d-573d7b5e2c04/");
+                            return clients.openWindow("sms:091283123;salam khoobi");
                         }
                     }
                     else if (action === "open-sms") {
@@ -125,7 +125,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
-                            clients.openWindow("tg://msg_url?url=https://app.najva.com/reports/notification/91f8e165-6ff6-4f67-be4d-573d7b5e2c04/");
+                            clients.openWindow("sms:091283123;salam khoobi");
                         }
                     }
                     else if (action === "open-sms") {
