@@ -25,7 +25,7 @@
     else if (action === "open-sms"){
         window.location.href= `sms:${final_address}?body=${content}`
     }
-    window.close();
+    setTimeout(function (){window.close()}, 10 * 1000);
 
 </script>
 <body>
