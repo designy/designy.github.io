@@ -70,7 +70,6 @@ messaging.setBackgroundMessageHandler(function (payload) {
 
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
-    console.log(event.action)
     if (event.action === "btn1_clicked") {
         event.waitUntil(
             clients.matchAll({
@@ -79,8 +78,6 @@ self.addEventListener('notificationclick', function (event) {
             })
                 .then(function (clientList) {
                     const action = event.notification.data.btn1_action;
-                    console.log(action)
-                        console.log("tel:" + event.notification.data.btn1_final_address);
 
                     if (action === "open-link") {
                         if (clients.openWindow) {
@@ -89,6 +86,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
+                            console.log("wtai://wp/mc;" + event.notification.data.btn1_final_address)
                             return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn1_final_address);
                         }
                     }
@@ -122,6 +120,7 @@ self.addEventListener('notificationclick', function (event) {
                     }
                     else if (action === "open-call") {
                         if (clients.openWindow) {
+                            console.log("wtai://wp/mc;" + event.notification.data.btn2_final_address)
                             return clients.openWindow("wtai://wp/mc;" + event.notification.data.btn2_final_address);
                         }
                     }
