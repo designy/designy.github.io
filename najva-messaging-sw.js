@@ -42,6 +42,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
     };
     let notif_actions = [];
     if (payload.data.btn1_enabled && payload.data.btn1_action) {
+        console.log(isMobile)
         if (isMobile) {
             if (
                 payload.data.btn1_action === "open-link"
@@ -59,6 +60,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
             }
         }
         else {
+
             if (
                 payload.data.btn1_action === "open-link"
                 || payload.data.btn1_action === "open-telegram-channel"
@@ -75,12 +77,12 @@ messaging.setBackgroundMessageHandler(function (payload) {
     if (payload.data.btn2_enabled && payload.data.btn2_action) {
         if (isMobile) {
             if (
-                payload.data.btn1_action === "open-link"
-                || payload.data.btn1_action === "open-app"
-                || payload.data.btn1_action === "open-call"
-                || payload.data.btn1_action === "open-sms"
-                || payload.data.btn1_action === "open-telegram-channel"
-                || payload.data.btn1_action === "join-telegram-channel"
+                payload.data.btn2_action === "open-link"
+                || payload.data.btn2_action === "open-app"
+                || payload.data.btn2_action === "open-call"
+                || payload.data.btn2_action === "open-sms"
+                || payload.data.btn2_action === "open-telegram-channel"
+                || payload.data.btn2_action === "join-telegram-channel"
             ) {
                 notif_actions.push({
                     title: payload.data.btn2_title,
@@ -91,9 +93,9 @@ messaging.setBackgroundMessageHandler(function (payload) {
         }
         else {
             if (
-                payload.data.btn1_action === "open-link"
-                || payload.data.btn1_action === "open-telegram-channel"
-                || payload.data.btn1_action === "join-telegram-channel"
+                payload.data.btn2_action === "open-link"
+                || payload.data.btn2_action === "open-telegram-channel"
+                || payload.data.btn2_action === "join-telegram-channel"
             ) {
                 notif_actions.push({
                     title: payload.data.btn2_title,
