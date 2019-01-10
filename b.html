@@ -22,21 +22,21 @@
     var final_address = queryString["final_address"];
     var content = queryString["content"];
     if (action === "open-call") {
-        window.location = `tel:${final_address}`
+        window.location.href = `tel:${final_address}`
     }
     else if (action === "open-sms") {
-        window.location = `sms:${final_address}?body=${content}`
+        window.location.href = `sms:${final_address}?body=${content}`
     }
     else if (action === "open-telegram-channel") {
-        window.location = final_address;
+        window.location.href = final_address;
         setTimeout(function () {
-            window.location = content;
+            window.location.href = content;
         }, 500)
     }
     else if (action === "open-app") {
-        window.location = final_address;
+        window.location.href = final_address;
         setTimeout(function () {
-            window.location = content;
+            window.location.href = content;
         }, 500)
     }
 
