@@ -17,6 +17,7 @@ function isMobileUserAgent() {
     })(self.navigator.userAgent || self.navigator.vendor);
     return check;
 }
+
 const isMobile = isMobileUserAgent();
 messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
@@ -128,6 +129,8 @@ messaging.setBackgroundMessageHandler(function (payload) {
 
 self.addEventListener('notificationclick', function (event) {
     console.log('On notification click: ', event.notification);
+    event.notification.close();
+    event.notification.clicked = true;
     if (event.action === "btn1_clicked") {
         event.waitUntil(
             clients.matchAll({
@@ -139,7 +142,7 @@ self.addEventListener('notificationclick', function (event) {
                     const final_address = event.notification.data.btn1_final_address;
                     const content = event.notification.data.btn1_content;
                     let url = final_address;
-                    if (isMobile){
+                    if (isMobile) {
                         url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
                     }
                     if (clients.openWindow) {
@@ -159,7 +162,7 @@ self.addEventListener('notificationclick', function (event) {
                     const final_address = event.notification.data.btn2_final_address;
                     const content = event.notification.data.btn2_content;
                     let url = final_address;
-                    if (isMobile){
+                    if (isMobile) {
                         url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
                     }
                     if (clients.openWindow) {
@@ -169,8 +172,6 @@ self.addEventListener('notificationclick', function (event) {
         );
     }
     else {
-        event.notification.close();
-        event.notification.clicked = true;
         event.waitUntil(
             clients.matchAll({
                 type: "window",
