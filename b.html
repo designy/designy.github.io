@@ -29,20 +29,13 @@
         window.location.href = final_address
     }
     else if (action === "open-app"){
-        window.location.href = final_address
+        window.location.href.replace(final_address)
     }
-    if (action !== "open-link" || action !== "open-telegram-channel" || action !== "join-telegram-channel"){
-        setTimeout(function () {
-            window.close()
-        }, 1000)
-    }
-    window.addEventListener('beforeunload', function (e) {
-        debugger
-      // Cancel the event
-      e.preventDefault();
-      // Chrome requires returnValue to be set
-      e.returnValue = '';
-    });
+    // if (action !== "open-link" || action !== "open-telegram-channel" || action !== "join-telegram-channel"){
+    //     setTimeout(function () {
+    //         window.close()
+    //     }, 1000)
+    // }
 
 </script>
 <body>
