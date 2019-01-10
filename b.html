@@ -31,13 +31,16 @@
         window.location.href = final_address
     }
     else if (action === "open-app") {
-        debugger
-        try {
-            window.location.href.replace(final_address)
-        } catch (e) {
-            window.location.href.replace(content)
-        }
+        window.location.href = final_address;
+        setTimeout(function () {
+            window.location.href = content;
+            setTimeout(function () {
+                window.close()
+            }, 3000)
+        }, 3000)
+
     }
+
     // if (action !== "open-link" || action !== "open-telegram-channel" || action !== "join-telegram-channel"){
     //     setTimeout(function () {
     //         window.close()
