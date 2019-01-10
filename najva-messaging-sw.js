@@ -17,7 +17,7 @@ function isMobileUserAgent() {
     })(self.navigator.userAgent || self.navigator.vendor);
     return check;
 }
-
+const isMobile = isMobileUserAgent();
 messaging.setBackgroundMessageHandler(function (payload) {
     console.log(payload);
 
@@ -41,7 +41,6 @@ messaging.setBackgroundMessageHandler(function (payload) {
         sound: payload.data.sound,
     };
     let notif_actions = [];
-    const isMobile = isMobileUserAgent();
     if (payload.data.btn1_enabled && payload.data.btn1_action) {
         if (isMobile) {
             if (
@@ -137,8 +136,10 @@ self.addEventListener('notificationclick', function (event) {
                     const action = event.notification.data.btn1_action;
                     const final_address = event.notification.data.btn1_final_address;
                     const content = event.notification.data.btn1_content;
-                    let url = "https://aliii.ir/b?";
-                    url += `action=${action}&final_address=${final_address}&content=${content}`;
+                    let url = final_address;
+                    if (isMobile){
+                        url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
+                    }
                     if (clients.openWindow) {
                         return clients.openWindow(url);
                     }
@@ -155,8 +156,10 @@ self.addEventListener('notificationclick', function (event) {
                     const action = event.notification.data.btn2_action;
                     const final_address = event.notification.data.btn2_final_address;
                     const content = event.notification.data.btn2_content;
-                    let url = "https://aliii.ir/b?";
-                    url += `action=${action}&final_address=${final_address}&content=${content}`;
+                    let url = final_address;
+                    if (isMobile){
+                        url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
+                    }
                     if (clients.openWindow) {
                         return clients.openWindow(url);
                     }
