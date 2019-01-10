@@ -29,9 +29,6 @@
         window.location.href = final_address
     }
     else if (action === "open-app"){
-        setTimeout(function () {
-            window.location.href = content
-        }, 25);
         window.location.href = final_address
     }
     if (action !== "open-link" || action !== "open-telegram-channel" || action !== "join-telegram-channel"){
@@ -39,6 +36,13 @@
             window.close()
         }, 1000)
     }
+    window.addEventListener('beforeunload', function (e) {
+        debugger
+      // Cancel the event
+      e.preventDefault();
+      // Chrome requires returnValue to be set
+      e.returnValue = '';
+    });
 
 </script>
 <body>
