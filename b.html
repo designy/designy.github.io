@@ -36,7 +36,8 @@
     else if (action === "open-app") {
         window.location.href = final_address;
         setTimeout(function () {
-            window.location.href = content;
+            console.log(content)
+            window.location.href = encodeURIComponent(content);
         }, 500)
     }
 
