@@ -25,7 +25,13 @@
     else if (action === "open-sms"){
         window.location.href = `sms:${final_address}?body=${content}`
     }
-    if (action === "open-telegram-channel"){
+    else if (action === "open-telegram-channel"){
+        window.location.href = final_address
+    }
+    else if (action === "open-app"){
+        setTimeout(function () {
+            window.location.href = content
+        }, 25);
         window.location.href = final_address
     }
     if (action !== "open-link" || action !== "open-telegram-channel" || action !== "join-telegram-channel"){
