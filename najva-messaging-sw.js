@@ -43,21 +43,65 @@ messaging.setBackgroundMessageHandler(function (payload) {
     let notif_actions = [];
     const isMobile = isMobileUserAgent();
     if (payload.data.btn1_enabled && payload.data.btn1_action) {
-        if (payload.data.btn1_action !== "open-sms" || isMobile) {
-            notif_actions.push({
-                title: payload.data.btn1_title,
-                icon: payload.data.btn1_icon,
-                action: "btn1_clicked",
-            });
+        if (isMobile) {
+            if (
+                payload.data.btn1_action === "open-link"
+                || payload.data.btn1_action === "open-app"
+                || payload.data.btn1_action === "open-call"
+                || payload.data.btn1_action === "open-sms"
+                || payload.data.btn1_action === "open-telegram-channel"
+                || payload.data.btn1_action === "join-telegram-channel"
+            ) {
+                notif_actions.push({
+                    title: payload.data.btn1_title,
+                    icon: payload.data.btn1_icon,
+                    action: "btn1_clicked",
+                });
+            }
+        }
+        else {
+            if (
+                payload.data.btn1_action === "open-link"
+                || payload.data.btn1_action === "open-telegram-channel"
+                || payload.data.btn1_action === "join-telegram-channel"
+            ) {
+                notif_actions.push({
+                    title: payload.data.btn1_title,
+                    icon: payload.data.btn1_icon,
+                    action: "btn1_clicked",
+                });
+            }
         }
     }
     if (payload.data.btn2_enabled && payload.data.btn2_action) {
-        if (payload.data.btn2_action !== "open-sms" || isMobile) {
-            notif_actions.push({
-                title: payload.data.btn2_title,
-                icon: payload.data.btn2_icon,
-                action: "btn2_clicked",
-            });
+        if (isMobile) {
+            if (
+                payload.data.btn1_action === "open-link"
+                || payload.data.btn1_action === "open-app"
+                || payload.data.btn1_action === "open-call"
+                || payload.data.btn1_action === "open-sms"
+                || payload.data.btn1_action === "open-telegram-channel"
+                || payload.data.btn1_action === "join-telegram-channel"
+            ) {
+                notif_actions.push({
+                    title: payload.data.btn2_title,
+                    icon: payload.data.btn2_icon,
+                    action: "btn2_clicked",
+                });
+            }
+        }
+        else {
+            if (
+                payload.data.btn1_action === "open-link"
+                || payload.data.btn1_action === "open-telegram-channel"
+                || payload.data.btn1_action === "join-telegram-channel"
+            ) {
+                notif_actions.push({
+                    title: payload.data.btn2_title,
+                    icon: payload.data.btn2_icon,
+                    action: "btn2_clicked",
+                });
+            }
         }
     }
     notificationOptions["actions"] = notif_actions;
