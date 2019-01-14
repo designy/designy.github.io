@@ -5,7 +5,6 @@
     <title>Title</title>
 </head>
 <script>
-    debugger
     var queryString = (function (paramsArray) {
         const params = {};
 
@@ -37,8 +36,6 @@
         }, 500)
     }
     else if (action === "open-app") {
-        debugger
-        alert(content);
         window.location = final_address;
         setTimeout(function () {
             window.location = content;
