@@ -143,7 +143,7 @@ self.addEventListener('notificationclick', function (event) {
                     const content = event.notification.data.btn1_content;
                     let url = final_address;
                     if (isMobile) {
-                        url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
+                        url = `https://aliii.ir/b?action=${encodeURIComponent(action)}&final_address=${encodeURIComponent(final_address)}&content=${encodeURIComponent(content)}`;
                     }
                     if (clients.openWindow) {
                         return clients.openWindow(encodeURIComponent(url));
@@ -163,10 +163,10 @@ self.addEventListener('notificationclick', function (event) {
                     const content = event.notification.data.btn2_content;
                     let url = final_address;
                     if (isMobile) {
-                        url = `https://aliii.ir/b?action=${action}&final_address=${final_address}&content=${content}`;
+                        url = `https://aliii.ir/b?action=${encodeURIComponent(action)}&final_address=${encodeURIComponent(final_address)}&content=${encodeURIComponent(content)}`;
                     }
                     if (clients.openWindow) {
-                        return clients.openWindow(encodeURIComponent(url));
+                        return clients.openWindow(url);
                     }
                 })
         );
