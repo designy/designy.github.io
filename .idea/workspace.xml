@@ -4,6 +4,7 @@
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/b.html" beforeDir="false" afterPath="$PROJECT_DIR$/b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/najva-messaging-sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/najva-messaging-sw.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,7 +60,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
+            <state relative-caret-position="22">
               <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,7 +72,7 @@
       <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/a.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
+            <state relative-caret-position="2090">
               <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -97,12 +98,8 @@
       <file leaf-file-name="najva-messaging-sw.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1027">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-              <folding>
-                <element signature="e#6489#7310#0" />
-                <element signature="e#7357#8178#0" />
-              </folding>
+            <state relative-caret-position="572">
+              <caret line="170" column="18" lean-forward="true" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -110,12 +107,8 @@
       <file leaf-file-name="b.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/b.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="484">
+              <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -201,9 +194,9 @@
         <option value="$PROJECT_DIR$/helper-frame.html" />
         <option value="$PROJECT_DIR$/permission-dialog.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
         <option value="$PROJECT_DIR$/c.html" />
         <option value="$PROJECT_DIR$/b.html" />
+        <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
       </list>
     </option>
   </component>
@@ -289,13 +282,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00378" summary="add amp link">
-      <created>1546931240329</created>
-      <option name="number" value="00378" />
-      <option name="presentableId" value="LOCAL-00378" />
-      <option name="project" value="LOCAL" />
-      <updated>1546931240329</updated>
     </task>
     <task id="LOCAL-00379" summary="add amp link">
       <created>1546931610943</created>
@@ -633,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547141054813</updated>
     </task>
-    <option name="localTasksCounter" value="427" />
+    <task id="LOCAL-00427" summary="add amp link">
+      <created>1547141232780</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1547141232780</updated>
+    </task>
+    <option name="localTasksCounter" value="428" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -647,7 +640,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22032085" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21619976" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21863581" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -978,33 +971,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/a.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
+        <state relative-caret-position="2090">
           <caret line="95" column="28" selection-start-line="95" selection-start-column="28" selection-end-line="95" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1027">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-          <folding>
-            <element signature="e#6489#7310#0" />
-            <element signature="e#7357#8178#0" />
           </folding>
         </state>
       </provider>
@@ -1016,14 +988,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/najva-messaging-sw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="170" column="18" lean-forward="true" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/b.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#div#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
