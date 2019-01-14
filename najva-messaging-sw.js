@@ -146,7 +146,7 @@ self.addEventListener('notificationclick', function (event) {
                         url = `https://aliii.ir/b?action=${encodeURIComponent(action)}&final_address=${encodeURIComponent(final_address)}&content=${encodeURIComponent(content)}`;
                     }
                     if (clients.openWindow) {
-                        return clients.openWindow(encodeURIComponent(url));
+                        return clients.openWindow(url);
                     }
                 })
         );
