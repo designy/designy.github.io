@@ -53,26 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="115" column="32" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="32" />
+            <state relative-caret-position="227">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2062#10244#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="withPopUp-prod.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/js/withPopUp-prod.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="10" column="79011" selection-start-line="10" selection-start-column="79011" selection-end-line="10" selection-end-column="79011" />
-            </state>
-          </provider>
+      <file leaf-file-name="batchsdk-worker-loader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/batchsdk-worker-loader.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
@@ -202,8 +197,8 @@
         <option value="$PROJECT_DIR$/c.html" />
         <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
         <option value="$PROJECT_DIR$/b.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/withPopUp-prod.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -232,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,6 +249,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,16 +261,16 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
+      <recent name="C:\Repos\gitlab\designy.github.io" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Repos\gitlab\designy.github.io" />
       <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
       <recent name="C:\Repos\gitlab\designy.github.io\assets" />
       <recent name="C:\Users\tnt\PycharmProjects\designy.github.io\assets\js" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
-      <recent name="C:\Repos\gitlab\designy.github.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,13 +295,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00390" summary="add amp link">
-      <created>1546945372013</created>
-      <option name="number" value="00390" />
-      <option name="presentableId" value="LOCAL-00390" />
-      <option name="project" value="LOCAL" />
-      <updated>1546945372013</updated>
     </task>
     <task id="LOCAL-00391" summary="add amp link">
       <created>1546945500582</created>
@@ -644,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548076685295</updated>
     </task>
-    <option name="localTasksCounter" value="439" />
+    <task id="LOCAL-00439" summary="fix title">
+      <created>1548156127338</created>
+      <option name="number" value="00439" />
+      <option name="presentableId" value="LOCAL-00439" />
+      <option name="project" value="LOCAL" />
+      <updated>1548156127338</updated>
+    </task>
+    <option name="localTasksCounter" value="440" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -658,7 +653,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22032085" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22350791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22594397" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -736,13 +731,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10380">
@@ -864,7 +852,6 @@
           <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2062#10244#0" />
           </folding>
         </state>
       </provider>
@@ -1016,21 +1003,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/js/withPopUp-prod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="115" column="32" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2062#10244#0" />
-          </folding>
+        <state relative-caret-position="741">
+          <caret line="10" column="79011" selection-start-line="10" selection-start-column="79011" selection-end-line="10" selection-end-column="79011" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/withPopUp-prod.js">
+    <entry file="file://$PROJECT_DIR$/batchsdk-worker-loader.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="10" column="79011" selection-start-line="10" selection-start-column="79011" selection-end-line="10" selection-end-column="79011" />
+        <state relative-caret-position="227">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
