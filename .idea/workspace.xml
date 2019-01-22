@@ -53,14 +53,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="68" column="331" selection-start-line="68" selection-start-column="331" selection-end-line="68" selection-end-column="331" />
+            <state relative-caret-position="315">
+              <caret line="115" column="32" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2062#10244#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="withPopUp-prod.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/withPopUp-prod.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="10" column="79011" selection-start-line="10" selection-start-column="79011" selection-end-line="10" selection-end-column="79011" />
             </state>
           </provider>
         </entry>
@@ -193,6 +203,7 @@
         <option value="$PROJECT_DIR$/najva-messaging-sw.js" />
         <option value="$PROJECT_DIR$/b.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/withPopUp-prod.js" />
       </list>
     </option>
   </component>
@@ -228,6 +239,17 @@
             <path>
               <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,13 +300,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00389" summary="add amp link">
-      <created>1546935526161</created>
-      <option name="number" value="00389" />
-      <option name="presentableId" value="LOCAL-00389" />
-      <option name="project" value="LOCAL" />
-      <updated>1546935526161</updated>
     </task>
     <task id="LOCAL-00390" summary="add amp link">
       <created>1546945372013</created>
@@ -622,20 +637,28 @@
       <option name="project" value="LOCAL" />
       <updated>1548068314650</updated>
     </task>
-    <option name="localTasksCounter" value="438" />
+    <task id="LOCAL-00438" summary="fix title">
+      <created>1548076685295</created>
+      <option name="number" value="00438" />
+      <option name="presentableId" value="LOCAL-00438" />
+      <option name="project" value="LOCAL" />
+      <updated>1548076685295</updated>
+    </task>
+    <option name="localTasksCounter" value="439" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="226" y="-8" width="1702" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22032085" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22107187" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22350791" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -647,10 +670,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,13 +736,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10380">
-          <caret line="519" column="40" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1460">
@@ -848,6 +864,7 @@
           <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2062#10244#0" />
           </folding>
         </state>
       </provider>
@@ -1001,11 +1018,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="68" column="331" selection-start-line="68" selection-start-column="331" selection-end-line="68" selection-end-column="331" />
+        <state relative-caret-position="315">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2062#10244#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/withPopUp-prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="10" column="79011" selection-start-line="10" selection-start-column="79011" selection-end-line="10" selection-end-column="79011" />
         </state>
       </provider>
     </entry>
