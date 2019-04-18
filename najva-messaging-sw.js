@@ -2,7 +2,7 @@ importScripts('https://app.najva.com/static/cdn/najva-app/najva-app.js');
 importScripts('https://app.najva.com/static/cdn/najva-app/najva-messaging.js');
 
 // configuration
-
+console.log("here")
 var config = {
     messagingSenderId: "334645784830"
 };
