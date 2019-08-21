@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="" />
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sport.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,8 +93,8 @@
       <file leaf-file-name="sport.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sport.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -236,6 +239,11 @@
               <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="designy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -251,16 +259,17 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Repos\gitlab\designy.github.io\assets" />
+      <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
+      <recent name="C:\Repos\gitlab\designy.github.io" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
       <recent name="C:\Repos\gitlab\designy.github.io" />
       <recent name="C:\Repos\gitlab\designy.github.io\assets" />
       <recent name="C:\Users\tnt\PycharmProjects\designy.github.io\assets\js" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Repos\gitlab\designy.github.io\assets\js" />
-      <recent name="C:\Repos\gitlab\designy.github.io" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,20 +294,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00412" summary="add amp link">
-      <created>1547133227449</created>
-      <option name="number" value="00412" />
-      <option name="presentableId" value="LOCAL-00412" />
-      <option name="project" value="LOCAL" />
-      <updated>1547133227449</updated>
-    </task>
-    <task id="LOCAL-00413" summary="add amp link">
-      <created>1547134419510</created>
-      <option name="number" value="00413" />
-      <option name="presentableId" value="LOCAL-00413" />
-      <option name="project" value="LOCAL" />
-      <updated>1547134419511</updated>
     </task>
     <task id="LOCAL-00414" summary="add amp link">
       <created>1547134426863</created>
@@ -629,7 +624,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566384721138</updated>
     </task>
-    <option name="localTasksCounter" value="461" />
+    <task id="LOCAL-00461" summary="add rss">
+      <created>1566385048376</created>
+      <option name="number" value="00461" />
+      <option name="presentableId" value="LOCAL-00461" />
+      <option name="project" value="LOCAL" />
+      <updated>1566385048377</updated>
+    </task>
+    <task id="LOCAL-00462" summary="add rss">
+      <created>1566385478652</created>
+      <option name="number" value="00462" />
+      <option name="presentableId" value="LOCAL-00462" />
+      <option name="project" value="LOCAL" />
+      <updated>1566385478652</updated>
+    </task>
+    <option name="localTasksCounter" value="463" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -642,8 +651,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3882353" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2919786" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24145535" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2919786" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24145535" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -1035,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sport.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
