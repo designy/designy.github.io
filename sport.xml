@@ -7,9 +7,10 @@
                     <item>
                 <title>روبن: خرید «کوتینیو» معرکه بود</title>
                 <link>https://khabarebekr.com/d/M9u5IK</link>
-                                        <image>
-                    <url>https://aliii.ir/assets/450x300.jpeg</url>
-                </image>
+                        <enclosure
+                                url="https://aliii.ir/assets/450x300.jpeg"
+                                length="12216320"
+                                type="image/jpeg" />
 
             </item>
 
