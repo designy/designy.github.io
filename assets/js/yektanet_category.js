@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
 			);
 			$cat_input = jQuery('#catfeature__demo-input-url');
 			$cat_input.val('');
+			jQuery('#chart').fadeOut().html('');
 			jQuery('#catfeature__demo-url-section').fadeIn();
 		} else {
 			jQuery('#catfeature__demo-url-section').fadeOut();
@@ -43,6 +44,7 @@ jQuery(document).ready(function() {
 			);
 			$cat_input = jQuery('#catfeature__demo-input');
 			$cat_input.val('');
+			jQuery('#chart').fadeOut().html('');
 			jQuery('#catfeature__demo-text-section').fadeIn();
 		}
 		_ch = ch;
