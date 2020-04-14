@@ -7,3 +7,19 @@
 .catfeature__demo-button.current{
     background-color: #ffcc00;
 }
+.catfeature__demo-submit{
+    margin-right: 30px;
+    white-space: nowrap;
+    color: #000000;
+    background-color: #ffe26a;
+    line-height: 1.5em;
+    margin-top: 15px;
+    padding: 7px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.catfeature__demo-submit:hover{
+    background-color: #ffc900;
+}

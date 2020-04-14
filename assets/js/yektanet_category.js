@@ -21,38 +21,6 @@ jQuery(document).ready(function() {
 		jQuery('#chart').fadeIn();
 	}
 
-	$cat_btn_chooser.on('click', function() {
-		if (jQuery(this).hasClass('current')) return false;
-
-		jQuery('.catfeature__demo-button.current').removeClass('current');
-		jQuery(this).addClass('current');
-
-		const ch = jQuery(this).attr('data-choose');
-		if (ch == 'url') {
-			jQuery('#catfeature__demo-text-section').fadeOut('fast', function () {
-				jQuery('.catfeature__demo-title').html(
-					'لطفاً برای تشخیص موضوع، آدرس اینترنتی مقاله خود را وارد کنید'
-				);
-				$cat_input = jQuery('#catfeature__demo-input-url');
-				$cat_input.val('');
-				jQuery('#catfeature__demo-url-section').fadeIn();
-				jQuery('#chart').fadeOut().html('');
-			});
-		} else {
-			jQuery('#catfeature__demo-url-section').fadeOut('fast', function () {
-			jQuery('.catfeature__demo-title').html(
-				'لطفاً برای تشخیص موضوع، یک متن نسبتاً طولانی از مقاله خود را وارد کنید'
-			);
-			$cat_input = jQuery('#catfeature__demo-input');
-			$cat_input.val('');
-			jQuery('#chart').fadeOut().html('');
-			jQuery('#catfeature__demo-text-section').fadeIn();
-            });
-		}
-		_ch = ch;
-
-		return false;
-	});
 	function getCategory(content) {
 		jQuery.ajax({
 			method: 'POST',
@@ -127,14 +95,14 @@ jQuery(document).ready(function() {
 
 	jQuery("#catfeature__demo-input-url").bind('paste', function(e) {
 	setTimeout(function() {
-		jQuery('.catfeature__demo-submit:first').click()
+		jQuery('.catfeature__demo-submit').click()
     }, 0);
 
 	});
 	jQuery("#catfeature__demo-input-url").keypress(function(event){
 		var keycode = (event.keyCode ? event.keyCode : event.which);
 		if(keycode == '13'){
-			jQuery('.catfeature__demo-submit:first').click();
+			jQuery('.catfeature__demo-submit').click();
 		}
 	});
 	function getContent() {
@@ -227,12 +195,6 @@ jQuery(document).ready(function() {
 				$cat_input.val(`http://${$cat_input.val()}`);
 			_data = { url: $cat_input.val() };
 		} else _data = { content: $cat_input.val() };
-
-		jQuery('.catfeature__loader-error').css({
-			opacity: '0',
-			visibility: 'hidden',
-		});
-		jQuery('.highcharts-container').fadeOut(500);
 		show_loader();
 		if (_ch == 'url') {
 			getContent();
