@@ -93,17 +93,17 @@ jQuery(document).ready(function() {
 						jQuery('#chart').html(result_text);
 					}, 1500);
 				} else {
-					jQuery('.catfeature__loader-error').css({
-						opacity: '1',
-						visibility: 'visible',
-					});
+                        var result_text =
+                            'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
+                    jQuery('#chart').html(result_text);
+
 				}
 			},
 			error: function(error) {
-				jQuery('.catfeature__loader-error').css({
-					opacity: '1',
-					visibility: 'visible',
-				});
+                        var result_text =
+                            'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
+                    jQuery('#chart').html(result_text);
+
 			},
 		});
 	}
@@ -126,7 +126,7 @@ jQuery(document).ready(function() {
 					// getCategory({ "content": response.content })
 					hide_loader();
 					window.setTimeout(function() {
-						const result = response.result;
+						var result = response.result;
 						let result_text = '';
 						if (result.length) {
 							const first_category = result[0];
@@ -155,17 +155,17 @@ jQuery(document).ready(function() {
 						jQuery('#chart').html(result_text);
 					}, 1500);
 				} else {
-					jQuery('.catfeature__loader-error').css({
-						opacity: '1',
-						visibility: 'visible',
-					});
+                        var result_text =
+                            'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
+                    jQuery('#chart').html(result_text);
+
 				}
 			},
 			error: function(error) {
-				jQuery('.catfeature__loader-error').css({
-					opacity: '1',
-					visibility: 'visible',
-				});
+                        var result_text =
+                            'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
+                    jQuery('#chart').html(result_text);
+
 			},
 		});
 	}
