@@ -77,9 +77,9 @@ jQuery(document).ready(function() {
 								result_text = `
 									موضوع تشخیص داده شده برای مقاله شما
 									<strong>
-									»
-									${first_category_title}
 									«
+									${first_category_title}
+									»
 									</strong>
 									است	
 									`;
@@ -91,10 +91,10 @@ jQuery(document).ready(function() {
 									`
 									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
 																		<strong>
-									»
+									«
 ${first_category_title} و ${second_category_title}
 
-									«
+									»
 									</strong>
 									است
 `;							}
@@ -151,9 +151,9 @@ ${first_category_title} و ${second_category_title}
 								result_text = `
 									موضوع تشخیص داده شده برای مقاله شما
 									<strong>
-									»
-									${first_category_title}
 									«
+									${first_category_title}
+									»
 									</strong>
 									است	
 									`;
@@ -164,10 +164,10 @@ ${first_category_title} و ${second_category_title}
 									`
 									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
 																		<strong>
-									»
+									«
 ${first_category_title} و ${second_category_title}
 
-									«
+									»
 									</strong>
 									است
 `;

@@ -71,8 +71,8 @@
       <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="139" column="78" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="78" />
+            <state relative-caret-position="352">
+              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -307,20 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00427" summary="add amp link">
-      <created>1547141232780</created>
-      <option name="number" value="00427" />
-      <option name="presentableId" value="LOCAL-00427" />
-      <option name="project" value="LOCAL" />
-      <updated>1547141232780</updated>
-    </task>
-    <task id="LOCAL-00428" summary="fix encode uri component">
-      <created>1547447166347</created>
-      <option name="number" value="00428" />
-      <option name="presentableId" value="LOCAL-00428" />
-      <option name="project" value="LOCAL" />
-      <updated>1547447166347</updated>
     </task>
     <task id="LOCAL-00429" summary="fix encode uri component">
       <created>1547447754713</created>
@@ -651,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586849011731</updated>
     </task>
-    <option name="localTasksCounter" value="476" />
+    <task id="LOCAL-00476" summary="add gif">
+      <created>1586849351180</created>
+      <option name="number" value="00476" />
+      <option name="presentableId" value="LOCAL-00476" />
+      <option name="project" value="LOCAL" />
+      <updated>1586849351180</updated>
+    </task>
+    <task id="LOCAL-00477" summary="add gif">
+      <created>1586849938640</created>
+      <option name="number" value="00477" />
+      <option name="presentableId" value="LOCAL-00477" />
+      <option name="project" value="LOCAL" />
+      <updated>1586849938640</updated>
+    </task>
+    <option name="localTasksCounter" value="478" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="139" column="78" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="78" />
+        <state relative-caret-position="352">
+          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
         </state>
       </provider>
     </entry>
