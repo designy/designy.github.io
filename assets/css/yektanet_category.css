@@ -1,0 +1,9 @@
+.catfeature__demo-button{
+    background-color: #b9b9b9;
+}
+.catfeature__demo-button:hover{
+    background-color: #ffcc00;
+}
+.catfeature__demo-button.current{
+    background-color: #ffcc00;
+}

@@ -10,7 +10,6 @@ const api_data_mapping = {
 };
 
 jQuery(document).ready(function() {
-	const $form = jQuery('#catfeature__demo-form');
 	let $cat_input = jQuery('#catfeature__demo-input');
 	const $cat_btn = jQuery('#catfeature__demo-submit');
 	const $cat_btn_chooser = jQuery('.catfeature__demo-button');
@@ -22,9 +21,7 @@ jQuery(document).ready(function() {
 	}
 
 	function hide_loader() {
-		window.setTimeout(function() {
-			jQuery('#chart').html('');
-		}, 1000);
+		jQuery('#chart').html('');
 	}
 
 	$cat_btn_chooser.on('click', function() {
