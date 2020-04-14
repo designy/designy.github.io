@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="add gif">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/yektanet_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/yektanet_category.js" afterDir="false" />
     </list>
@@ -71,9 +71,11 @@
       <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+            <state relative-caret-position="39">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
               <folding>
+                <element signature="e#749#1296#0" />
+                <element signature="e#1330#3035#0" />
                 <element signature="e#3567#5696#0" />
               </folding>
             </state>
@@ -310,27 +312,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00431" summary="fix encode uri component">
-      <created>1547448371779</created>
-      <option name="number" value="00431" />
-      <option name="presentableId" value="LOCAL-00431" />
-      <option name="project" value="LOCAL" />
-      <updated>1547448371779</updated>
-    </task>
-    <task id="LOCAL-00432" summary="fix encode uri component">
-      <created>1547448429463</created>
-      <option name="number" value="00432" />
-      <option name="presentableId" value="LOCAL-00432" />
-      <option name="project" value="LOCAL" />
-      <updated>1547448429463</updated>
-    </task>
-    <task id="LOCAL-00433" summary="fix encode uri component">
-      <created>1547448680995</created>
-      <option name="number" value="00433" />
-      <option name="presentableId" value="LOCAL-00433" />
-      <option name="project" value="LOCAL" />
-      <updated>1547448680995</updated>
     </task>
     <task id="LOCAL-00434" summary="fix encode uri component">
       <created>1547448732893</created>
@@ -654,7 +635,28 @@
       <option name="project" value="LOCAL" />
       <updated>1586852792301</updated>
     </task>
-    <option name="localTasksCounter" value="480" />
+    <task id="LOCAL-00480" summary="add gif">
+      <created>1586853611112</created>
+      <option name="number" value="00480" />
+      <option name="presentableId" value="LOCAL-00480" />
+      <option name="project" value="LOCAL" />
+      <updated>1586853611112</updated>
+    </task>
+    <task id="LOCAL-00481" summary="add gif">
+      <created>1586853738984</created>
+      <option name="number" value="00481" />
+      <option name="presentableId" value="LOCAL-00481" />
+      <option name="project" value="LOCAL" />
+      <updated>1586853738984</updated>
+    </task>
+    <task id="LOCAL-00482" summary="add gif">
+      <created>1586854932308</created>
+      <option name="number" value="00482" />
+      <option name="presentableId" value="LOCAL-00482" />
+      <option name="project" value="LOCAL" />
+      <updated>1586854932308</updated>
+    </task>
+    <option name="localTasksCounter" value="483" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1058,9 +1060,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+        <state relative-caret-position="39">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
           <folding>
+            <element signature="e#749#1296#0" />
+            <element signature="e#1330#3035#0" />
             <element signature="e#3567#5696#0" />
           </folding>
         </state>
