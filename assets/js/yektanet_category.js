@@ -215,7 +215,19 @@ jQuery(document).ready(function() {
 		} else _data = { content: $cat_input.val() };
 		show_loader();
 		if (_ch == 'url') {
-			getContent();
+			var parser = document.createElement('a');
+			parser.href = $cat_input.val();
+			if (parser.pathname && parser.pathname !=="/"){
+				getContent();
+			}
+			else{
+							var result_text =
+				'صفحات اصلی سایت ها عموما حاوی موضوعات متعدد می باشند. لطفا جهت تشخیص موضوع آدرس صفحه یک مقاله را وارد نمایید.';
+			jQuery('#chart').html(result_text);
+			jQuery('#chart').fadeIn();
+
+			}
+
 		} else {
 			getCategory();
 		}
