@@ -169,12 +169,11 @@ jQuery(document).ready(function() {
 				}
 			},
 			error: function(xhr, status, error) {
-				debugger;
 				var result_text = "";
-				if (status === 429 && xhr.responseJSON.detail === 'Request was throttled. Expected available in 8 seconds.'){
+				if (xhr.status === 429 && xhr.responseJSON.detail === 'Request was throttled. Expected available in 8 seconds.'){
 					result_text = 'شما از تعداد مجاز تست دمو درصفحه فراتر رفته اید، لطفا جهت استفاده از سیستم تشخیص موضوع دقایقی دیگر مجددا آزمایش نمایید.'
 				}
-				if (status === 500){
+				if (xhr.status === 500){
 					if (xhr.responseJSON.detail === "can't scrape content"){
 						result_text =
 					'آدرس URL درخواستی قابل بررسی نمی باشد، لطفا جهت استفاده از سیستم تشخیص موضوع URL دیگری را آزمایش نمایید.';
