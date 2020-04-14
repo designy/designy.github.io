@@ -74,9 +74,15 @@ jQuery(document).ready(function() {
 								first_category_prob >= 0.5 ||
 								result.length === 1
 							) {
-								result_text =
-									`${'موضوع تشخیص داده شده برای مقاله شما' +
-										'»'}${first_category_title}»` + `است.`;
+								result_text = `
+									موضوع تشخیص داده شده برای مقاله شما
+									<strong>
+									»
+									${first_category_title}
+									«
+									</strong>
+									است	
+									`;
 							} else {
 								const second_category = result[1];
 								const second_category_title =
@@ -136,9 +142,15 @@ jQuery(document).ready(function() {
 								first_category_prob >= 0.5 ||
 								result.length === 1
 							) {
-								result_text =
-									`${'موضوع تشخیص داده شده برای مقاله شما' +
-										'»'}${first_category_title}»` + `است.`;
+								result_text = `
+									موضوع تشخیص داده شده برای مقاله شما
+									<strong>
+									»
+									${first_category_title}
+									«
+									</strong>
+									است	
+									`;
 							} else {
 								const second_category = result[1];
 								const second_category_title =
