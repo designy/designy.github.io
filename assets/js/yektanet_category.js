@@ -127,14 +127,14 @@ jQuery(document).ready(function() {
 
 	jQuery("#catfeature__demo-input-url").bind('paste', function(e) {
 	setTimeout(function() {
-		 	jQuery('.catfeature__demo-submit').click()
-    }, 500);
+		jQuery('.catfeature__demo-submit:first').click()
+    }, 0);
 
 	});
 	jQuery("#catfeature__demo-input-url").keypress(function(event){
 		var keycode = (event.keyCode ? event.keyCode : event.which);
 		if(keycode == '13'){
-			jQuery('.catfeature__demo-submit').click();
+			jQuery('.catfeature__demo-submit:first').click();
 		}
 	});
 	function getContent() {
