@@ -132,7 +132,7 @@ jQuery(document).ready(function() {
 								result.length === 1
 							) {
 								result_text = `
-									موضوع تشخیص داده شده برای مقاله شما
+									کاربر گرامی، موضوع اصلی مقاله مد نظر شما
 									<strong>
 									«
 									${first_category_title}
@@ -145,7 +145,7 @@ jQuery(document).ready(function() {
 								const second_category_title = second_category[0];
 								result_text =
 									`
-									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
+									کاربر گرامی، موضوع اصلی مقاله مد نظر شما
 									<strong>
 									«${first_category_title}»
 									و
