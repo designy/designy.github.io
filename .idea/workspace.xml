@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/yektanet_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/yektanet_category.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,12 +71,8 @@
       <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
-              <folding>
-                <element signature="e#1330#3035#0" />
-                <element signature="e#3060#4888#0" />
-              </folding>
+            <state relative-caret-position="616">
+              <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -310,20 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00423" summary="add amp link">
-      <created>1547138801322</created>
-      <option name="number" value="00423" />
-      <option name="presentableId" value="LOCAL-00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1547138801322</updated>
-    </task>
-    <task id="LOCAL-00424" summary="add amp link">
-      <created>1547139277413</created>
-      <option name="number" value="00424" />
-      <option name="presentableId" value="LOCAL-00424" />
-      <option name="project" value="LOCAL" />
-      <updated>1547139277413</updated>
     </task>
     <task id="LOCAL-00425" summary="add amp link">
       <created>1547140077078</created>
@@ -654,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586847438176</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="add gif">
+      <created>1586847673907</created>
+      <option name="number" value="00472" />
+      <option name="presentableId" value="LOCAL-00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1586847673907</updated>
+    </task>
+    <task id="LOCAL-00473" summary="add gif">
+      <created>1586848431195</created>
+      <option name="number" value="00473" />
+      <option name="presentableId" value="LOCAL-00473" />
+      <option name="project" value="LOCAL" />
+      <updated>1586848431195</updated>
+    </task>
+    <option name="localTasksCounter" value="474" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -667,8 +664,8 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3882353" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22459893" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17595147" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22459893" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17595147" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -1058,12 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
-          <folding>
-            <element signature="e#1330#3035#0" />
-            <element signature="e#3060#4888#0" />
-          </folding>
+        <state relative-caret-position="616">
+          <caret line="108" column="14" lean-forward="true" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="14" />
         </state>
       </provider>
     </entry>

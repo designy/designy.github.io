@@ -18,10 +18,7 @@ jQuery(document).ready(function() {
 
 	function show_loader() {
 		jQuery('#chart').html('<i class="fa fa-spinner fa-spin fa-2x"></i>');
-	}
-
-	function hide_loader() {
-		jQuery('#chart').html('');
+		jQuery('#chart').fadeIn();
 	}
 
 	$cat_btn_chooser.on('click', function() {
@@ -67,8 +64,6 @@ jQuery(document).ready(function() {
 			},
 			success: function(response) {
 				if (response.status === 'success') {
-					hide_loader();
-					window.setTimeout(function() {
 						const result = response.result;
 						let result_text = '';
 						if (result.length) {
@@ -96,18 +91,20 @@ jQuery(document).ready(function() {
 								'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
 						}
 						jQuery('#chart').html(result_text);
-					}, 1500);
+						jQuery('#chart').fadeIn();
 				} else {
                         var result_text =
                             'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
                     jQuery('#chart').html(result_text);
+                    jQuery('#chart').fadeIn();
 
 				}
 			},
 			error: function(error) {
                         var result_text =
                             'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
-                    jQuery('#chart').html(result_text);
+						jQuery('#chart').html(result_text);
+						jQuery('#chart').fadeIn();
 
 			},
 		});
@@ -129,8 +126,6 @@ jQuery(document).ready(function() {
 			success: function(response) {
 				if (response.status === 'success') {
 					// getCategory({ "content": response.content })
-					hide_loader();
-					window.setTimeout(function() {
 						var result = response.result;
 						let result_text = '';
 						if (result.length) {
@@ -158,11 +153,12 @@ jQuery(document).ready(function() {
 								'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
 						}
 						jQuery('#chart').html(result_text);
-					}, 1500);
+						jQuery('#chart').fadeIn();
 				} else {
                         var result_text =
                             'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
-                    jQuery('#chart').html(result_text);
+                    	jQuery('#chart').html(result_text);
+                    	jQuery('#chart').fadeIn();
 
 				}
 			},
@@ -170,6 +166,7 @@ jQuery(document).ready(function() {
                         var result_text =
                             'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
                     jQuery('#chart').html(result_text);
+                    jQuery('#chart').fadeIn();
 
 			},
 		});
