@@ -146,7 +146,7 @@ jQuery(document).ready(function() {
 	  }
 	}
 	jQuery("#catfeature__demo-input-url").bind('paste', function(e) {
-		catchPaste(evt, this, function(clipData) {
+		catchPaste(e, this, function(clipData) {
 		 	jQuery('.catfeature__demo-submit').click()
 	  });
 	});
