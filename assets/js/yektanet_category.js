@@ -167,7 +167,7 @@ jQuery(document).ready(function() {
 		});
 	}
 
-	jQuery('#catfeature__demo-submit').click(function(e) {
+	jQuery('.catfeature__demo-submit').click(function(e) {
 		e.preventDefault();
 		if (_ch == 'url') {
 			$cat_input = jQuery('#catfeature__demo-input-url');
