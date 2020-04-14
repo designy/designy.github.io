@@ -170,7 +170,7 @@ jQuery(document).ready(function() {
 			},
 			error: function(xhr, status, error) {
 				var result_text = "";
-				if (xhr.status === 429 && xhr.responseJSON.detail === 'Request was throttled. Expected available in 8 seconds.'){
+				if (xhr.status === 429 && xhr.responseJSON.detail.indexOf('Request was throttled') >= 0){
 					result_text = 'شما از تعداد مجاز تست دمو درصفحه فراتر رفته اید، لطفا جهت استفاده از سیستم تشخیص موضوع دقایقی دیگر مجددا آزمایش نمایید.'
 				}
 				if (xhr.status === 500){
