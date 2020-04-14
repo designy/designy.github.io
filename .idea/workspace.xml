@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/yektanet_category.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/yektanet_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/yektanet_category.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="88" />
+              <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -60,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yektanet_category.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="yektanet_category.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/yektanet_category.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="176">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+            <state relative-caret-position="726">
+              <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
               <folding>
                 <element signature="e#1330#3035#0" />
                 <element signature="e#3060#4888#0" />
@@ -206,8 +204,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/a.html" />
         <option value="$PROJECT_DIR$/sport.xml" />
-        <option value="$PROJECT_DIR$/assets/js/yektanet_category.js" />
         <option value="$PROJECT_DIR$/assets/css/yektanet_category.css" />
+        <option value="$PROJECT_DIR$/assets/js/yektanet_category.js" />
       </list>
     </option>
   </component>
@@ -312,20 +310,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00421" summary="add amp link">
-      <created>1547137874103</created>
-      <option name="number" value="00421" />
-      <option name="presentableId" value="LOCAL-00421" />
-      <option name="project" value="LOCAL" />
-      <updated>1547137874103</updated>
-    </task>
-    <task id="LOCAL-00422" summary="add amp link">
-      <created>1547138427015</created>
-      <option name="number" value="00422" />
-      <option name="presentableId" value="LOCAL-00422" />
-      <option name="project" value="LOCAL" />
-      <updated>1547138427015</updated>
     </task>
     <task id="LOCAL-00423" summary="add amp link">
       <created>1547138801322</created>
@@ -656,7 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586845472369</updated>
     </task>
-    <option name="localTasksCounter" value="470" />
+    <task id="LOCAL-00470" summary="add gif">
+      <created>1586846342257</created>
+      <option name="number" value="00470" />
+      <option name="presentableId" value="LOCAL-00470" />
+      <option name="project" value="LOCAL" />
+      <updated>1586846342257</updated>
+    </task>
+    <task id="LOCAL-00471" summary="add gif">
+      <created>1586847438176</created>
+      <option name="number" value="00471" />
+      <option name="presentableId" value="LOCAL-00471" />
+      <option name="project" value="LOCAL" />
+      <updated>1586847438176</updated>
+    </task>
+    <option name="localTasksCounter" value="472" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1041,31 +1039,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
+    <entry file="file://$PROJECT_DIR$/assets/css/yektanet_category.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="e#1330#3035#0" />
-            <element signature="e#3060#4888#0" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="88" />
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/yektanet_category.css">
+    <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="726">
+          <caret line="170" column="27" lean-forward="true" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+          <folding>
+            <element signature="e#1330#3035#0" />
+            <element signature="e#3060#4888#0" />
+          </folding>
         </state>
       </provider>
     </entry>

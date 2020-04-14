@@ -32,13 +32,21 @@ jQuery(document).ready(function() {
 
 		const ch = jQuery(this).attr('data-choose');
 		if (ch == 'url') {
-			jQuery('#catfeature__demo-input').fadeOut();
-			$cat_input = jQuery('#catfeature__demo-input-url').fadeIn();
+			jQuery('#catfeature__demo-text-section').fadeOut();
+			jQuery('.catfeature__demo-title').html(
+				'لطفاً برای تشخیص موضوع، آدرس اینترنتی مقاله خود را وارد کنید'
+			);
+			$cat_input = jQuery('#catfeature__demo-input-url');
 			$cat_input.val('');
+			jQuery('#catfeature__demo-url-section').fadeIn();
 		} else {
-			jQuery('#catfeature__demo-input-url').fadeOut();
-			$cat_input = jQuery('#catfeature__demo-input').fadeIn();
+			jQuery('#catfeature__demo-url-section').fadeOut();
+			jQuery('.catfeature__demo-title').html(
+				'لطفاً برای تشخیص موضوع، یک متن نسبتاً طولانی از مقاله خود را وارد کنید'
+			);
+			$cat_input = jQuery('#catfeature__demo-input');
 			$cat_input.val('');
+			jQuery('#catfeature__demo-text-section').fadeIn();
 		}
 		_ch = ch;
 
