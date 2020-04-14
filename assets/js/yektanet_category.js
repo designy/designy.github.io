@@ -147,7 +147,7 @@ jQuery(document).ready(function() {
 							} else {
 								const second_category = result[1];
 								const second_category_title =
-									second_category[1];
+									second_category[0];
 								result_text =
 									`${'موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های' +
 										'»'}${first_category_title} و ${+second_category_title}»` +
