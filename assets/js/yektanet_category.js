@@ -168,9 +168,28 @@ jQuery(document).ready(function() {
 
 				}
 			},
-			error: function(error) {
-                        var result_text =
-                            'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
+			error: function(xhr, status, error) {
+				debugger;
+				var result_text = "";
+				if (status === 429 && xhr.responseJSON.detail === 'Request was throttled. Expected available in 8 seconds.'){
+					result_text = 'شما از تعداد مجاز تست دمو درصفحه فراتر رفته اید، لطفا جهت استفاده از سیستم تشخیص موضوع دقایقی دیگر مجددا آزمایش نمایید.'
+				}
+				if (status === 500){
+					if (xhr.responseJSON.detail === "can't scrape content"){
+						result_text =
+					'آدرس URL درخواستی قابل بررسی نمی باشد، لطفا جهت استفاده از سیستم تشخیص موضوع URL دیگری را آزمایش نمایید.';
+					}
+					else if (xhr.responseJSON.detail === "can't extract category"){
+						result_text = 'آدرس URL درخواستی قابل بررسی نمی باشد، لطفا جهت استفاده از سیستم تشخیص موضوع URL دیگری را آزمایش نمایید.'
+					}
+					else{
+						result_text = 'سرور در حال حاضر قادر به پاسخگویی نمی باشد، لطفا جهت استفاده از سیستم تشخیص موضوع دقایقی دیگر مجددا آزمایش نمایید.'
+					}
+
+				}
+				else{
+					result_text = 'سرور در حال حاضر قادر به پاسخگویی نمی باشد، لطفا جهت استفاده از سیستم تشخیص موضوع دقایقی دیگر مجددا آزمایش نمایید.'
+				}
                     jQuery('#chart').html(result_text);
                     jQuery('#chart').fadeIn();
 
