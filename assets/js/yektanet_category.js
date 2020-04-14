@@ -29,16 +29,17 @@ jQuery(document).ready(function() {
 
 		const ch = jQuery(this).attr('data-choose');
 		if (ch == 'url') {
-			jQuery('#catfeature__demo-text-section').fadeOut();
-			jQuery('.catfeature__demo-title').html(
-				'لطفاً برای تشخیص موضوع، آدرس اینترنتی مقاله خود را وارد کنید'
-			);
-			$cat_input = jQuery('#catfeature__demo-input-url');
-			$cat_input.val('');
-			jQuery('#chart').fadeOut().html('');
-			jQuery('#catfeature__demo-url-section').fadeIn();
+			jQuery('#catfeature__demo-text-section').fadeOut('fast', function () {
+				jQuery('.catfeature__demo-title').html(
+					'لطفاً برای تشخیص موضوع، آدرس اینترنتی مقاله خود را وارد کنید'
+				);
+				$cat_input = jQuery('#catfeature__demo-input-url');
+				$cat_input.val('');
+				jQuery('#catfeature__demo-url-section').fadeIn();
+				jQuery('#chart').fadeOut().html('');
+			});
 		} else {
-			jQuery('#catfeature__demo-url-section').fadeOut();
+			jQuery('#catfeature__demo-url-section').fadeOut('fast', function () {
 			jQuery('.catfeature__demo-title').html(
 				'لطفاً برای تشخیص موضوع، یک متن نسبتاً طولانی از مقاله خود را وارد کنید'
 			);
@@ -46,6 +47,7 @@ jQuery(document).ready(function() {
 			$cat_input.val('');
 			jQuery('#chart').fadeOut().html('');
 			jQuery('#catfeature__demo-text-section').fadeIn();
+            });
 		}
 		_ch = ch;
 
