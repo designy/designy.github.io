@@ -90,11 +90,10 @@ jQuery(document).ready(function() {
 								result_text =
 									`
 									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
-																		<strong>
-									«
-${first_category_title} و ${second_category_title}
-
-									»
+									<strong>
+									«${first_category_title}»
+									و
+									«${second_category_title}»
 									</strong>
 									است
 `;							}
@@ -163,11 +162,10 @@ ${first_category_title} و ${second_category_title}
 								result_text =
 									`
 									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
-																		<strong>
-									«
-${first_category_title} و ${second_category_title}
-
-									»
+									<strong>
+									«${first_category_title}»
+									و
+									«${second_category_title}»
 									</strong>
 									است
 `;
