@@ -88,10 +88,16 @@ jQuery(document).ready(function() {
 								const second_category_title =
 									second_category[0];
 								result_text =
-									`${'موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های' +
-										'»'}${first_category_title} و ${+second_category_title}«` +
-									`است.`;
-							}
+									`
+									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
+																		<strong>
+									»
+${first_category_title} و ${second_category_title}
+
+									«
+									</strong>
+									است
+`;							}
 						} else {
 							result_text =
 								'متاسفانه قادر به تشخیص موضوع متن یا URL شما نبودیم لطفا متن یا URL دیگری انتخاب کنید و مجدداً تلاش کنید.';
@@ -153,12 +159,18 @@ jQuery(document).ready(function() {
 									`;
 							} else {
 								const second_category = result[1];
-								const second_category_title =
-									second_category[0];
+								const second_category_title = second_category[0];
 								result_text =
-									`${'موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های' +
-										'»'}${first_category_title} و ${+second_category_title}«` +
-									`است.`;
+									`
+									موضوع تشخیص داده شده برای مقاله شما نزدیک به دسته‌بندی‌های
+																		<strong>
+									»
+${first_category_title} و ${second_category_title}
+
+									«
+									</strong>
+									است
+`;
 							}
 						} else {
 							result_text =
