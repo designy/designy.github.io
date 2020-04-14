@@ -8,18 +8,18 @@
     background-color: #ffcc00;
 }
 .catfeature__demo-submit{
-    margin-right: 30px;
-    white-space: nowrap;
-    color: #000000;
-    background-color: #ffe26a;
-    line-height: 1.5em;
-    margin-top: 15px;
-    padding: 7px 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 2px;
-    text-decoration: none;
+    margin-right: 30px !important;
+    white-space: nowrap !important;
+    color: #000000 !important;
+    background-color: #ffe26a !important;
+    line-height: 1.5em !important;
+    margin-top: 15px !important;
+    padding: 7px 20px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 2px !important;
+    text-decoration: none !important;
 }
 .catfeature__demo-submit:hover{
-    background-color: #ffc900;
+    background-color: #ffc900 !important;
 }
