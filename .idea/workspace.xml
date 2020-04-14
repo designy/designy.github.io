@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="">
+    <list default="true" id="720ffe4e-586d-49f7-bf41-c37f86760395" name="Default" comment="add gif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/yektanet_category.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/yektanet_category.js" afterDir="false" />
     </list>
@@ -71,8 +71,11 @@
       <file leaf-file-name="yektanet_category.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+            <state relative-caret-position="463">
+              <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+              <folding>
+                <element signature="e#3567#5696#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -307,20 +310,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1485271597703</updated>
-    </task>
-    <task id="LOCAL-00429" summary="fix encode uri component">
-      <created>1547447754713</created>
-      <option name="number" value="00429" />
-      <option name="presentableId" value="LOCAL-00429" />
-      <option name="project" value="LOCAL" />
-      <updated>1547447754713</updated>
-    </task>
-    <task id="LOCAL-00430" summary="fix encode uri component">
-      <created>1547447803344</created>
-      <option name="number" value="00430" />
-      <option name="presentableId" value="LOCAL-00430" />
-      <option name="project" value="LOCAL" />
-      <updated>1547447803344</updated>
     </task>
     <task id="LOCAL-00431" summary="fix encode uri component">
       <created>1547448371779</created>
@@ -651,7 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586849938640</updated>
     </task>
-    <option name="localTasksCounter" value="478" />
+    <task id="LOCAL-00478" summary="add gif">
+      <created>1586850195296</created>
+      <option name="number" value="00478" />
+      <option name="presentableId" value="LOCAL-00478" />
+      <option name="project" value="LOCAL" />
+      <updated>1586850195296</updated>
+    </task>
+    <task id="LOCAL-00479" summary="add gif">
+      <created>1586852792301</created>
+      <option name="number" value="00479" />
+      <option name="presentableId" value="LOCAL-00479" />
+      <option name="project" value="LOCAL" />
+      <updated>1586852792301</updated>
+    </task>
+    <option name="localTasksCounter" value="480" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -664,7 +667,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3882353" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22459893" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22459893" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17595147" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
@@ -1055,8 +1058,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/yektanet_category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="81" column="37" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+        <state relative-caret-position="463">
+          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+          <folding>
+            <element signature="e#3567#5696#0" />
+          </folding>
         </state>
       </provider>
     </entry>

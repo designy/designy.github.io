@@ -120,7 +120,15 @@ jQuery(document).ready(function() {
 			},
 		});
 	}
-
+	$("#catfeature__demo-input-url").bind('paste', function(e) {
+     jQuery('.catfeature__demo-submit').click()
+	});
+	$("#catfeature__demo-input-url").keypress(function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if(keycode == '13'){
+			jQuery('.catfeature__demo-submit').click();
+		}
+	});
 	function getContent() {
 		jQuery.ajax({
 			method: 'GET',
