@@ -207,6 +207,12 @@ $(document).ready(function () {
       },
       crossDomain: true,
       contentType: 'application/json',
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader(
+          'Authorization',
+          'Token ' + '809debdba9c8b1b72179e19620a3da767300ae90'
+        );
+      },
       success: function (response) {
         if (response.result) {
           var title = response.result.title;
