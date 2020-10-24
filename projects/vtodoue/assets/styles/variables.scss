@@ -1,0 +1,102 @@
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #ff3464 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$cold: #00a9e5;
+$winter: #53cde2;
+$winter-light: #d8f9ff;
+
+$sizes: (
+	5: 5%,
+	10: 10%,
+	15: 15%,
+	20: 20%,
+);
+
+$space-xs: 8px;
+$space-sm: 15px;
+$space-md: 20px;
+$space-lg: 30px;
+
+$yellow: #ffdd00ab;
+$dark-yellow: darken($yellow, 10%);
+
+$dark-cyan: #014559;
+$dark-green: darken($dark-cyan, 5%);
+$darkest-green: darken($dark-cyan, 10%);
+$light-green: lighten($dark-cyan, 5%);
+$lightest-green: lighten($dark-cyan, 15%);
+
+$red: rgb(189, 30, 45);
+$dark-red: darken($red, 5%);
+$darkest-red: darken($red, 10%);
+$light-red: lighten($red, 5%);
+$lightest-red: lighten($red, 10%);
+
+$primary: $dark-cyan !default;
+$secondary: $gray-600 !default;
+$success: #18bc9c !default;
+$info: #0091bc !default;
+$warning: #ffdd00ab !default;
+$danger: #f72d40 !default;
+$light: #f1f1f1 !default;
+$dark: $gray-800 !default;
+$primary-light: #3c7086;
+$primary-dark: #001e30;
+$gray-dark: #e1e2e1;
+
+$theme-colors: (
+	'primary': $primary,
+	'primary-light': $primary-light,
+	'primary-dark': $primary-dark,
+	'secondary': $red,
+	'success': $success,
+	'info': $info,
+	'warning': $warning,
+	'danger': $danger,
+	'light': $light,
+	'dark': $dark,
+	'blue': $blue,
+	'gray-light': #f5f5f6,
+	'gray-dark': $gray-dark,
+	'yellow': $yellow,
+	'gray': $gray-600,
+);
+
+:export {
+	primary: $primary;
+	primaryLight: $primary-light;
+	primaryDark: $primary-dark;
+	secondary: $primary-light;
+	success: $success;
+	info: $info;
+	warning: $warning;
+	danger: $danger;
+	light: $light;
+	dark: $dark;
+	blue: $blue;
+	grayLight: #f5f5f6;
+	grayDark: $gray-dark;
+  yellow: $yellow;
+  gray: $gray-600;
+
+}
