@@ -1,0 +1,4 @@
+static/
+dist/
+.nuxt/
+node_modules/
