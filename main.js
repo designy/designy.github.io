@@ -20,7 +20,7 @@ function subscribeUser() {
         userVisibleOnly: true,
         applicationServerKey: publicKey
       }).then(function(sub) {
-        console.log(sub)
+      console.log(JSON.stringify(sub))
         console.log('Endpoint URL: ', sub.endpoint);
       }).catch(function(e) {
         if (Notification.permission === 'denied') {
