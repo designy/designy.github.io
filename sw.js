@@ -1,28 +1,31 @@
-self.addEventListener('push', function(e) {
-  var body;
+importScripts('https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js');
 
-  if (e.data) {
-    body = e.data.text();
-  } else {
-    body = 'Push message no payload';
-  }
-
-  var options = {
-    body: body,
-    icon: 'images/notification-flat.png',
-    vibrate: [100, 50, 100],
-    data: {
-      dateOfArrival: Date.now(),
-      primaryKey: 1
-    },
-    actions: [
-      {action: 'explore', title: 'Explore this new world',
-        icon: 'images/checkmark.png'},
-      {action: 'close', title: 'I don\'t want any of this',
-        icon: 'images/xmark.png'},
-    ]
+// Initialize the Firebase app in the service worker by passing in
+// your app's Firebase config object.
+// https://firebase.google.com/docs/web/setup#config-object
+var firebaseConfig = {
+    apiKey: "AIzaSyCwEuRSi7eAFHNMuC-6Kh1Z7pIHzkcPGwY",
+    authDomain: "test-vapid.firebaseapp.com",
+    projectId: "test-vapid",
+    storageBucket: "test-vapid.appspot.com",
+    messagingSenderId: "231440941704",
+    appId: "1:231440941704:web:69ed5eccc8efd41bf3d53d"
   };
-  e.waitUntil(
-    self.registration.showNotification('Push Notification', options)
-  );
+firebase.initializeApp(firebaseConfig);
+
+// Retrieve an instance of Firebase Messaging so that it can handle background
+// messages.
+const messaging = firebase.messaging();
+messaging.onBackgroundMessage((payload) => {
+  console.log('[firebase-messaging-sw.js] Received background message ', payload);
+  // Customize notification here
+  const notificationTitle = 'Background Message Title';
+  const notificationOptions = {
+    body: 'Background Message body.',
+    icon: '/firebase-logo.png'
+  };
+
+  self.registration.showNotification(notificationTitle,
+    notificationOptions);
 });
