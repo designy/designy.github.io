@@ -55,6 +55,7 @@ if ('serviceWorker' in navigator) {
     })
     .then((token) => {
       console.log(token);
+      subscribeUser()
     });
   messaging.onMessage((payload) => {
     return registration.showNotification(payload.notification.title, {
