@@ -10,7 +10,8 @@ const urlB64ToUint8Array = base64String => {
   }
   return outputArray;
 };
-const publicKey = urlB64ToUint8Array('BLGbajUFzGauVQ2rv3n_rM3mPkpvrSzzG7mJNG7UC33sDhXp7TLMwFzmIUCPFZnGfgKjG87NS8uV8Mej2t52uyI');
+const publicKey = urlB64ToUint8Array('BBpROl4GVrcjy8CYW4qD_ThWFq-m29qKS8ctWqUH5GHjpuqnQHA_UQhYXR-Ucb0vlmLUKxlBwmSDbUsxB-86YxM');
+const messaging = firebase.messaging();
 
 function subscribeUser() {
   if ('serviceWorker' in navigator) {
@@ -33,19 +34,35 @@ function subscribeUser() {
   }
 }
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').then(function(reg) {
+  navigator.serviceWorker.register('sw.js').then(function(registration) {
     console.log('Service Worker Registered!', reg);
+  messaging
+    .getToken({
+      serviceWorkerRegistration: registration,
+      vapidKey: publicKey,
+      userVisibleOnly: true,
 
-    reg.pushManager.getSubscription().then(function(sub) {
-      if (sub === null) {
-        // Update UI to ask user to register for Push
-        console.log('Not subscribed to push service!');
-        subscribeUser()
-      } else {
-        // We have a subscription, update the database
-        console.log('Subscription object: ', sub);
-      }
+    })
+    .then((token) => {
+      console.log(token);
     });
+  messaging.onMessage((payload) => {
+    return registration.showNotification(payload.notification.title, {
+      body: payload.notification.body + " forground-message",
+      requireInteraction: true,
+    });
+  });
+
+    // reg.pushManager.getSubscription().then(function(sub) {
+    //   if (sub === null) {
+    //     // Update UI to ask user to register for Push
+    //     console.log('Not subscribed to push service!');
+    //     subscribeUser()
+    //   } else {
+    //     // We have a subscription, update the database
+    //     console.log('Subscription object: ', sub);
+    //   }
+    // });
   })
    .catch(function(err) {
     console.log('Service Worker registration failed: ', err);
