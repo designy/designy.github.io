@@ -20,7 +20,7 @@ var firebaseConfig = {
   };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const publicKey = urlB64ToUint8Array('BBpROl4GVrcjy8CYW4qD_ThWFq-m29qKS8ctWqUH5GHjpuqnQHA_UQhYXR-Ucb0vlmLUKxlBwmSDbUsxB-86YxM');
+const publicKey = 'BBpROl4GVrcjy8CYW4qD_ThWFq-m29qKS8ctWqUH5GHjpuqnQHA_UQhYXR-Ucb0vlmLUKxlBwmSDbUsxB-86YxM';
 const messaging = firebase.messaging();
 
 function subscribeUser() {
