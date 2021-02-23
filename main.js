@@ -46,6 +46,7 @@ function subscribeUser() {
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').then(function(registration) {
     console.log('Service Worker Registered!', registration);
+    messaging.useServiceWorker(registration)
   messaging
     .getToken({
       serviceWorkerRegistration: registration,
