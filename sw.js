@@ -1,5 +1,5 @@
-importScripts('https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/8.2.9/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/6.6.2/firebase-messaging.js');
 
 // Initialize the Firebase app in the service worker by passing in
 // your app's Firebase config object.
@@ -17,7 +17,7 @@ firebase.initializeApp(firebaseConfig);
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.
 const messaging = firebase.messaging();
-messaging.onBackgroundMessage((payload) => {
+messaging.setBackgroundMessageHandler((payload) => {
     debugger
     console.log(payload)
   // Customize notification here
