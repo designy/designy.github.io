@@ -10,6 +10,16 @@ const urlB64ToUint8Array = base64String => {
   }
   return outputArray;
 };
+var firebaseConfig = {
+    apiKey: "AIzaSyCwEuRSi7eAFHNMuC-6Kh1Z7pIHzkcPGwY",
+    authDomain: "test-vapid.firebaseapp.com",
+    projectId: "test-vapid",
+    storageBucket: "test-vapid.appspot.com",
+    messagingSenderId: "231440941704",
+    appId: "1:231440941704:web:69ed5eccc8efd41bf3d53d"
+  };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 const publicKey = urlB64ToUint8Array('BBpROl4GVrcjy8CYW4qD_ThWFq-m29qKS8ctWqUH5GHjpuqnQHA_UQhYXR-Ucb0vlmLUKxlBwmSDbUsxB-86YxM');
 const messaging = firebase.messaging();
 
@@ -35,7 +45,7 @@ function subscribeUser() {
 }
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js').then(function(registration) {
-    console.log('Service Worker Registered!', reg);
+    console.log('Service Worker Registered!', registration);
   messaging
     .getToken({
       serviceWorkerRegistration: registration,
