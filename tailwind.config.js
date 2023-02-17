@@ -1,15 +1,15 @@
-const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    colors: {
-      lime: colors.lime,
+    content: [
+        "./components/**/*.{js,vue,ts}",
+        "./layouts/**/*.vue",
+        "./pages/**/*.vue",
+        "./plugins/**/*.{js,ts}",
+        "./nuxt.config.{js,ts}",
+    ],
+    theme: {
+        extend: {},
     },
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [require('tailwindcss-rtl')],
-};
+    plugins: [require('tailwindcss-rtl')],
+}

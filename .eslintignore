@@ -1,4 +1,0 @@
-src/static/
-node_modules/
-.nuxt/
-./stylelint.config.js

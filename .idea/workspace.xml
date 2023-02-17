@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c127a17-cf2b-407e-b709-99594e66f755" name="Changes" comment="revert nuxt config">
+      <change afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AboutMe.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HeadingTitle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MyResume.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MyWorks.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ProfileCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/pages.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blog/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blog/pages/[id].vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/blog/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/vuetify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.stylelintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSans-Bold-web.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSans-Bold-web.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSans-Medium-web.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSans-Medium-web.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSans(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb(FaNum).eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb(FaNum)_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb(FaNum)_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/eot/IRANSansWeb_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/eot/IRANSans(FaNum)_Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/eot/IRANSansWeb(FaNum).eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/eot/IRANSansWeb(FaNum)_Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/eot/IRANSansWeb(FaNum)_Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/eot/IRANSansWeb(FaNum)_UltraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/ttf/IRANSansWeb(FaNum).ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/ttf/IRANSansWeb(FaNum)_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/ttf/IRANSansWeb(FaNum)_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/ttf/IRANSansWeb(FaNum)_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff/IRANSansWeb(FaNum)_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff/IRANSansWeb(FaNum)_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff/IRANSansWeb(FaNum)_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff/IRANSansWeb(FaNum)_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff2/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff2/IRANSansWeb(FaNum)_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff2/IRANSansWeb(FaNum)_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff2/IRANSansWeb(FaNum)_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/faNum/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/css/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-duotone-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-duotone-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-duotone-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-duotone-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-duotone-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-light-300.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-light-300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-light-300.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-light-300.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-light-300.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb(FaNum).ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb(FaNum)_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb_Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb_Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb_Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/ttf/IRANSansWeb_UltraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb(FaNum).woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb(FaNum)_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb(FaNum)_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb(FaNum)_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb_Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb_Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb_Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff/IRANSansWeb_UltraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb(FaNum).woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb(FaNum)_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb_Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb_Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb_Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/woff2/IRANSansWeb_UltraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo/arsh-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo/yektanet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/me.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/nuxtjs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/designy.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/designy.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutMe.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactMe.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeadingTitle.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyResume.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyWorks.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProfileCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/default.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/i18n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugins/vue-screen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/.stylelintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSans-Bold-web.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSans-Bold-web.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSans-Medium-web.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSans-Medium-web.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSansWeb(FaNum).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/IRANSansWeb(FaNum).woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSans(FaNum)_Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb(FaNum).eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb(FaNum)_Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb(FaNum)_Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb_Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb_Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb_Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/eot/IRANSansWeb_UltraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/eot/IRANSans(FaNum)_Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/eot/IRANSansWeb(FaNum).eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/eot/IRANSansWeb(FaNum)_Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/eot/IRANSansWeb(FaNum)_Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/eot/IRANSansWeb(FaNum)_UltraLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/ttf/IRANSansWeb(FaNum).ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/ttf/IRANSansWeb(FaNum)_Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/ttf/IRANSansWeb(FaNum)_Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/ttf/IRANSansWeb(FaNum)_Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff/IRANSansWeb(FaNum).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff/IRANSansWeb(FaNum)_Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff/IRANSansWeb(FaNum)_Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff/IRANSansWeb(FaNum)_Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff/IRANSansWeb(FaNum)_UltraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff2/IRANSansWeb(FaNum).woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff2/IRANSansWeb(FaNum)_Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff2/IRANSansWeb(FaNum)_Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff2/IRANSansWeb(FaNum)_Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/faNum/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-duotone-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-duotone-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-duotone-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-duotone-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-duotone-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-light-300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-light-300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-light-300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-light-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-light-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/fontawesome/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb(FaNum).ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb(FaNum)_Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb_Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb_Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb_Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/ttf/IRANSansWeb_UltraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb(FaNum).woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb(FaNum)_Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb(FaNum)_Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb(FaNum)_Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb_Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb_Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb_Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff/IRANSansWeb_UltraLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb(FaNum).woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb(FaNum)_Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb_Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb_Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb_Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/fonts/woff2/IRANSansWeb_UltraLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/logo/arsh-logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/logo/yektanet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/images/me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/styles/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylelint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LGv5SMmLq3wbNFmwTYo8IeGj0k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/TNT/PycharmProjects/notion-api-worker",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "C:\\Users\\TNT\\PycharmProjects\\designy.github.io\\old\\node_modules\\stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TNT\PycharmProjects\designy.github.io" />
+      <recent name="C:\Users\TNT\PycharmProjects\designy.github.io\plugin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TNT\PycharmProjects\designy.github.io\pages\blog" />
+      <recent name="C:\Users\TNT\PycharmProjects\designy.github.io" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c127a17-cf2b-407e-b709-99594e66f755" name="Changes" comment="" />
+      <created>1675510050794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675510050794</updated>
+      <workItem from="1675510051919" duration="13439000" />
+      <workItem from="1675624546782" duration="3756000" />
+      <workItem from="1675786562585" duration="10264000" />
+      <workItem from="1675854047514" duration="561000" />
+      <workItem from="1675931953635" duration="14958000" />
+      <workItem from="1676103578858" duration="1874000" />
+      <workItem from="1676114650684" duration="6605000" />
+      <workItem from="1676181835359" duration="1279000" />
+      <workItem from="1676634367625" duration="14550000" />
+    </task>
+    <task id="LOCAL-00001" summary="init website">
+      <created>1675510292179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675510292179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init website">
+      <created>1675510578584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675510578584</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new yarn lock">
+      <created>1675511774046</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675511774046</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove travis">
+      <created>1675514938698</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675514938698</updated>
+    </task>
+    <task id="LOCAL-00005" summary="revert nuxt config">
+      <created>1675515322943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675515322943</updated>
+    </task>
+    <task id="LOCAL-00006" summary="revert nuxt config">
+      <created>1675516660774</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675516660774</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init website" />
+    <MESSAGE value="new yarn lock" />
+    <MESSAGE value="remove travis" />
+    <MESSAGE value="revert nuxt config" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert nuxt config" />
+  </component>
+</project>
