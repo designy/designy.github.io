@@ -1,18 +1,12 @@
 <template>
-<!--  <NotionRenderer :blockMap="data" fullPage prism />-->
+  <div v-for="(value, key) in data">
+    <nuxt-link :to="{name: 'blog-pages-id___fa', params: {id: key}}">{{ key }}</nuxt-link>
+  </div>
 </template>
 
 <script setup lang="ts">
-// const { $notion } = useNuxtApp()
-// const { data } = await useAsyncData("notion", () => $notion.getPageBlocks("19bd5a4bddf3426ebd2d28c82cffd9f7"))
-import {Client} from "@notionhq/client";
-
-// Initializing a client
-const notion = new Client({
-  auth: "secret_Be3jMuvCRtZGlvQz0p0yVpCTIpkWc2LsqYfomPTEjE3",
-})
-const result = await notion.databases.list({})
-console.log(result)
+const { $notion } = useNuxtApp()
+const { data } = await useAsyncData("notion", () => $notion.getPageBlocks("dec0b9e78ba34712aadb22c44c95fc9d"))
 </script>
 
 <style scoped>

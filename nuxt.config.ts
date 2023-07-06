@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false,
+    ssr: true,
     app:{
     head: {
-        title: 'aliii',
+        title: 'ali esmaeili',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,28 +32,28 @@ export default defineNuxtConfig({
                 as: 'font',
                 crossorigin: 'anonymous',
             },
-            // {
-            //     rel: 'preload',
-            //     href: '/fonts/fontawesome/webfonts/fa-solid-900.woff2',
-            //     as: 'font',
-            //     crossorigin: 'anonymous',
-            // },
-            // {
-            //     rel: 'preload',
-            //     href: '/fonts/fontawesome/webfonts/fa-regular-400.woff2',
-            //     as: 'font',
-            //     crossorigin: 'anonymous',
-            // },
-            // {
-            //     rel: 'preload',
-            //     href: '/fonts/fontawesome/webfonts/fa-brands-400.woff2',
-            //     as: 'font',
-            //     crossorigin: 'anonymous',
-            // },
-            // {
-            //     rel: 'stylesheet',
-            //     href: '/fonts/fontawesome/css/all.min.css',
-            // },
+            {
+                rel: 'preload',
+                href: '/fonts/fontawesome/webfonts/fa-solid-900.woff2',
+                as: 'font',
+                crossorigin: 'anonymous',
+            },
+            {
+                rel: 'preload',
+                href: '/fonts/fontawesome/webfonts/fa-regular-400.woff2',
+                as: 'font',
+                crossorigin: 'anonymous',
+            },
+            {
+                rel: 'preload',
+                href: '/fonts/fontawesome/webfonts/fa-brands-400.woff2',
+                as: 'font',
+                crossorigin: 'anonymous',
+            },
+            {
+                rel: 'stylesheet',
+                href: '/fonts/fontawesome/css/all.min.css',
+            },
         ],
     },
     },
@@ -68,7 +68,6 @@ export default defineNuxtConfig({
     },
     modules: [
         '@nuxtjs/i18n',
-        ["vue3-notion/nuxt", { css: true }],
     ],
     postcss: {
         plugins: {
@@ -79,21 +78,22 @@ export default defineNuxtConfig({
     i18n: {
         locales: [
             {
-                code: 'en',
-                name: 'انگلیسی',
-                dir: 'ltr',
-            },
-            {
                 code: 'fa',
                 name: 'فارسی',
                 dir: 'rtl',
             },
+            {
+                code: 'en',
+                name: 'انگلیسی',
+                dir: 'ltr',
+            },
+
         ],
         defaultLocale: 'fa',
         defaultDirection: 'rtl',
         vueI18nLoader: true,
         vueI18n: {
-            fallbackLocale: 'en',
+            fallbackLocale: 'fa',
             messages: {
                 en: {},
                 fa: {
